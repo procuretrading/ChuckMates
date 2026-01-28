@@ -1,0 +1,64 @@
+# GitHub Upload Instructions
+
+## IMPORTANT: How to Upload the Zip File to GitHub
+
+### Step 1: Extract the Zip First!
+
+**DO NOT upload the .zip file itself to GitHub!**
+
+1. Download `github-upload.zip`
+2. **Extract/Unzip it** on your computer
+3. You should now have a folder called `github-upload` with these files inside:
+   - index.html
+   - about.html
+   - platinum-series.html
+   - premium-series.html
+   - adapters.html
+   - sitemap.xml
+   - robots.txt
+   - README.md
+   - css/ (folder)
+   - images/ (folder)
+
+### Step 2: Upload to GitHub
+
+1. Go to your repository on GitHub: https://github.com/procuretrading/YOURREPONAME
+2. Click "uploading an existing file" or "Add file" → "Upload files"
+3. **Open the extracted `github-upload` folder**
+4. **Select ALL the files and folders** (Ctrl+A or Cmd+A)
+5. **Drag them all at once** into the GitHub upload area
+   - OR: Click "choose your files" and select all of them
+6. Scroll down and click "Commit changes"
+
+### Step 3: Wait for Upload
+
+- GitHub will upload all files
+- This might take 1-2 minutes
+- You'll see all your files appear in the repository
+
+### Step 4: Enable GitHub Pages
+
+1. Go to Settings → Pages
+2. Source: "Deploy from a branch"
+3. Branch: "main" / "/ (root)"
+4. Click Save
+5. Wait 2-3 minutes
+
+Your site will be live at: `https://procuretrading.github.io/YOURREPONAME/`
+
+---
+
+## Troubleshooting
+
+**If you can only drag one file at a time:**
+- Try using Ctrl+A (Windows) or Cmd+A (Mac) to select all files
+- Try using "choose your files" button instead of drag-and-drop
+- Make sure you're dragging FROM the extracted folder, not the .zip file
+
+**If files don't appear in correct structure:**
+- Make sure you extracted the zip first
+- Make sure you're uploading the CONTENTS of the github-upload folder, not the folder itself
+
+---
+
+Need help? Just ask!

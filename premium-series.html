@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chuck Mates Premium Series - SimpleSeal technology eliminates the need for Teflon tape. Easy installation with superior reliability for tire inflation.">
+    <meta name="keywords" content="Chuck Mates Premium, SimpleSeal, tire chuck, brass chuck, no Teflon tape, SKOG TOOLS">
+    <title>Premium Series - Chuck Mates | SKOG TOOLS</title>
+    <style>
+/* SKOG TOOLS Website Styles */
+
+:root {
+  --primary-red: #E31E24;
+  --primary-black: #1a1a1a;
+  --secondary-gray: #4a4a4a;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --text-dark: #2c2c2c;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+/* Header & Navigation */
+header {
+  background: var(--primary-black);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: var(--primary-red);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--primary-black) 0%, #2a2a2a 100%);
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #c11a1f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(227, 30, 36, 0.3);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: var(--secondary-gray);
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: var(--shadow);
+}
+
+.product-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background: var(--light-gray);
+  padding: 1rem;
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-badge {
+  display: inline-block;
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.product-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-black);
+}
+
+.product-info p {
+  color: var(--secondary-gray);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.product-features {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.product-features li {
+  padding: 0.25rem 0;
+  color: var(--secondary-gray);
+  font-size: 0.9rem;
+}
+
+.product-features li::before {
+  content: "✓ ";
+  color: var(--primary-red);
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-black);
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: var(--primary-red);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: #c11a1f;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--primary-black);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background: #2a2a2a;
+  transform: translateY(-2px);
+}
+
+/* Product Detail Page */
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--light-gray);
+  padding: 2rem;
+}
+
+.product-details h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  color: #ffa41c;
+  font-size: 1.2rem;
+}
+
+.rating-count {
+  color: var(--secondary-gray);
+  font-size: 0.95rem;
+}
+
+.product-details .price {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-description {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  color: var(--secondary-gray);
+}
+
+.features-list {
+  margin-bottom: 2rem;
+}
+
+.features-list h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.features-list ul {
+  list-style: none;
+}
+
+.features-list li {
+  padding: 0.5rem 0;
+  color: var(--secondary-gray);
+}
+
+.features-list li::before {
+  content: "• ";
+  color: var(--primary-red);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Brand Story Section */
+.brand-story {
+  background: var(--light-gray);
+  padding: 4rem 2rem;
+}
+
+.brand-story-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand-story h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-black);
+}
+
+.brand-story p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--secondary-gray);
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-black);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-red);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* SEO Schema Markup Hidden */
+.schema-markup {
+  display: none;
+}
+
+    </style>
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Chuck Mates Premium Series",
+      "description": "Premium brass tire inflator accessories with SimpleSeal technology"
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html"><img src="images/skog-logo.png" alt="SKOG TOOLS Logo" class="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="platinum-series.html">Platinum Series</a></li>
+                    <li><a href="premium-series.html">Premium Series</a></li>
+                    <li><a href="adapters.html">Adapters</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Chuck Mates Premium Series</h1>
+            <p>SimpleSeal™ Technology - No Teflon Tape Required. Easy-Peasy!</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="section-header">
+            <h2>Meet Your New Mate</h2>
+            <p>Premium brass construction with SimpleSeal technology for effortless installation</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Chuck Mates Premium Standard -->
+            <div class="product-card">
+                <img src="images/premium-product.jpg" alt="Chuck Mates Premium Series" class="product-image">
+                <div class="product-info">
+                    <span class="product-badge">Best Seller</span>
+                    <h3>Chuck Mates Premium Quick-Connect</h3>
+                    <p>Open-type design with SimpleSeal™ technology. No Teflon tape required! Brass construction for durability and reliability.</p>
+                    <ul class="product-features">
+                        <li>SimpleSeal™ - No Teflon Tape Required</li>
+                        <li>Easy Application & Installation</li>
+                        <li>Premium Brass Construction</li>
+                        <li>Open-Type Speed Clip Design</li>
+                        <li>Universal Vehicle Compatibility</li>
+                        <li>Locking Adapter for Air Compressors</li>
+                    </ul>
+                    <div class="button-group">
+                        <a href="https://www.amazon.com/dp/B0CYDXGGH2?maas=maas_adg_327CF1EEFCD7D1038F8578A727578281_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-primary" target="_blank" rel="noopener">Buy 1-Pack</a>
+                        <a href="https://www.amazon.com/dp/B0DC4PWX4H?maas=maas_adg_6B804281DD6DF337A29F16A7CBE5D7BE_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-secondary" target="_blank" rel="noopener">Buy 2-Pack</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chuck Mates Premium NPT -->
+            <div class="product-card">
+                <img src="images/premium-product.jpg" alt="Chuck Mates Premium NPT" class="product-image">
+                <div class="product-info">
+                    <span class="product-badge">Premium Series</span>
+                    <h3>Chuck Mates Premium NPT Quick-Connect</h3>
+                    <p>NPT threaded variant with SimpleSeal™ technology. Perfect for standard NPT air compressor fittings. No Teflon tape needed!</p>
+                    <ul class="product-features">
+                        <li>1/4" NPT Threading</li>
+                        <li>SimpleSeal™ Technology</li>
+                        <li>No Teflon Tape Required</li>
+                        <li>Premium Brass Construction</li>
+                        <li>Universal NPT Compatibility</li>
+                        <li>Leak-Free Performance</li>
+                    </ul>
+                    <div class="button-group">
+                        <a href="https://www.amazon.com/dp/B0F2JNH29G?maas=maas_adg_DBF1C03358AB746C4A71ACF4E5AD5CEE_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-primary" target="_blank" rel="noopener">Buy 1-Pack</a>
+                        <a href="https://www.amazon.com/dp/B0F2JQ15B3?maas=maas_adg_AF1BC76D9824C99DA1F07AD0C92043FE_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-secondary" target="_blank" rel="noopener">Buy 2-Pack</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 3rem; padding: 2rem; background: #f5f5f5; border-radius: 8px;">
+            <h3 style="margin-bottom: 1rem; color: #1a1a1a;">Why Choose Premium Series?</h3>
+            <p style="color: #4a4a4a; line-height: 1.8;">The Premium Series features our innovative SimpleSeal™ technology, eliminating the hassle of Teflon tape while providing a superior seal. Constructed from premium brass for long-lasting durability, these chucks offer exceptional value and reliability. The open-type design allows for maximum airflow, making tire inflation faster and more efficient. Whether you need standard or NPT threading, Chuck Mates Premium delivers professional performance at an accessible price point.</p>
+            
+            <h3 style="margin: 2rem 0 1rem; color: #1a1a1a;">When Every Second Matters</h3>
+            <p style="color: #4a4a4a; line-height: 1.8;">Specially crafted from foam-resistant brass material, coated to resist different types of inflator oils. Offers the highest level of reliability. The result is tools built to withstand demanding work and deliver confidence when it matters most.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="platinum-series.html">Platinum Series</a></li>
+                <li><a href="premium-series.html">Premium Series</a></li>
+                <li><a href="adapters.html">Adapters</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <p>&copy; 2026 SKOG TOOLS. All rights reserved.</p>
+            <p>Products available on Amazon</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SKOG TOOLS - Innovative tire inflator accessories including Chuck Mates Platinum and Premium Series. RatchetSeal and SimpleSeal technology for leak-free connections.">
+    <meta name="keywords" content="tire inflator, chuck mates, tire valve accessories, RatchetSeal, SimpleSeal, tire inflation, SKOG TOOLS">
+    <title>SKOG TOOLS - Innovative Tire Accessories That Make Life Easier</title>
+    <style>
+/* SKOG TOOLS Website Styles */
+
+:root {
+  --primary-red: #E31E24;
+  --primary-black: #1a1a1a;
+  --secondary-gray: #4a4a4a;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --text-dark: #2c2c2c;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+header {
+  background: var(--primary-black);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: var(--primary-red);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--primary-black) 0%, #2a2a2a 100%);
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #c11a1f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(227, 30, 36, 0.3);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: var(--secondary-gray);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: var(--shadow);
+}
+
+.product-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background: var(--light-gray);
+  padding: 1rem;
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-badge {
+  display: inline-block;
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.product-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-black);
+}
+
+.product-info p {
+  color: var(--secondary-gray);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.product-features {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.product-features li {
+  padding: 0.25rem 0;
+  color: var(--secondary-gray);
+  font-size: 0.9rem;
+}
+
+.product-features li::before {
+  content: "✓ ";
+  color: var(--primary-red);
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: var(--primary-red);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: #c11a1f;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--primary-black);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background: #2a2a2a;
+  transform: translateY(-2px);
+}
+
+.brand-story {
+  background: var(--light-gray);
+  padding: 4rem 2rem;
+}
+
+.brand-story-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand-story h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-black);
+}
+
+.brand-story p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--secondary-gray);
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: var(--primary-black);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-red);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+    </style>
+    
+    <!-- Schema.org markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SKOG TOOLS",
+      "url": "https://skogtools.com",
+      "logo": "https://skogtools.com/images/skog-logo.png",
+      "description": "Innovative tire inflator accessories that make life easier",
+      "sameAs": [
+        "https://www.amazon.com/skog"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/skog-logo.png" alt="SKOG TOOLS Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="platinum-series.html">Platinum Series</a></li>
+                    <li><a href="premium-series.html">Premium Series</a></li>
+                    <li><a href="adapters.html">Adapters</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Innovative Tire Accessories That Make Life Easier</h1>
+            <p>Precision-engineered solutions for reliable, leak-free tire inflation</p>
+            <a href="https://www.amazon.com/skog?maas=maas_adg_A9FE909AF33A722428DFC6F62DC37794_afap_abs&ref_=aa_maas&tag=maas" class="cta-button" target="_blank" rel="noopener">Shop on Amazon</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <p>Discover our innovative tire inflator accessories designed for performance and reliability</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Chuck Mates Platinum Series -->
+            <div class="product-card">
+                <img src="images/platinum-product.jpg" alt="Chuck Mates Platinum Series" class="product-image">
+                <div class="product-info">
+                    <span class="product-badge">Platinum Series</span>
+                    <h3>Chuck Mates Platinum</h3>
+                    <p>Patented RatchetSeal™ technology delivers a secure, leak-free seal every time. Universal fit for virtually all vehicles.</p>
+                    <ul class="product-features">
+                        <li>Instant Connect & Disconnect</li>
+                        <li>360° Swivel prevents kinks</li>
+                        <li>Leak-Free Connection</li>
+                        <li>Push Button Release</li>
+                    </ul>
+                    <div class="button-group">
+                        <a href="product-platinum.html" class="btn btn-secondary">Learn More</a>
+                        <a href="https://www.amazon.com/dp/B0F9B1ZKJP?maas=maas_adg_FF31821B904C892E50D7452A0D3CD0FB_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-primary" target="_blank" rel="noopener">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chuck Mates Premium Series -->
+            <div class="product-card">
+                <img src="images/premium-product.jpg" alt="Chuck Mates Premium Series" class="product-image">
+                <div class="product-info">
+                    <span class="product-badge">Premium Series</span>
+                    <h3>Chuck Mates Premium</h3>
+                    <p>SimpleSeal™ technology - no Teflon tape required! Easy-peasy application with superior reliability.</p>
+                    <ul class="product-features">
+                        <li>No Teflon Tape Required</li>
+                        <li>Easy Application</li>
+                        <li>Brass Construction</li>
+                        <li>Universal Compatibility</li>
+                    </ul>
+                    <div class="button-group">
+                        <a href="product-premium.html" class="btn btn-secondary">Learn More</a>
+                        <a href="https://www.amazon.com/dp/B0CYDXGGH2?maas=maas_adg_327CF1EEFCD7D1038F8578A727578281_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-primary" target="_blank" rel="noopener">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reach360 Extension -->
+            <div class="product-card">
+                <img src="images/reach360-product.jpg" alt="Chuck Mates Reach360 Extension" class="product-image">
+                <div class="product-info">
+                    <span class="product-badge">Platinum Series</span>
+                    <h3>Reach360 Extension</h3>
+                    <p>Reach difficult to access tire valves with ease. Perfect for dual rear tires, motorcycles, and tight spaces.</p>
+                    <ul class="product-features">
+                        <li>360° Swivel Design</li>
+                        <li>Extended Reach</li>
+                        <li>Kink-Free Hose</li>
+                        <li>Perfect for Hard-to-Reach Valves</li>
+                    </ul>
+                    <div class="button-group">
+                        <a href="product-reach360.html" class="btn btn-secondary">Learn More</a>
+                        <a href="https://www.amazon.com/dp/B0F99YM7V3?maas=maas_adg_38065D4D87B3DB15B49DA4DA1BC1D1B1_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-primary" target="_blank" rel="noopener">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="brand-story">
+        <div class="brand-story-content">
+            <h2>Reliability Driven Excellence</h2>
+            <p>SKOG was founded on the principles of aviation utility and reliability. As a former commercial pilot and maintenance technician, Todd Evan operated in challenging environments where equipment diagnostics and alignment were essential.</p>
+            <p><strong>Failure was not an option.</strong> Systems and tools had to perform as expected, every time.</p>
+            <p>Todd's many years flying quality product is engineered with a focus on durability, quality, and performance. We prioritize manufacturing based on capability. The result is tools built to withstand demanding work and deliver confidence when it matters most.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="platinum-series.html">Platinum Series</a></li>
+                <li><a href="premium-series.html">Premium Series</a></li>
+                <li><a href="adapters.html">Adapters</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <p>&copy; 2026 SKOG TOOLS. All rights reserved.</p>
+            <p>Products available on Amazon</p>
+        </div>
+    </footer>
+</body>
+</html>
