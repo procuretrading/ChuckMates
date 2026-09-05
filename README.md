@@ -1,6 +1,6 @@
-# SKOG TOOLS Website
+# SKÖG TOOLS Website
 
-This is the static website for SKOG TOOLS, showcasing tire inflator accessories including Chuck Mates Platinum and Premium Series products.
+This is the static website for SKÖG TOOLS, showcasing tire inflator accessories including Chuck Mates Platinum and Premium Series products.
 
 ## Quick Start - Local Preview
 
@@ -83,7 +83,7 @@ skog-tools-website/
 ├── index.html              # Homepage
 ├── platinum-series.html    # Platinum Series products
 ├── premium-series.html     # Premium Series products
-├── adapters.html          # SKOG Adapters
+├── adapters.html          # SKÖG Adapters
 ├── about.html             # About/Brand Story
 ├── sitemap.xml            # SEO sitemap
 ├── css/
@@ -142,4 +142,4 @@ If you need help:
 - Add customer testimonials
 
 ---
-Built with ❤️ for SKOG TOOLS
+Built with ❤️ for SKÖG TOOLS
