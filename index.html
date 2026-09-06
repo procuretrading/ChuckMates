@@ -10,7 +10,8 @@
 /* SKOG TOOLS Website Styles */
 
 :root {
-  --primary-red: #E31E24;
+  --primary-red: #E60909;
+  --premium-orange: #FF6600;
   --primary-black: #1a1a1a;
   --secondary-gray: #4a4a4a;
   --light-gray: #f5f5f5;
@@ -116,7 +117,7 @@ nav a:hover {
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--primary-black) 0%, #2a2a2a 100%);
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.4) 0%, rgba(42, 42, 42, 0.45) 100%), url('images/hero-bg-tire.jpg') center center / cover no-repeat;
   color: var(--white);
   padding: 4rem 2rem;
   text-align: center;
@@ -154,9 +155,9 @@ nav a:hover {
 }
 
 .cta-button:hover {
-  background: #c11a1f;
+  background: #C40808;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(227, 30, 36, 0.3);
+  box-shadow: 0 4px 12px rgba(230, 9, 9, 0.3);
 }
 
 .container {
@@ -212,6 +213,10 @@ nav a:hover {
 
 .product-info {
   padding: 1.5rem;
+}
+
+.badge-premium {
+  background: var(--premium-orange) !important;
 }
 
 .product-badge {
@@ -281,7 +286,17 @@ nav a:hover {
 }
 
 .btn-primary:hover {
-  background: #c11a1f;
+  background: #C40808;
+  transform: translateY(-2px);
+}
+
+.btn-premium {
+  background: var(--premium-orange);
+  color: var(--white);
+}
+
+.btn-premium:hover {
+  background: #CC5200;
   transform: translateY(-2px);
 }
 
@@ -353,7 +368,15 @@ footer {
   .hero h1 {
     font-size: 2rem;
   }
-  
+
+  #home-hero {
+    padding: 3rem 1rem;
+  }
+
+  #home-hero h1 {
+    font-size: 1.5rem;
+  }
+
   .hero p {
     font-size: 1.2rem;
   }
@@ -429,15 +452,16 @@ footer {
                     <li><a href="platinum-series.html">Platinum Series</a></li>
                     <li><a href="premium-series.html">Premium Series</a></li>
                     <li><a href="adapters.html">Adapters</a></li>
+                    <li><a href="tire-gauge.html">Tire Gauge</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home-hero">
         <div class="hero-content">
-            <h1>Innovative Tire Accessories That Make Life Easier</h1>
+            <h1>Innovative Tire Accessories<br>That Make Life Easier</h1>
             <p>Precision-engineered solutions for reliable, leak-free tire inflation</p>
             <a href="https://www.amazon.com/skog?maas=maas_adg_A9FE909AF33A722428DFC6F62DC37794_afap_abs&ref_=aa_maas&tag=maas" class="cta-button" target="_blank" rel="noopener">Shop on Amazon</a>
         </div>
@@ -474,7 +498,7 @@ footer {
             <div class="product-card">
                 <img src="images/premium-product.jpg" alt="Chuck Mates Premium Series" class="product-image">
                 <div class="product-info">
-                    <a href="premium-series.html" class="product-badge">Premium Series</a>
+                    <a href="premium-series.html" class="product-badge badge-premium">Premium Series</a>
                     <h3>Chuck Mates Premium</h3>
                     <p>SimpleSeal™ technology - no Teflon tape required! Easy-peasy application with superior reliability.</p>
                     <ul class="product-features">
@@ -485,7 +509,7 @@ footer {
                     </ul>
                     <div class="button-group">
                         <a href="product-premium.html" class="btn btn-secondary">Learn More</a>
-                        <a href="https://www.amazon.com/dp/B0CYDXGGH2?maas=maas_adg_327CF1EEFCD7D1038F8578A727578281_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-primary" target="_blank" rel="noopener">Buy on Amazon</a>
+                        <a href="https://www.amazon.com/dp/B0CYDXGGH2?maas=maas_adg_327CF1EEFCD7D1038F8578A727578281_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-premium" target="_blank" rel="noopener">Buy on Amazon</a>
                     </div>
                 </div>
             </div>
@@ -528,6 +552,7 @@ footer {
                 <li><a href="platinum-series.html">Platinum Series</a></li>
                 <li><a href="premium-series.html">Premium Series</a></li>
                 <li><a href="adapters.html">Adapters</a></li>
+                <li><a href="tire-gauge.html">Tire Gauge</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
             <p>&copy; 2026 SKOG TOOLS. All rights reserved.</p>
