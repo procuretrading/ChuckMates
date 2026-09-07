@@ -748,7 +748,15 @@ footer {
     } else { fileChosen.style.display = 'none'; }
   });
   ['dragenter','dragover'].forEach(e => { fileDrop.addEventListener(e, ev => { ev.preventDefault(); fileDrop.classList.add('drag-over'); }); });
-  ['dragleave','drop'].forEach(e => { fileDrop.addEventListener(e, () => fileDrop.classList.remove('drag-over')); });
+  fileDrop.addEventListener('dragleave', () => fileDrop.classList.remove('drag-over'));
+  fileDrop.addEventListener('drop', ev => {
+    ev.preventDefault();
+    fileDrop.classList.remove('drag-over');
+    if (ev.dataTransfer && ev.dataTransfer.files.length) {
+      fileInput.files = ev.dataTransfer.files;
+      fileInput.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+  });
   const form = document.getElementById('contact-form');
   const submitBtn = document.getElementById('submit-btn');
   const msgOk = document.getElementById('msg-success');
