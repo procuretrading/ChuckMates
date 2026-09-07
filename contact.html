@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact SKOG® TOOLS - Questions about SKOG Tools or Chuck Mates® products? Get in touch with our team.">
+    <meta name="keywords" content="SKOG® TOOLS, contact us, customer support, Chuck Mates">
+    <title>SKOG Tools Contact</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <style>
+/* SKOG TOOLS Website Styles */
+
+:root {
+  --primary-red: #E60909;
+  --premium-orange: #FF6600;
+  --primary-black: #1a1a1a;
+  --secondary-gray: #4a4a4a;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --text-dark: #2c2c2c;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+/* Header & Navigation */
+header {
+  background: var(--primary-black);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.tm {
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: var(--primary-red);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.4) 0%, rgba(42, 42, 42, 0.45) 100%), url('images/hero-bg-tire.jpg') center center / cover no-repeat;
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #C40808;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 9, 9, 0.3);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: var(--secondary-gray);
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: var(--shadow);
+}
+
+.product-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background: var(--white);
+  padding: 1rem;
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-badge {
+  display: inline-block;
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.product-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-black);
+}
+
+.product-info p {
+  color: var(--secondary-gray);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.product-features {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.product-features li {
+  padding: 0.25rem 0;
+  color: var(--secondary-gray);
+  font-size: 0.9rem;
+}
+
+.product-features li::before {
+  content: "✓ ";
+  color: var(--primary-red);
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-black);
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  min-width: 120px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background: var(--primary-red);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: #C40808;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--primary-black);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background: #2a2a2a;
+  transform: translateY(-2px);
+}
+
+/* Adapter Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s;
+}
+
+.gallery-item:hover,
+.gallery-item:focus-visible {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Product Detail Page */
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--white);
+  padding: 2rem;
+}
+
+.product-details h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  color: #ffa41c;
+  font-size: 1.2rem;
+}
+
+.rating-count {
+  color: var(--secondary-gray);
+  font-size: 0.95rem;
+}
+
+.product-details .price {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-description {
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  color: var(--secondary-gray);
+}
+
+.features-list {
+  margin-bottom: 2rem;
+}
+
+.features-list h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.features-list ul {
+  list-style: none;
+}
+
+.features-list li {
+  padding: 0.5rem 0;
+  color: var(--secondary-gray);
+}
+
+.features-list li::before {
+  content: "• ";
+  color: var(--primary-red);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Brand Story Section */
+.brand-story {
+  background: var(--light-gray);
+  padding: 4rem 2rem;
+}
+
+.brand-story-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand-story h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-black);
+}
+
+.brand-story p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--secondary-gray);
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-black);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-red);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+    order: 3;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  nav ul.nav-open {
+    max-height: 400px;
+    padding: 0.5rem 0 1rem;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+}
+
+/* SEO Schema Markup Hidden */
+.schema-markup {
+  display: none;
+}
+
+    </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=DM+Sans:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg:            #0b0b0b;
+    --surface:       #161616;
+    --border:        #2a2a2a;
+    --border-focus:  #ffffff;
+    --text:          #efefef;
+    --text-muted:    #777;
+    --accent:        #ffffff;
+    --radius:        2px;
+  }
+  .contact-embed, .contact-embed *, .contact-embed *::before, .contact-embed *::after { box-sizing: border-box; }
+  .contact-embed {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.5rem 5rem;
+  }
+  .contact-embed .logo-wrap { margin-bottom: 2.75rem; }
+  .contact-embed .brand-logo { height: 64px; width: auto; }
+  .contact-embed .form-wrap { width: 100%; max-width: 560px; }
+  .contact-embed .intro { font-size: 0.9rem; line-height: 1.7; color: var(--text); margin-bottom: 2.5rem; }
+  .contact-embed form { display: flex; flex-direction: column; gap: 1.4rem; margin: 0; }
+  .contact-embed .name-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .contact-embed .field { display: flex; flex-direction: column; gap: 0.4rem; }
+  .contact-embed label { font-family: 'Barlow', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text); display: flex; align-items: baseline; gap: 0.3rem; }
+  .contact-embed label .req { color: var(--accent); font-size: 0.7rem; }
+  .contact-embed label .sub { font-family: 'DM Sans', sans-serif; text-transform: none; letter-spacing: 0; font-size: 0.73rem; font-weight: 400; color: var(--text-muted); }
+  .contact-embed input[type="text"], .contact-embed input[type="email"], .contact-embed textarea { background: var(--surface); border: 1px solid var(--border); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 0.9rem; padding: 0.7rem 0.875rem; border-radius: var(--radius); outline: none; transition: border-color 0.15s; width: 100%; -webkit-appearance: none; }
+  .contact-embed input[type="text"]:focus, .contact-embed input[type="email"]:focus, .contact-embed textarea:focus { border-color: var(--border-focus); }
+  .contact-embed textarea { resize: vertical; min-height: 130px; }
+  .contact-embed .checkbox-field { display: flex; align-items: center; gap: 0.65rem; margin-top: -0.4rem; }
+  .contact-embed .checkbox-field input[type="checkbox"] { width: 15px; height: 15px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+  .contact-embed .checkbox-field label { text-transform: none; letter-spacing: 0; font-size: 0.875rem; font-family: 'DM Sans', sans-serif; font-weight: 400; cursor: pointer; color: var(--text-muted); }
+  .contact-embed .file-section label { margin-bottom: 0.5rem; display: block; }
+  .contact-embed .file-drop { position: relative; border: 1.5px dashed var(--border); border-radius: var(--radius); padding: 2.25rem 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.55rem; cursor: pointer; transition: border-color 0.18s; }
+  .contact-embed .file-drop:hover, .contact-embed .file-drop.drag-over { border-color: var(--accent); }
+  .contact-embed .file-drop input[type="file"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .contact-embed .upload-circle { width: 38px; height: 38px; border: 1.5px solid var(--text-muted); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 1.3rem; font-weight: 300; line-height: 1; transition: border-color 0.18s, color 0.18s; user-select: none; }
+  .contact-embed .file-drop:hover .upload-circle { border-color: var(--accent); color: var(--accent); }
+  .contact-embed .upload-cta { font-family: 'DM Sans', sans-serif; font-size: 0.875rem; color: var(--text-muted); }
+  .contact-embed .upload-hint { font-size: 0.75rem; color: #464646; }
+  .contact-embed .file-chosen { font-size: 0.8rem; color: var(--accent); word-break: break-all; text-align: center; padding: 0 1rem; display: none; }
+  .contact-embed .actions { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+  .contact-embed button[type="submit"] { background: transparent; border: 1.5px solid var(--accent); color: var(--accent); font-family: 'Barlow', sans-serif; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.8rem 2.1rem; border-radius: var(--radius); cursor: pointer; transition: background 0.15s, color 0.15s; }
+  .contact-embed button[type="submit"]:hover { background: var(--accent); color: #0b0b0b; }
+  .contact-embed button[type="submit"]:disabled { opacity: 0.45; cursor: not-allowed; }
+  .contact-embed .status-msg { font-size: 0.875rem; display: none; }
+  .contact-embed .status-msg.success { color: var(--accent); }
+  .contact-embed .status-msg.error { color: #ff6b6b; }
+  .contact-embed .social { margin-top: 3.5rem; display: flex; gap: 1.25rem; justify-content: center; }
+  .contact-embed .social a { color: var(--text-muted); text-decoration: none; transition: color 0.15s; display: flex; align-items: center; }
+  .contact-embed .social a:hover { color: var(--text); }
+  @media (max-width: 460px) { .contact-embed .name-row { grid-template-columns: 1fr; } .contact-embed button[type="submit"] { width: 100%; } }
+  @media (prefers-reduced-motion: reduce) { .contact-embed * { transition: none !important; } }
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html"><img src="images/skog-logo.png" alt="SKOG® TOOLS Logo" class="logo"></a>
+            </div>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="platinum-series.html">Platinum Series</a></li>
+                    <li><a href="premium-series.html">Premium Series</a></li>
+                    <li><a href="adapters.html">Adapters</a></li>
+                    <li><a href="tire-gauge.html">Tire Gauge</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contact-embed">
+    <div class="logo-wrap">
+      <img src="images/skog-logo.png" alt="SKOG® TOOLS Logo" class="brand-logo">
+    </div>
+
+    <div class="form-wrap">
+      <p class="intro">Have a question about SKOG Tools or Chuck Mates? We'd love to hear from you. Reach out and we'll get back to you shortly.</p>
+
+      <form id="contact-form" action="https://formspree.io/f/mvkowdwg" method="POST" enctype="multipart/form-data">
+        <div class="name-row">
+          <div class="field">
+            <label for="first_name">First Name <span class="req">*</span></label>
+            <input type="text" id="first_name" name="first_name" required autocomplete="given-name">
+          </div>
+          <div class="field">
+            <label for="last_name">Last Name <span class="req">*</span></label>
+            <input type="text" id="last_name" name="last_name" required autocomplete="family-name">
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="checkbox-field">
+          <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+          <label for="newsletter">Sign up for news and updates</label>
+        </div>
+        <div class="field">
+          <label for="subject">Subject <span class="req">*</span></label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="field">
+          <label for="message">Message <span class="req">*</span></label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="field file-section">
+          <label>File Upload <span class="sub">(PNG or JPG)</span></label>
+          <div class="file-drop" id="file-drop">
+            <input type="file" name="upload" id="file-input" accept=".png,.jpg,.jpeg,image/png,image/jpeg">
+            <div class="upload-circle">+</div>
+            <div class="upload-cta">Add a File</div>
+            <div class="upload-hint">PNG or JPG only (max 5 MB)</div>
+            <div class="file-chosen" id="file-chosen"></div>
+          </div>
+        </div>
+        <div class="actions">
+          <button type="submit" id="submit-btn">Submit</button>
+          <span class="status-msg success" id="msg-success">Message sent — we'll be in touch.</span>
+          <span class="status-msg error" id="msg-error">Something went wrong. Please try again.</span>
+        </div>
+      </form>
+
+      <div class="social">
+        <a href="https://www.instagram.com/skogtools" target="_blank" rel="noopener" aria-label="SKOG Tools on Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/skogtools" target="_blank" rel="noopener" aria-label="SKOG Tools on Facebook">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="platinum-series.html">Platinum Series</a></li>
+                <li><a href="premium-series.html">Premium Series</a></li>
+                <li><a href="adapters.html">Adapters</a></li>
+                <li><a href="tire-gauge.html">Tire Gauge</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>&copy; 2026 SKOG<sup class="tm">®</sup> TOOLS. All rights reserved.</p>
+            <p>Products available on Amazon</p>
+        </div>
+    </footer>
+    <script>
+        (function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var nav = document.getElementById('primary-nav');
+            var navList = nav ? nav.querySelector('ul') : null;
+            if (!toggle || !navList) return;
+
+            function closeMenu() {
+                navList.classList.remove('nav-open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            toggle.addEventListener('click', function () {
+                var isOpen = navList.classList.toggle('nav-open');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navList.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMenu);
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) closeMenu();
+            });
+        })();
+    </script>
+    <script>
+  const fileInput  = document.getElementById('file-input');
+  const fileDrop   = document.getElementById('file-drop');
+  const fileChosen = document.getElementById('file-chosen');
+  fileInput.addEventListener('change', () => {
+    const f = fileInput.files[0];
+    if (f) {
+      if (f.size > 5 * 1024 * 1024) { alert('File exceeds 5 MB.'); fileInput.value = ''; fileChosen.style.display = 'none'; return; }
+      fileChosen.textContent = f.name;
+      fileChosen.style.display = 'block';
+    } else { fileChosen.style.display = 'none'; }
+  });
+  ['dragenter','dragover'].forEach(e => { fileDrop.addEventListener(e, ev => { ev.preventDefault(); fileDrop.classList.add('drag-over'); }); });
+  ['dragleave','drop'].forEach(e => { fileDrop.addEventListener(e, () => fileDrop.classList.remove('drag-over')); });
+  const form = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const msgOk = document.getElementById('msg-success');
+  const msgErr = document.getElementById('msg-error');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    submitBtn.disabled = true; submitBtn.textContent = 'Sending…';
+    msgOk.style.display = msgErr.style.display = 'none';
+    try {
+      const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+      if (res.ok) { form.reset(); fileChosen.style.display = 'none'; msgOk.style.display = 'inline'; submitBtn.textContent = 'Sent'; }
+      else { msgErr.style.display = 'inline'; submitBtn.disabled = false; submitBtn.textContent = 'Submit'; }
+    } catch { msgErr.style.display = 'inline'; submitBtn.disabled = false; submitBtn.textContent = 'Submit'; }
+  });
+</script>
+</body>
+</html>
