@@ -581,15 +581,6 @@ footer {
   .contact-embed .checkbox-field { display: flex; align-items: center; gap: 0.65rem; margin-top: -0.4rem; }
   .contact-embed .checkbox-field input[type="checkbox"] { width: 15px; height: 15px; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
   .contact-embed .checkbox-field label { text-transform: none; letter-spacing: 0; font-size: 0.875rem; font-family: 'DM Sans', sans-serif; font-weight: 400; cursor: pointer; color: var(--text-muted); }
-  .contact-embed .file-section label { margin-bottom: 0.5rem; display: block; }
-  .contact-embed .file-drop { position: relative; border: 1.5px dashed var(--border); border-radius: var(--radius); padding: 2.25rem 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.55rem; cursor: pointer; transition: border-color 0.18s; }
-  .contact-embed .file-drop:hover, .contact-embed .file-drop.drag-over { border-color: var(--accent); }
-  .contact-embed .file-drop input[type="file"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
-  .contact-embed .upload-circle { width: 38px; height: 38px; border: 1.5px solid var(--text-muted); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 1.3rem; font-weight: 300; line-height: 1; transition: border-color 0.18s, color 0.18s; user-select: none; }
-  .contact-embed .file-drop:hover .upload-circle { border-color: var(--accent); color: var(--accent); }
-  .contact-embed .upload-cta { font-family: 'DM Sans', sans-serif; font-size: 0.875rem; color: var(--text-muted); }
-  .contact-embed .upload-hint { font-size: 0.75rem; color: #464646; }
-  .contact-embed .file-chosen { font-size: 0.8rem; color: var(--accent); word-break: break-all; text-align: center; padding: 0 1rem; display: none; }
   .contact-embed .actions { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
   .contact-embed button[type="submit"] { background: transparent; border: 1.5px solid var(--accent); color: var(--accent); font-family: 'Barlow', sans-serif; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.8rem 2.1rem; border-radius: var(--radius); cursor: pointer; transition: background 0.15s, color 0.15s; }
   .contact-embed button[type="submit"]:hover { background: var(--accent); color: #0b0b0b; }
@@ -637,7 +628,7 @@ footer {
     <div class="form-wrap">
       <p class="intro">Have a question about SKOG Tools or Chuck Mates? We'd love to hear from you. Reach out and we'll get back to you shortly.</p>
 
-      <form id="contact-form" action="https://formspree.io/f/mvkowdwg" method="POST" enctype="multipart/form-data">
+      <form id="contact-form" action="https://formspree.io/f/mvkowdwg" method="POST">
         <div class="name-row">
           <div class="field">
             <label for="first_name">First Name <span class="req">*</span></label>
@@ -663,16 +654,6 @@ footer {
         <div class="field">
           <label for="message">Message <span class="req">*</span></label>
           <textarea id="message" name="message" required></textarea>
-        </div>
-        <div class="field file-section">
-          <label>File Upload <span class="sub">(PNG or JPG)</span></label>
-          <div class="file-drop" id="file-drop">
-            <input type="file" name="upload" id="file-input" accept=".png,.jpg,.jpeg,image/png,image/jpeg">
-            <div class="upload-circle">+</div>
-            <div class="upload-cta">Add a File</div>
-            <div class="upload-hint">PNG or JPG only (max 5 MB)</div>
-            <div class="file-chosen" id="file-chosen"></div>
-          </div>
         </div>
         <div class="actions">
           <button type="submit" id="submit-btn">Submit</button>
@@ -736,27 +717,6 @@ footer {
         })();
     </script>
     <script>
-  const fileInput  = document.getElementById('file-input');
-  const fileDrop   = document.getElementById('file-drop');
-  const fileChosen = document.getElementById('file-chosen');
-  fileInput.addEventListener('change', () => {
-    const f = fileInput.files[0];
-    if (f) {
-      if (f.size > 5 * 1024 * 1024) { alert('File exceeds 5 MB.'); fileInput.value = ''; fileChosen.style.display = 'none'; return; }
-      fileChosen.textContent = f.name;
-      fileChosen.style.display = 'block';
-    } else { fileChosen.style.display = 'none'; }
-  });
-  ['dragenter','dragover'].forEach(e => { fileDrop.addEventListener(e, ev => { ev.preventDefault(); fileDrop.classList.add('drag-over'); }); });
-  fileDrop.addEventListener('dragleave', () => fileDrop.classList.remove('drag-over'));
-  fileDrop.addEventListener('drop', ev => {
-    ev.preventDefault();
-    fileDrop.classList.remove('drag-over');
-    if (ev.dataTransfer && ev.dataTransfer.files.length) {
-      fileInput.files = ev.dataTransfer.files;
-      fileInput.dispatchEvent(new Event('change', { bubbles: true }));
-    }
-  });
   const form = document.getElementById('contact-form');
   const submitBtn = document.getElementById('submit-btn');
   const msgOk = document.getElementById('msg-success');
@@ -767,7 +727,7 @@ footer {
     msgOk.style.display = msgErr.style.display = 'none';
     try {
       const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
-      if (res.ok) { form.reset(); fileChosen.style.display = 'none'; msgOk.style.display = 'inline'; submitBtn.textContent = 'Sent'; }
+      if (res.ok) { form.reset(); msgOk.style.display = 'inline'; submitBtn.textContent = 'Sent'; }
       else { msgErr.style.display = 'inline'; submitBtn.disabled = false; submitBtn.textContent = 'Submit'; }
     } catch { msgErr.style.display = 'inline'; submitBtn.disabled = false; submitBtn.textContent = 'Submit'; }
   });
