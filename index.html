@@ -322,6 +322,46 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
+/* Homepage Featured Tiles */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-tile {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s;
+}
+
+.feature-tile:hover,
+.feature-tile:focus-visible {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.feature-tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.featured-banner {
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.featured-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .brand-story {
   background: var(--light-gray);
   padding: 4rem 2rem;
@@ -335,8 +375,19 @@ nav a:hover {
 
 .brand-story h2 {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   color: var(--primary-black);
+}
+
+.brand-story-content .brand-story-tagline {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-black);
+  margin-bottom: 1.5rem;
+}
+
+#story-headline-short {
+  display: none;
 }
 
 .brand-story p {
@@ -396,7 +447,33 @@ footer {
   .product-grid {
     grid-template-columns: 1fr;
   }
-  
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .featured-banner {
+    display: none;
+  }
+
+  .brand-story h2 {
+    font-size: 1.15rem;
+  }
+
+  .brand-story-content .brand-story-tagline {
+    font-size: 1.15rem;
+  }
+
+  #story-headline-full {
+    display: none;
+  }
+
+  #story-headline-short {
+    display: block;
+  }
+
   .header-content {
     flex-wrap: wrap;
     row-gap: 0.5rem;
@@ -481,80 +558,33 @@ footer {
     </section>
 
     <div class="container">
-        <div class="section-header">
-            <h2>Featured Products</h2>
-            <p>Discover our innovative tire inflator accessories designed for performance and reliability</p>
+        <div class="featured-grid">
+            <a href="platinum-series.html" class="feature-tile" aria-label="Shop Chuck Mates® Platinum Series">
+                <img src="images/featured-platinum-square.jpg" alt="Chuck Mates® Platinum Series">
+            </a>
+            <a href="premium-series.html" class="feature-tile" aria-label="Shop Chuck Mates® Premium Series">
+                <img src="images/featured-premium-square.jpg" alt="Chuck Mates® Premium Series">
+            </a>
+            <a href="platinum-series.html" class="feature-tile" aria-label="Shop Chuck Mates® Reach360 Extension">
+                <img src="images/featured-reach360-square.jpg" alt="Chuck Mates® Reach360 Extension">
+            </a>
+            <a href="tire-gauge.html" class="feature-tile" aria-label="Shop SKÖG® Platinum Tire Pressure Gauge">
+                <img src="images/featured-tire-gauge-square.jpg" alt="SKÖG® Platinum Series Tire Pressure Gauge, Dual-Needle">
+            </a>
         </div>
 
-        <div class="product-grid">
-            <!-- Chuck Mates Platinum Series -->
-            <div class="product-card">
-                <img src="images/platinum-product.jpg" alt="Chuck Mates® Platinum Series" class="product-image">
-                <div class="product-info">
-                    <a href="platinum-series.html" class="product-badge">Platinum Series</a>
-                    <h3>Chuck Mates<sup class="tm">®</sup> Platinum</h3>
-                    <p>Patented RatchetSeal™ technology delivers a secure, leak-free seal every time. Universal fit for virtually all vehicles.</p>
-                    <ul class="product-features">
-                        <li>Instant Connect & Disconnect</li>
-                        <li>360° Swivel prevents kinks</li>
-                        <li>Leak-Free Connection</li>
-                        <li>Push Button Release</li>
-                    </ul>
-                    <div class="button-group">
-                        <a href="product-platinum.html" class="btn btn-secondary">Learn More</a>
-                        <a href="https://www.amazon.com/dp/B0F9B1ZKJP?maas=maas_adg_FF31821B904C892E50D7452A0D3CD0FB_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-primary" target="_blank" rel="noopener">Buy on Amazon</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Chuck Mates Premium Series -->
-            <div class="product-card">
-                <img src="images/premium-product.jpg" alt="Chuck Mates® Premium Series" class="product-image">
-                <div class="product-info">
-                    <a href="premium-series.html" class="product-badge badge-premium">Premium Series</a>
-                    <h3>Chuck Mates<sup class="tm">®</sup> Premium</h3>
-                    <p>SimpleSeal™ technology - no Teflon tape required! Easy-peasy application with superior reliability.</p>
-                    <ul class="product-features">
-                        <li>No Teflon Tape Required</li>
-                        <li>Easy Application</li>
-                        <li>Brass Construction</li>
-                        <li>Universal Compatibility</li>
-                    </ul>
-                    <div class="button-group">
-                        <a href="product-premium.html" class="btn btn-secondary">Learn More</a>
-                        <a href="https://www.amazon.com/dp/B0CYDXGGH2?maas=maas_adg_327CF1EEFCD7D1038F8578A727578281_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-premium" target="_blank" rel="noopener">Buy on Amazon</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Reach360 Extension -->
-            <div class="product-card">
-                <img src="images/reach360-product.jpg" alt="Chuck Mates® Reach360 Extension" class="product-image">
-                <div class="product-info">
-                    <a href="platinum-series.html" class="product-badge">Platinum Series</a>
-                    <h3>Reach360 Extension</h3>
-                    <p>Reach difficult to access tire valves with ease. Perfect for dual rear tires, motorcycles, and tight spaces.</p>
-                    <ul class="product-features">
-                        <li>360° Swivel Design</li>
-                        <li>Extended Reach</li>
-                        <li>Kink-Free Hose</li>
-                        <li>Perfect for Hard-to-Reach Valves</li>
-                    </ul>
-                    <div class="button-group">
-                        <a href="product-reach360.html" class="btn btn-secondary">Learn More</a>
-                        <a href="https://www.amazon.com/dp/B0F99YM7V3?maas=maas_adg_38065D4D87B3DB15B49DA4DA1BC1D1B1_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-primary" target="_blank" rel="noopener">Buy on Amazon</a>
-                    </div>
-                </div>
-            </div>
+        <div class="featured-banner">
+            <img src="images/featured-arrgh-banner.jpg" alt="Love your portable tire inflator but hate screwing it on? There is a better way — simply push the SKÖG chuck on. Problem solved.">
         </div>
     </div>
 
     <section class="brand-story">
         <div class="brand-story-content">
-            <h2>Reliability Driven Excellence</h2>
-            <p>SKÖG<sup class="tm">®</sup> was founded on the principles of aviation utility and reliability. As a former commercial pilot and maintenance technician, Todd Evan operated in challenging environments where equipment diagnostics and alignment were essential.</p>
-            <p><strong>Failure was not an option.</strong> Systems and tools had to perform as expected, every time.</p>
-            <p>Todd's many years flying quality product is engineered with a focus on durability, quality, and performance. We prioritize manufacturing based on capability. The result is tools built to withstand demanding work and deliver confidence when it matters most.</p>
+            <h2 id="story-headline-full">Still Screwing on the Inflator Hose?</h2>
+            <h2 id="story-headline-short">Still Screwing on the Hose?</h2>
+            <p class="brand-story-tagline">Get Chuck Mates<sup class="tm">®</sup>!</p>
+            <p>Kneel down, thread it on, air up, unscrew it, and do it again on the other 3 tires. Chuck Mates<sup class="tm">®</sup> changes that. Add Chuck Mates<sup class="tm">®</sup> and your tire inflator finally becomes the convenient, grab-and-go tool you always wanted it to be.</p>
+            <p>Whether you're topping off a daily driver or dialing in exact pressures with our ANSI-accurate gauge, SKÖG<sup class="tm">®</sup> tools are built to get it right the first time, every time.</p>
         </div>
     </section>
 
