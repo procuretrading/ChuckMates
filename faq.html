@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about SKÖG® TOOLS and Chuck Mates® - vehicle compatibility, warranty, where to buy, and more.">
+    <meta name="keywords" content="SKÖG® TOOLS, Chuck Mates, FAQ, frequently asked questions, tire valve stem, warranty, quick-connect">
+    <title>SKÖG Tools FAQ</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <style>
+/* SKÖG TOOLS Website Styles */
+
+:root {
+  --primary-red: #E60909;
+  --premium-orange: #FF6600;
+  --primary-black: #1a1a1a;
+  --secondary-gray: #4a4a4a;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --text-dark: #2c2c2c;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+/* Header & Navigation */
+header {
+  background: var(--primary-black);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.tm {
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: var(--primary-red);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.4) 0%, rgba(42, 42, 42, 0.45) 100%), url('images/hero-bg-tire.jpg') center center / cover no-repeat;
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: var(--secondary-gray);
+}
+
+/* FAQ Accordion */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.faq-item:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.25rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--primary-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-red);
+  line-height: 1;
+  transition: transform 0.3s;
+}
+
+.faq-item[open] summary::after {
+  content: "\2212";
+}
+
+.faq-item .faq-answer {
+  padding: 0 1.5rem 1.5rem;
+  color: var(--secondary-gray);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-black);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-red);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+    order: 3;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  nav ul.nav-open {
+    max-height: 400px;
+    padding: 0.5rem 0 1rem;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .faq-item summary {
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .faq-item .faq-answer {
+    padding: 0 1.25rem 1.25rem;
+  }
+}
+
+/* SEO Schema Markup Hidden */
+.schema-markup {
+  display: none;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html"><img src="images/skog-logo.png" alt="SKÖG® TOOLS Logo" class="logo"></a>
+            </div>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="platinum-series.html">Platinum Series</a></li>
+                    <li><a href="premium-series.html">Premium Series</a></li>
+                    <li><a href="adapters.html">Adapters</a></li>
+                    <li><a href="tire-gauge.html">Tire Gauge</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Frequently Asked Questions</h1>
+            <p>Answers about Chuck Mates<sup class="tm">®</sup> and SKÖG<sup class="tm">®</sup> TOOLS</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>WHAT VEHICLES CAN I USE CHUCK MATES?</summary>
+                <div class="faq-answer">
+                    <p>Our full line of Chuck Mates works on all standard tire valve stems.  By standard, we refer to the Schrader valve type stem, which has a technical designator of 8V1. For all you technical persons, that is a thread pitch of 0.305” - 32TPI.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>WHAT IS UNIQUE ABOUT SKÖG TOOLS?</summary>
+                <div class="faq-answer">
+                    <p>What sets SKÖG apart from other brands is a laser focus on quality and manufacturing superiority. Every detail of design is poured over before we launch a new product to the SKÖG lineup.  Our founder comes from a career in aviation, so he lives and breathes quality, durability, and consistency and it is seen in every tool we make.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>WHERE CAN I BUY SKÖG TOOLS?</summary>
+                <div class="faq-answer">
+                    <p>SKÖG Tools are available on Amazon with Prime shipping. Enjoy fast delivery, verified customer reviews, and Amazon's hassle-free return policy.  Other channels of distribution are in the works and coming soon, so stay tuned!</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>WHO DO I CONTACT FOR WARRANTY WORK?</summary>
+                <div class="faq-answer">
+                    <p>Contact the vendor where you purchased from. They will guide you. If you run into any challenges, feel free to contact us here on this website.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>ARE CHUCK MATES COMPATIBLE WITH DUAL REAR WHEEL (DRW) TRUCKS?</summary>
+                <div class="faq-answer">
+                    <p>Yes, and if your truck has “blind” valve stems on the rear tires, we offer the Reach360 7in Extension which is designed specifically for duallies.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>WHERE ARE SKÖG TOOLS DESIGNED AND MANUFACTURED?</summary>
+                <div class="faq-answer">
+                    <p>SKÖG products are designed in the USA and manufactured in Taiwan, the premium manufacturing  hub of Asia for tools and related hardware.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>CAN I USE CHUCK MATES WITH A PORTABLE AIR COMPRESSOR?</summary>
+                <div class="faq-answer">
+                    <p>Yes, if your portable air compressor screws onto the tire valve stem of your car, you can screw it onto a Chuck Mate instead and never have to screw around with it again!  Also, use the “open type” Chuck Mate, as portable tire inflators generally do not tolerate the “closed type” quick-connect.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>IS THERE ANY DIFFERENCE BETWEEN A SPEED-CLIP AND QUICK-CONNECT?</summary>
+                <div class="faq-answer">
+                    <p>No. They are the same, just different terms used for the function of a Chuck Mate.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "WHAT VEHICLES CAN I USE CHUCK MATES?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our full line of Chuck Mates works on all standard tire valve stems.  By standard, we refer to the Schrader valve type stem, which has a technical designator of 8V1. For all you technical persons, that is a thread pitch of 0.305” - 32TPI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "WHAT IS UNIQUE ABOUT SKÖG TOOLS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "What sets SKÖG apart from other brands is a laser focus on quality and manufacturing superiority. Every detail of design is poured over before we launch a new product to the SKÖG lineup.  Our founder comes from a career in aviation, so he lives and breathes quality, durability, and consistency and it is seen in every tool we make."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "WHERE CAN I BUY SKÖG TOOLS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SKÖG Tools are available on Amazon with Prime shipping. Enjoy fast delivery, verified customer reviews, and Amazon's hassle-free return policy.  Other channels of distribution are in the works and coming soon, so stay tuned!"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "WHO DO I CONTACT FOR WARRANTY WORK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contact the vendor where you purchased from. They will guide you. If you run into any challenges, feel free to contact us here on this website."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ARE CHUCK MATES COMPATIBLE WITH DUAL REAR WHEEL (DRW) TRUCKS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and if your truck has “blind” valve stems on the rear tires, we offer the Reach360 7in Extension which is designed specifically for duallies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "WHERE ARE SKÖG TOOLS DESIGNED AND MANUFACTURED?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SKÖG products are designed in the USA and manufactured in Taiwan, the premium manufacturing  hub of Asia for tools and related hardware."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "CAN I USE CHUCK MATES WITH A PORTABLE AIR COMPRESSOR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if your portable air compressor screws onto the tire valve stem of your car, you can screw it onto a Chuck Mate instead and never have to screw around with it again!  Also, use the “open type” Chuck Mate, as portable tire inflators generally do not tolerate the “closed type” quick-connect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "IS THERE ANY DIFFERENCE BETWEEN A SPEED-CLIP AND QUICK-CONNECT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. They are the same, just different terms used for the function of a Chuck Mate."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="platinum-series.html">Platinum Series</a></li>
+                <li><a href="premium-series.html">Premium Series</a></li>
+                <li><a href="adapters.html">Adapters</a></li>
+                <li><a href="tire-gauge.html">Tire Gauge</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p>&copy; 2026 SKÖG<sup class="tm">®</sup> TOOLS. All rights reserved.</p>
+            <p>Products available on Amazon.com</p>
+        </div>
+    </footer>
+    <script>
+        (function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var nav = document.getElementById('primary-nav');
+            var navList = nav ? nav.querySelector('ul') : null;
+            if (!toggle || !navList) return;
+
+            function closeMenu() {
+                navList.classList.remove('nav-open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            toggle.addEventListener('click', function () {
+                var isOpen = navList.classList.toggle('nav-open');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navList.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMenu);
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) closeMenu();
+            });
+        })();
+    </script>
+</body>
+</html>
