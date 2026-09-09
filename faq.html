@@ -270,6 +270,10 @@ footer {
   color: var(--primary-red);
 }
 
+.h1-short {
+  display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
@@ -278,6 +282,14 @@ footer {
 
   .hero p {
     font-size: 1.2rem;
+  }
+
+  .h1-full {
+    display: none;
+  }
+
+  .h1-short {
+    display: inline;
   }
 
   .header-content {
@@ -358,7 +370,7 @@ footer {
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Frequently Asked Questions</h1>
+            <h1><span class="h1-full">Frequently Asked Questions</span><span class="h1-short">FAQ</span></h1>
             <p>Answers about Chuck Mates<sup class="tm">®</sup> and SKÖG<sup class="tm">®</sup> TOOLS</p>
         </div>
     </section>
