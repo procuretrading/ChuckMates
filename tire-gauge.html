@@ -206,6 +206,33 @@ nav a:hover {
   margin-top: 2rem;
 }
 
+/* Feature Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s;
+}
+
+.gallery-item:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .product-card {
   background: var(--white);
   border: 1px solid var(--border-color);
@@ -593,6 +620,23 @@ footer {
             
             <h3 style="margin: 2rem 0 1rem; color: #1a1a1a;">Built for Every Vehicle</h3>
             <p style="color: #4a4a4a; line-height: 1.8;">Accurate to ANSI B40.1 standards (±1.5%), this gauge is equally at home on cars, trucks, motorcycles, and bicycles. The patented RatchetSeal™ locking chuck and 7" kink-free, 360° rotating hose make valve access easy in tight spaces, and the included padded pouch keeps it protected in the garage or glove box between uses.</p>
+        </div>
+
+        <div class="section-header" style="margin-top: 3rem; margin-bottom: 0;">
+            <h2 style="font-size: 2rem;">See It In Action</h2>
+            <p>From lock-on to lock-in, here's how the dual-needle system works</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/psi100-how-it-works.jpg" alt="Four-step guide: Lock On, Read True, Air Down, Remove" loading="lazy" width="1000" height="1000">
+            </div>
+            <div class="gallery-item">
+                <img src="images/psi100-dual-needle-setting.jpg" alt="Setting the reference needle once, then matching it on every tire" loading="lazy" width="1000" height="1000">
+            </div>
+            <div class="gallery-item">
+                <img src="images/psi100-ratchetseal-chuck.jpg" alt="Chuck Mates patented RatchetSeal locking quick-connect chuck close-up" loading="lazy" width="1000" height="1000">
+            </div>
         </div>
     </div>
 
