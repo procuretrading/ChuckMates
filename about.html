@@ -401,6 +401,64 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
+/* Founder Intro */
+.founder-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.founder-photo {
+  flex: 0 0 320px;
+  width: 320px;
+}
+
+.founder-photo img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: var(--shadow-hover);
+  display: block;
+}
+
+.founder-intro-text {
+  flex: 1 1 380px;
+  min-width: 280px;
+  text-align: left;
+}
+
+.founder-intro-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  color: var(--primary-black);
+}
+
+@media (max-width: 768px) {
+  .founder-intro {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .founder-photo {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .founder-photo img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .founder-intro-text {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
 /* Brand Story Section */
 .brand-story {
   background: var(--light-gray);
@@ -550,15 +608,21 @@ footer {
 
     <div class="container">
         <div class="brand-story-content" style="max-width: 900px; margin: 0 auto;">
-            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1a1a1a;">Our Story</h2>
-            
-            <p style="font-size: 1.1rem; line-height: 1.8; color: #4a4a4a; margin-bottom: 1.5rem;">
-                SKÖG<sup class="tm">®</sup> was founded on the principles of aviation utility and reliability. As a former commercial pilot and maintenance technician, founder Todd Evan operated in challenging environments where equipment diagnostics and alignment were essential.
-            </p>
+            <div class="founder-intro">
+                <div class="founder-photo">
+                    <img src="images/todd-founder-portrait.jpg" alt="Todd Evan, founder of SKÖG® TOOLS, on the tarmac beside a King Air aircraft" loading="lazy" width="1000" height="1000">
+                </div>
+                <div class="founder-intro-text">
+                    <h2>Our Story</h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #4a4a4a; margin-bottom: 1.5rem;">
+                        SKÖG<sup class="tm">®</sup> was founded on the principles of aviation utility and reliability. As a former commercial pilot and maintenance technician, founder Todd Evan operated in challenging environments where equipment diagnostics and alignment were essential.
+                    </p>
 
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #1a1a1a; margin-bottom: 1.5rem; font-weight: 600;">
-                Failure was not an option.
-            </p>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: #1a1a1a; margin-bottom: 0; font-weight: 600;">
+                        Failure was not an option.
+                    </p>
+                </div>
+            </div>
 
             <p style="font-size: 1.1rem; line-height: 1.8; color: #4a4a4a; margin-bottom: 1.5rem;">
                 Systems and tools had to perform as expected, every time. This unwavering commitment to reliability became the foundation of SKÖG<sup class="tm">®</sup> TOOLS.
