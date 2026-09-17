@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SKÖG® Adapters - Premium locking adapters for air compressors and tire inflators. Universal compatibility with valve stems.">
-    <meta name="keywords" content="SKÖG® Adapters, locking adapter, tire inflator adapter, air compressor adapter, valve stem adapter">
-    <title>SKÖG® Adapters | SKÖG® TOOLS</title>
+    <meta name="description" content="Frequently asked questions about SKÖG® TOOLS and Chuck Mates® tire valve accessories - compatibility, warranty, where to buy, and more.">
+    <meta name="keywords" content="SKÖG® TOOLS, FAQ, frequently asked questions, Chuck Mates, tire valve stem, Schrader valve, warranty">
+    <title>FAQ - SKÖG® TOOLS</title>
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -319,34 +319,6 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* Adapter Gallery */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.gallery-item {
-  display: block;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: all 0.3s;
-}
-
-.gallery-item:hover,
-.gallery-item:focus-visible {
-  box-shadow: var(--shadow-hover);
-  transform: translateY(-4px);
-}
-
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 /* Product Detail Page */
 .product-detail {
   display: grid;
@@ -429,6 +401,64 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
+/* Founder Intro */
+.founder-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.founder-photo {
+  flex: 0 0 320px;
+  width: 320px;
+}
+
+.founder-photo img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: var(--shadow-hover);
+  display: block;
+}
+
+.founder-intro-text {
+  flex: 1 1 380px;
+  min-width: 280px;
+  text-align: left;
+}
+
+.founder-intro-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  color: var(--primary-black);
+}
+
+@media (max-width: 768px) {
+  .founder-intro {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .founder-photo {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .founder-photo img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .founder-intro-text {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
 /* Brand Story Section */
 .brand-story {
   background: var(--light-gray);
@@ -484,25 +514,6 @@ footer {
 .footer-links a:hover {
   color: var(--primary-red);
 }
-
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.footer-social a {
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  transition: color 0.3s;
-}
-
-.footer-social a:hover {
-  color: var(--primary-red);
-}
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -561,17 +572,72 @@ footer {
   display: none;
 }
 
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-red);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.faq-item[open] summary::after {
+  content: "\2212";
+}
+
+.faq-item p {
+  margin-top: 1rem;
+  color: var(--secondary-gray);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(--primary-red);
+}
+
     </style>
-    
-    <!-- Schema.org markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "SKÖG® Adapters",
-      "description": "Premium locking adapters for tire inflators"
-    }
-    </script>
 </head>
 <body>
     <header>
@@ -601,70 +667,51 @@ footer {
 
     <section class="hero">
         <div class="hero-content">
-            <h1>SKÖG<sup class="tm">®</sup> Adapters</h1>
-            <p>Premium Locking Adapters for Universal Compatibility</p>
+            <h1>Frequently Asked Questions</h1>
+            <p>Everything you need to know about Chuck Mates<sup class="tm">®</sup> and SKÖG<sup class="tm">®</sup> Tools</p>
         </div>
     </section>
 
     <div class="container">
-        <div class="section-header">
-            <h2>Universal Locking Adapters</h2>
-            <p>Connect your air compressor to Chuck Mates<sup class="tm">®</sup> and valve stems with confidence</p>
+        <div class="faq-list">
+                <details class="faq-item" open>
+                    <summary>What vehicles can I use Chuck Mates on?</summary>
+                    <p>Our full line of Chuck Mates works on all standard tire valve stems. By standard, we refer to the Schrader valve type stem, which has a technical designator of 8V1. For all you technical persons, that is a thread pitch of 0.305” - 32TPI.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What is unique about SKÖG Tools?</summary>
+                    <p>What sets SKÖG apart from other brands is a laser focus on quality and manufacturing superiority. Every detail of design is poured over before we launch a new product to the SKÖG lineup. Our founder comes from a career in aviation, so he lives and breathes quality, durability, and consistency and it is seen in every tool we make.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Where can I buy SKÖG Tools?</summary>
+                    <p>SKÖG Tools are available on Amazon with Prime shipping. Enjoy fast delivery, verified customer reviews, and Amazon's hassle-free return policy. Other channels of distribution are in the works and coming soon, so stay tuned!</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Who do I contact for warranty work?</summary>
+                    <p>Contact the vendor where you purchased from. They will guide you. If you run into any challenges, feel free to contact us here on this website.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Are Chuck Mates compatible with dual rear wheel (DRW) trucks?</summary>
+                    <p>Yes, and if your truck has “blind” valve stems on the rear tires, we offer the Reach360 7in Extension which is designed specifically for duallies.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Where are SKÖG Tools designed and manufactured?</summary>
+                    <p>SKÖG products are designed in the USA and manufactured in Taiwan, the premium manufacturing hub of Asia for tools and related hardware.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I use Chuck Mates with a portable air compressor?</summary>
+                    <p>Yes, if your portable air compressor screws onto the tire valve stem of your car, you can screw it onto a Chuck Mate instead and never have to screw around with it again! Also, use the “open type” Chuck Mate, as portable tire inflators generally do not tolerate the “closed type” quick-connect.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is there any difference between a speed-clip and quick-connect?</summary>
+                    <p>No. They are the same, just different terms used for the function of a Chuck Mate.</p>
+                </details>
         </div>
 
-        <div class="product-grid">
-            <!-- SKÖG Adapters -->
-            <div class="product-card">
-                <img src="images/adapter-product.jpg" alt="SKÖG® Adapters" class="product-image">
-                <div class="product-info">
-                    <span class="product-badge">Premium Quality</span>
-                    <h3>SKÖG<sup class="tm">®</sup> Locking Adapters</h3>
-                    <p>Premium brass locking adapters designed for air compressors and tire inflators. Compatible with Chuck Mates<sup class="tm">®</sup> and standard valve stems.</p>
-                    <ul class="product-features">
-                        <li>Brass Construction</li>
-                        <li>Locking Design for Secure Connection</li>
-                        <li>Universal Compatibility</li>
-                        <li>Works with Chuck Mates<sup class="tm">®</sup> Products</li>
-                        <li>Standard Valve Stem Compatible</li>
-                        <li>Durable and Long-Lasting</li>
-                    </ul>
-                    <div class="button-group">
-                        <a href="https://www.amazon.com/dp/B0FBKJ5XRC?maas=maas_adg_DC304A8012B3E4C37D7143873B390F94_afap_abs&ref_=aa_maas&tag=maass" class="btn btn-primary" target="_blank" rel="noopener">Buy 1-Pack</a>
-                        <a href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-secondary" target="_blank" rel="noopener">Buy 2-Pack</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-header" style="margin-top: 4rem;">
-            <h2>See It In Action</h2>
-            <p>Why SKÖG<sup class="tm">®</sup> Adapters seal the deal</p>
-        </div>
-
-        <div class="gallery-grid">
-            <a class="gallery-item" href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" target="_blank" rel="noopener" aria-label="Buy SKÖG Adapters 2-Pack on Amazon">
-                <img src="images/adapter-connection-B0GY89G2M3.jpg" alt="SKÖG Adapter connecting an inflator hose to an air chuck with NPT threads">
-            </a>
-            <a class="gallery-item" href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" target="_blank" rel="noopener" aria-label="Buy SKÖG Adapters 2-Pack on Amazon">
-                <img src="images/adapter-lifestyle-B0GY89G2M3.jpg" alt="Person holding a SKÖG Adapter, expand your choice of inflator tools">
-            </a>
-            <a class="gallery-item" href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" target="_blank" rel="noopener" aria-label="Buy SKÖG Adapters 2-Pack on Amazon">
-                <img src="images/adapter-specs-B0GY89G2M3.jpg" alt="SKÖG Adapter technical specifications, 1/4 inch M-NPT to 8V1 Schrader with dimensions">
-            </a>
-            <a class="gallery-item" href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" target="_blank" rel="noopener" aria-label="Buy SKÖG Adapters 2-Pack on Amazon">
-                <img src="images/adapter-compare-B0GY89G2M3.jpg" alt="Comparison of a bulky brass adapter requiring tape versus the sleek self-sealing SKÖG steel adapter">
-            </a>
-            <a class="gallery-item" href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" target="_blank" rel="noopener" aria-label="Buy SKÖG Adapters 2-Pack on Amazon">
-                <img src="images/adapter-detail-B0GY89G2M3.jpg" alt="Close-up of the SKÖG Adapter attached to an air chuck, fits right seals tight looks even better">
-            </a>
-        </div>
-
-        <div style="margin-top: 3rem; padding: 2rem; background: #f5f5f5; border-radius: 8px;">
-            <h3 style="margin-bottom: 1rem; color: #1a1a1a;">Complete Your Setup</h3>
-            <p style="color: #4a4a4a; line-height: 1.8;">SKÖG<sup class="tm">®</sup> Adapters are the perfect complement to your Chuck Mates<sup class="tm">®</sup> collection. These premium brass adapters provide a secure, locking connection between your air compressor and tire inflation accessories. Whether you're using them with Chuck Mates<sup class="tm">®</sup> Platinum or Premium series products, or connecting directly to valve stems, SKÖG<sup class="tm">®</sup> Adapters ensure a leak-free, reliable connection every time.</p>
-            
-            <h3 style="margin: 2rem 0 1rem; color: #1a1a1a;">Built for Reliability</h3>
-            <p style="color: #4a4a4a; line-height: 1.8;">Constructed from high-quality brass with precision threading, these adapters are built to last. The locking mechanism provides superior grip and prevents accidental disconnection during use, making your tire inflation process safer and more efficient.</p>
+        <div style="background: #f5f5f5; padding: 2rem; border-radius: 8px; text-align: center; margin-top: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1a1a1a;">Still have questions?</h3>
+            <p style="color: #4a4a4a; margin-bottom: 1.5rem;">Our team is happy to help with anything not covered here.</p>
+            <a href="contact.html" class="cta-button">Contact Us</a>
         </div>
     </div>
 

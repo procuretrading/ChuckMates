@@ -457,6 +457,25 @@ footer {
   color: var(--primary-red);
 }
 
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(--primary-red);
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
@@ -545,6 +564,7 @@ footer {
                     <li><a href="adapters.html">Adapters</a></li>
                     <li><a href="tire-gauge.html">Tire Gauge</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -687,8 +707,17 @@ footer {
                 <li><a href="adapters.html">Adapters</a></li>
                 <li><a href="tire-gauge.html">Tire Gauge</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="https://www.facebook.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+            </div>
             <p>&copy; 2026 SKÖG<sup class="tm">®</sup> TOOLS. All rights reserved.</p>
             <p>Products available on Amazon.com</p>
         </div>
