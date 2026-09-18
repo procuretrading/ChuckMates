@@ -25,6 +25,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://skogtools.com/tire-gauge.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://skogtools.com/about.html</loc>
     <lastmod>2026-01-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -35,5 +41,11 @@
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://skogtools.com/contact.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
