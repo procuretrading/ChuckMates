@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T6HPT75C6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2T6HPT75C6');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guides and how-tos from SKÖG® TOOLS on tire inflation, valve stems, tire pressure gauges, and getting the most out of your Chuck Mates® gear.">
+    <meta name="keywords" content="SKÖG® TOOLS blog, tire inflation guide, tire pressure gauge guide, Chuck Mates, tire valve stem">
+    <title>Blog - SKÖG® TOOLS</title>
+    <link rel="canonical" href="https://skogtools.com/blog/index.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skogtools.com/blog/index.html">
+    <meta property="og:site_name" content="SKÖG® TOOLS">
+    <meta property="og:title" content="Blog - SKÖG® TOOLS">
+    <meta property="og:description" content="Guides and how-tos from SKÖG® TOOLS on tire inflation, valve stems, tire pressure gauges, and getting the most out of your Chuck Mates® gear.">
+    <meta property="og:image" content="https://skogtools.com/images/skog-logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://skogtools.com/blog/index.html">
+    <meta name="twitter:title" content="Blog - SKÖG® TOOLS">
+    <meta name="twitter:description" content="Guides and how-tos from SKÖG® TOOLS on tire inflation, valve stems, tire pressure gauges, and getting the most out of your Chuck Mates® gear.">
+    <meta name="twitter:image" content="https://skogtools.com/images/skog-logo.png">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <style>
+/* SKÖG TOOLS Website Styles */
+
+:root {
+  --primary-red: #E60909;
+  --premium-orange: #FF6600;
+  --primary-black: #1a1a1a;
+  --secondary-gray: #4a4a4a;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --text-dark: #2c2c2c;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+/* Header & Navigation */
+header {
+  background: var(--primary-black);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.tm {
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: var(--primary-red);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.4) 0%, rgba(42, 42, 42, 0.45) 100%), url('../images/hero-bg-tire.jpg') center center / cover no-repeat;
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #C40808;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 9, 9, 0.3);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: var(--secondary-gray);
+}
+
+/* Post Grid */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.post-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: var(--light-gray);
+}
+
+.post-card-info {
+  padding: 1.5rem;
+}
+
+.post-card-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-black);
+}
+
+.post-card-info p {
+  color: var(--secondary-gray);
+  font-size: 0.95rem;
+}
+
+/* Empty State */
+.empty-state {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+}
+
+.empty-state h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.empty-state p {
+  color: var(--secondary-gray);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-black);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-red);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(--primary-red);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+    order: 3;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  nav ul.nav-open {
+    max-height: 400px;
+    padding: 0.5rem 0 1rem;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+}
+    </style>
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "SKÖG® TOOLS Blog",
+      "description": "Guides and how-tos from SKÖG® TOOLS on tire inflation, valve stems, tire pressure gauges, and getting the most out of your Chuck Mates® gear.",
+      "url": "https://skogtools.com/blog/index.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "SKÖG® TOOLS",
+        "logo": "https://skogtools.com/images/skog-logo.png"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="../index.html"><img src="../images/skog-logo.png" alt="SKÖG® TOOLS Logo" class="logo"></a>
+            </div>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../platinum-series.html">Platinum Series</a></li>
+                    <li><a href="../premium-series.html">Premium Series</a></li>
+                    <li><a href="../adapters.html">Adapters</a></li>
+                    <li><a href="../tire-gauge.html">Tire Gauge</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>SKÖG® TOOLS Blog</h1>
+            <p>Guides and how-tos on tire inflation, valve stems, and getting the most out of your Chuck Mates® gear.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="empty-state">
+            <h2>New guides coming soon</h2>
+            <p>We're putting together practical guides on tire pressure gauges, valve stems, and getting the most out of your Chuck Mates® gear. Check back soon, or browse our products and FAQ in the meantime.</p>
+            <a href="../faq.html" class="cta-button">Read the FAQ</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../platinum-series.html">Platinum Series</a></li>
+                <li><a href="../premium-series.html">Premium Series</a></li>
+                <li><a href="../adapters.html">Adapters</a></li>
+                <li><a href="../tire-gauge.html">Tire Gauge</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="https://www.facebook.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 SKÖG<sup class="tm">®</sup> TOOLS. All rights reserved.</p>
+            <p>Products available on Amazon.com</p>
+        </div>
+    </footer>
+    <script>
+        (function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var nav = document.getElementById('primary-nav');
+            var navList = nav ? nav.querySelector('ul') : null;
+            if (!toggle || !navList) return;
+
+            function closeMenu() {
+                navList.classList.remove('nav-open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            toggle.addEventListener('click', function () {
+                var isOpen = navList.classList.toggle('nav-open');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navList.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMenu);
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) closeMenu();
+            });
+        })();
+    </script>
+</body>
+</html>

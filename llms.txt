@@ -11,6 +11,10 @@ SKÖG® TOOLS was founded by a commercial pilot and applies an aviation-reliabil
 - [SKÖG® Adapters](https://skogtools.com/adapters.html): Locking brass NPT-to-Schrader adapters for air compressors.
 - [SKÖG® Platinum Tire Gauge](https://skogtools.com/tire-gauge.html): Battery-free dual-needle tire pressure gauge, ANSI B40.1 accurate, with a RatchetSeal quick-connect chuck.
 
+## Guides
+
+- [Blog](https://skogtools.com/blog/index.html): Guides and how-tos on tire inflation, valve stems, tire pressure gauges, and getting the most out of Chuck Mates® gear.
+
 ## Company
 
 - [About](https://skogtools.com/about.html): Brand story and founder background.
