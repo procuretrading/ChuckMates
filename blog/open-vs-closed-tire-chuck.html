@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T6HPT75C6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2T6HPT75C6');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use an open-flow chuck with a portable inflator. Closed-flow chucks are built for shop air. See the differences, a quick test, and when each one fits.">
+    <title>Open-Flow vs Closed-Flow Tire Chuck for Portable Inflators</title>
+    <link rel="canonical" href="https://skogtools.com/blog/open-vs-closed-tire-chuck.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://skogtools.com/blog/open-vs-closed-tire-chuck.html">
+    <meta property="og:site_name" content="SKÖG® TOOLS">
+    <meta property="og:title" content="Open-Flow vs Closed-Flow Tire Chuck for Portable Inflators">
+    <meta property="og:description" content="Use an open-flow chuck with a portable inflator. Closed-flow chucks are built for shop air. See the differences, a quick test, and when each one fits.">
+    <meta property="og:image" content="https://skogtools.com/images/skog-logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://skogtools.com/blog/open-vs-closed-tire-chuck.html">
+    <meta name="twitter:title" content="Open-Flow vs Closed-Flow Tire Chuck for Portable Inflators">
+    <meta name="twitter:description" content="Use an open-flow chuck with a portable inflator. Closed-flow chucks are built for shop air. See the differences, a quick test, and when each one fits.">
+    <meta name="twitter:image" content="https://skogtools.com/images/skog-logo.png">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <style>
+
+/* SKÖG TOOLS Website Styles */
+
+:root {
+  --primary-red: #E60909;
+  --premium-orange: #FF6600;
+  --primary-black: #1a1a1a;
+  --secondary-gray: #4a4a4a;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --text-dark: #2c2c2c;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+/* Header & Navigation */
+header {
+  background: var(--primary-black);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.tm {
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: var(--primary-red);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.4) 0%, rgba(42, 42, 42, 0.45) 100%), url('../images/hero-bg-tire.jpg') center center / cover no-repeat;
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #C40808;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 9, 9, 0.3);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: var(--secondary-gray);
+}
+
+/* Post Grid (blog index) */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.post-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: var(--light-gray);
+}
+
+.post-card-info {
+  padding: 1.5rem;
+}
+
+.post-card-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-black);
+}
+
+.post-card-info p {
+  color: var(--secondary-gray);
+  font-size: 0.95rem;
+}
+
+/* Empty State */
+.empty-state {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+}
+
+.empty-state h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.empty-state p {
+  color: var(--secondary-gray);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Breadcrumb */
+.breadcrumb-nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 0;
+  font-size: 0.9rem;
+  color: var(--secondary-gray);
+}
+
+.breadcrumb-nav a {
+  color: var(--secondary-gray);
+  text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+  color: var(--primary-red);
+}
+
+.breadcrumb-nav .current {
+  color: var(--primary-black);
+  font-weight: 600;
+}
+
+/* Article body */
+.article-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 0;
+}
+
+.article-body .lede {
+  font-size: 1.15rem;
+  color: var(--secondary-gray);
+  margin-bottom: 1.5rem;
+}
+
+.article-body h2 {
+  font-size: 1.6rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--primary-black);
+}
+
+.article-body h3 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.75rem;
+  color: var(--primary-black);
+}
+
+.article-body p {
+  margin-bottom: 1.1rem;
+  color: var(--text-dark);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 0 0 1.2rem 1.5rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+.article-body li {
+  margin-bottom: 0.5rem;
+}
+
+.article-body a {
+  color: var(--primary-red);
+  text-decoration: underline;
+}
+
+.article-body a:hover {
+  color: #C40808;
+}
+
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 2rem;
+  font-size: 0.95rem;
+}
+
+.article-body th,
+.article-body td {
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-body th {
+  background: var(--light-gray);
+  color: var(--primary-black);
+  font-weight: 600;
+}
+
+.article-faq {
+  max-width: 800px;
+  margin: 1rem auto 0;
+  padding: 0 2rem 1rem;
+}
+
+.article-faq h2 {
+  font-size: 1.6rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--primary-black);
+}
+
+.back-to-blog {
+  display: block;
+  text-align: center;
+  margin: 1rem 0 3rem;
+  font-weight: 600;
+  color: var(--primary-red);
+  text-decoration: none;
+}
+
+.back-to-blog:hover {
+  color: #C40808;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-black);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-red);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(--primary-red);
+}
+
+/* FAQ accordion */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-red);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.faq-item[open] summary::after {
+  content: "\2212";
+}
+
+.faq-item p {
+  margin-top: 1rem;
+  color: var(--secondary-gray);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+    order: 3;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  nav ul.nav-open {
+    max-height: 400px;
+    padding: 0.5rem 0 1rem;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .article-body table {
+    font-size: 0.85rem;
+  }
+}
+
+    </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Open-flow vs closed-flow tire chuck: which do you need for a portable inflator?",
+  "description": "Use an open-flow chuck with a portable inflator. Closed-flow chucks are built for shop air. See the differences, a quick test, and when each one fits.",
+  "mainEntityOfPage": "https://skogtools.com/blog/open-vs-closed-tire-chuck.html",
+  "datePublished": "2026-09-25",
+  "dateModified": "2026-09-25",
+  "author": {
+    "@type": "Organization",
+    "name": "SKÖG® TOOLS",
+    "url": "https://skogtools.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SKÖG® TOOLS",
+    "url": "https://skogtools.com/"
+  },
+  "image": "https://skogtools.com/images/skog-logo.png"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://skogtools.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://skogtools.com/blog/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Open-Flow vs Closed-Flow Tire Chuck for Portable Inflators",
+      "item": "https://skogtools.com/blog/open-vs-closed-tire-chuck.html"
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="../index.html"><img src="../images/skog-logo.png" alt="SKÖG® TOOLS Logo" class="logo"></a>
+            </div>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../platinum-series.html">Platinum Series</a></li>
+                    <li><a href="../premium-series.html">Premium Series</a></li>
+                    <li><a href="../adapters.html">Adapters</a></li>
+                    <li><a href="../tire-gauge.html">Tire Gauge</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Open-flow vs closed-flow tire chuck: which do you need for a portable inflator?</h1>
+        </div>
+    </section>
+
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> &raquo; <a href="index.html">Blog</a> &raquo; <span class="current">Open-Flow vs Closed-Flow Tire Chuck for Portable Inflators</span>
+    </nav>
+
+    <div class="article-body">
+        <p class="lede">Use an open-flow chuck with a portable inflator. An open-flow chuck lets air pass whenever air is supplied, while a closed-flow chuck stays shut until it is pressed onto a valve stem. Closed-flow suits shop compressors with a pressurized hose. Portable inflators generally don&rsquo;t tolerate closed-type quick-connects, so open-flow is typically the right match.</p>
+        <h2>What is the difference between an open-flow and a closed-flow chuck?</h2>
+        <p>The difference is whether the chuck has its own internal valve. A tire chuck is the fitting on the end of an air hose that connects to a tire&rsquo;s valve stem. An open-flow chuck has no internal shutoff, so air passes through it whenever the air source is on. A closed-flow chuck only lets air through when it is pressed onto a valve stem and depresses the valve core pin.</p>
+        <p>The valve core is the small spring-loaded valve inside a Schrader valve stem. Both chuck types push its pin so air can reach the tire. The difference shows up when the chuck is off the stem:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Open-flow chuck</th>
+                    <th>Closed-flow chuck</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Internal valve</th>
+                    <td>None</td>
+                    <td>Yes, opens when pressed onto a stem</td>
+                </tr>
+                <tr>
+                    <th scope="row">Off the valve stem</th>
+                    <td>Air flows out if the source is on</td>
+                    <td>Air stays in the hose</td>
+                </tr>
+                <tr>
+                    <th scope="row">Typical air source</th>
+                    <td>Portable 12V or cordless inflator</td>
+                    <td>Shop compressor with a tank and pressurized hose</td>
+                </tr>
+                <tr>
+                    <th scope="row">Main drawback</th>
+                    <td>Blows air if left running while disconnected</td>
+                    <td>Portable inflators generally don&rsquo;t tolerate it (SKÖG&reg; TOOLS FAQ)</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Why doesn&rsquo;t a closed-flow chuck work well with a portable inflator?</h2>
+        <p>A closed-flow chuck only passes available air pressure while it is attached to a valve stem. It also adds a second valve between the pump and the tire that a portable inflator doesn&rsquo;t need. It is best to use the open-type chuck, as most portable inflators are designed for air to flow freely through the hose. If you&rsquo;re unsure what yours supports, check the manufacturer&rsquo;s manual for details.</p>
+        <h2>When is a closed-flow chuck the right choice?</h2>
+        <p>A closed-flow chuck is the right choice where the air hose remains pressurized between uses, most common on a shop-air compressor. If there is always pressure in the air hose, an open-flow chuck would blow air out anytime the chuck is off the tire valve stem. The closed chuck&rsquo;s internal valve holds that air in the hose until you connect the chuck onto another tire stem.</p>
+        <p>Shop hoses and trigger-type (pistol grip type) commonly use 1/4&quot; NPT, a tapered pipe thread used on many air-tool fittings. That is why closed-flow quick-connects are often sold with a 1/4&quot; NPT end rather than the smaller screw-on valve thread a portable inflator uses.</p>
+        <h2>How can you tell which type of chuck you have?</h2>
+        <p>Check the packaging or listing first, since most chucks are sold as &ldquo;open&rdquo; or &ldquo;closed.&rdquo; If that information is unavailable, a 10-second test settles it:</p>
+        <ol>
+            <li>Connect the chuck to your air source, with the chuck off any valve stem.</li>
+            <li>Point the chuck away from your face and hands, then turn the air on briefly.</li>
+            <li>If air blows out continuously, it is open-flow. If nothing comes out until the chuck is pressed onto a valve stem, it is closed-flow.</li>
+            <li>Turn the air off before you disconnect anything.</li>
+        </ol>
+        <h2>Is a lock-on chuck the same as a closed-flow chuck?</h2>
+        <p>No. Lock-on, clip-on, and push-on describe how a chuck holds onto the valve stem. Open-flow and closed-flow describe how air moves through it. A lock-on chuck can be either type, so check both specs before you buy. A chuck that locks on nicely is still the wrong part for a portable inflator if it is closed-flow.</p>
+        <h2>How do you use an open-flow chuck with a portable inflator?</h2>
+        <p>Attach the chuck to the inflator hose, clip it onto the valve stem, run the inflator, and switch it off before you unclip. In order:</p>
+        <ol>
+            <li>Thread the inflator&rsquo;s screw-on hose end onto the open-flow quick-connect, or use the chuck the inflator came with.</li>
+            <li>Set the inflator to the cold pressure on your vehicle&rsquo;s Tire and Loading Information placard, usually on the driver&rsquo;s door jamb.</li>
+            <li>Remove the valve cap and push the chuck squarely onto the stem.</li>
+            <li>Run the inflator until it stops, then switch it off.</li>
+            <li>Unclip the chuck, replace the cap, and confirm the pressure with a separate gauge.</li>
+        </ol>
+        <p>A short hiss when you unclip is the valve core closing. <a href="https://www.nhtsa.gov/vehicle-safety/tires" target="_blank" rel="noopener">NHTSA</a> recommends checking pressure at least once a month, with the tires cold.</p>
+        <p>A note on our own products: Chuck Mates&reg; Premium and Platinum quick-connects are both open-flow, and the SKÖG&reg; Quick-Connect Tire Inflator (Closed Type, 1/4&quot; NPT) is our closed-flow option for shop air. Details are on the <a href="../premium-series.html">Premium Series</a> and <a href="../platinum-series.html">Platinum Series</a> pages.</p>
+    </div>
+
+    <div class="article-faq">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>Is a speed clip the same as a quick-connect?</summary>
+                <p>Yes. The <a href="../faq.html">SKOG FAQ</a> treats them as two names for the same function.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Will an open-flow chuck fit my valve stem?</summary>
+                <p>Automotive chucks are made for Schrader valves, the standard stem on cars and trucks, which use the 8V1 thread (0.305&Prime;-32 TPI). Presta valves, found on many bicycles, are a different design.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Why does air keep hissing after I unclip the chuck?</summary>
+                <p>A brief hiss is normal. A steady hiss means the valve core isn&rsquo;t sealing, so have the stem or core checked by a tire professional.</p>
+            </details>
+        </div>
+    </div>
+
+    <a class="back-to-blog" href="index.html">&larr; Back to the Blog</a>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../platinum-series.html">Platinum Series</a></li>
+                <li><a href="../premium-series.html">Premium Series</a></li>
+                <li><a href="../adapters.html">Adapters</a></li>
+                <li><a href="../tire-gauge.html">Tire Gauge</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="https://www.facebook.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 SKÖG<sup class="tm">®</sup> TOOLS. All rights reserved.</p>
+            <p>Products available on Amazon.com</p>
+        </div>
+    </footer>
+    <script>
+        (function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var nav = document.getElementById('primary-nav');
+            var navList = nav ? nav.querySelector('ul') : null;
+            if (!toggle || !navList) return;
+
+            function closeMenu() {
+                navList.classList.remove('nav-open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            toggle.addEventListener('click', function () {
+                var isOpen = navList.classList.toggle('nav-open');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navList.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMenu);
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) closeMenu();
+            });
+        })();
+    </script>
+</body>
+</html>

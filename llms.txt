@@ -14,6 +14,17 @@ SKÖG® TOOLS was founded by a commercial pilot and applies an aviation-reliabil
 ## Guides
 
 - [Blog](https://skogtools.com/blog/index.html): Guides and how-tos on tire inflation, valve stems, tire pressure gauges, and getting the most out of Chuck Mates® gear.
+- [Open-Flow vs Closed-Flow Tire Chuck for Portable Inflators](https://skogtools.com/blog/open-vs-closed-tire-chuck.html): The difference between open-flow and closed-flow tire chucks, and why portable inflators need open-flow.
+- [How to Inflate the Inner Tire on a Dually Truck or RV](https://skogtools.com/blog/how-to-inflate-inner-dually-tire.html): Reaching the inner dual valve stem through the hand hole with a long-reach chuck or extension.
+- [Door Placard vs Sidewall PSI: Which Tire Pressure to Use](https://skogtools.com/blog/door-placard-vs-sidewall-tire-pressure.html): Why the door-jamb placard pressure is the target, not the tire sidewall's maximum PSI.
+- [Chuck Mates® Platinum vs Premium: What's the Difference?](https://skogtools.com/blog/chuck-mates-platinum-vs-premium.html): How RatchetSeal™ Platinum and SimpleSeal™ Premium quick-connects compare, and how to choose between them.
+- [Why Air Hisses Out When You Remove a Tire Inflator Chuck](https://skogtools.com/blog/air-leaks-when-removing-tire-chuck.html): Why screw-on chucks leak more air than quick-connects, and how to disconnect with less loss.
+- [Check Tire Pressure Hot or Cold? And How Often to Check](https://skogtools.com/blog/check-tire-pressure-hot-or-cold.html): Why tire pressure should be checked cold, and how often NHTSA recommends checking it.
+- [How to Use a Dual-Needle Tire Pressure Gauge, Step by Step](https://skogtools.com/blog/how-to-use-dual-needle-tire-gauge.html): Step-by-step use of a dual-needle dial gauge like the SKÖG® Platinum Tire Gauge.
+- [How Accurate Are Tire Gauges? Digital vs Dial vs Pencil](https://skogtools.com/blog/tire-pressure-gauge-accuracy.html): How gauge accuracy is measured (percent of span, ASME B40.1/B40.7) across gauge types.
+- [NPT-to-Schrader Adapters: Do You Need Teflon Tape on Them?](https://skogtools.com/blog/npt-to-schrader-adapter-teflon-tape.html): What a 1/4" NPT-to-Schrader adapter is, and when Teflon tape is and isn't needed.
+- [Will Chuck Mates Fit My Vehicle? Schrader Valve Guide](https://skogtools.com/blog/will-chuck-mates-fit-my-vehicle.html): Schrader (8V1) valve compatibility, Schrader vs Presta, and the history of the Schrader valve.
+- [Benefits of Proper Tire Inflation: Fuel, Safety, Tire Life](https://skogtools.com/blog/benefits-of-proper-tire-inflation.html): Fuel economy, handling, and tire-life benefits of proper inflation, with DOE and NHTSA figures.
 
 ## Company
 

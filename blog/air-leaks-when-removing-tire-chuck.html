@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T6HPT75C6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2T6HPT75C6');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Air hisses because the valve stays open for a moment after the chuck seal lets go. Learn why screw-on chucks leak more and how to lose less air.">
+    <title>Why Air Hisses Out When You Remove a Tire Inflator Chuck</title>
+    <link rel="canonical" href="https://skogtools.com/blog/air-leaks-when-removing-tire-chuck.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://skogtools.com/blog/air-leaks-when-removing-tire-chuck.html">
+    <meta property="og:site_name" content="SKÖG® TOOLS">
+    <meta property="og:title" content="Why Air Hisses Out When You Remove a Tire Inflator Chuck">
+    <meta property="og:description" content="Air hisses because the valve stays open for a moment after the chuck seal lets go. Learn why screw-on chucks leak more and how to lose less air.">
+    <meta property="og:image" content="https://skogtools.com/images/skog-logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://skogtools.com/blog/air-leaks-when-removing-tire-chuck.html">
+    <meta name="twitter:title" content="Why Air Hisses Out When You Remove a Tire Inflator Chuck">
+    <meta name="twitter:description" content="Air hisses because the valve stays open for a moment after the chuck seal lets go. Learn why screw-on chucks leak more and how to lose less air.">
+    <meta name="twitter:image" content="https://skogtools.com/images/skog-logo.png">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <style>
+
+/* SKÖG TOOLS Website Styles */
+
+:root {
+  --primary-red: #E60909;
+  --premium-orange: #FF6600;
+  --primary-black: #1a1a1a;
+  --secondary-gray: #4a4a4a;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --text-dark: #2c2c2c;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+/* Header & Navigation */
+header {
+  background: var(--primary-black);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.tm {
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: var(--primary-red);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.4) 0%, rgba(42, 42, 42, 0.45) 100%), url('../images/hero-bg-tire.jpg') center center / cover no-repeat;
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #C40808;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 9, 9, 0.3);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: var(--secondary-gray);
+}
+
+/* Post Grid (blog index) */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.post-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: var(--light-gray);
+}
+
+.post-card-info {
+  padding: 1.5rem;
+}
+
+.post-card-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-black);
+}
+
+.post-card-info p {
+  color: var(--secondary-gray);
+  font-size: 0.95rem;
+}
+
+/* Empty State */
+.empty-state {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+}
+
+.empty-state h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.empty-state p {
+  color: var(--secondary-gray);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Breadcrumb */
+.breadcrumb-nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 0;
+  font-size: 0.9rem;
+  color: var(--secondary-gray);
+}
+
+.breadcrumb-nav a {
+  color: var(--secondary-gray);
+  text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+  color: var(--primary-red);
+}
+
+.breadcrumb-nav .current {
+  color: var(--primary-black);
+  font-weight: 600;
+}
+
+/* Article body */
+.article-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 0;
+}
+
+.article-body .lede {
+  font-size: 1.15rem;
+  color: var(--secondary-gray);
+  margin-bottom: 1.5rem;
+}
+
+.article-body h2 {
+  font-size: 1.6rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--primary-black);
+}
+
+.article-body h3 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.75rem;
+  color: var(--primary-black);
+}
+
+.article-body p {
+  margin-bottom: 1.1rem;
+  color: var(--text-dark);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 0 0 1.2rem 1.5rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+.article-body li {
+  margin-bottom: 0.5rem;
+}
+
+.article-body a {
+  color: var(--primary-red);
+  text-decoration: underline;
+}
+
+.article-body a:hover {
+  color: #C40808;
+}
+
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 2rem;
+  font-size: 0.95rem;
+}
+
+.article-body th,
+.article-body td {
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-body th {
+  background: var(--light-gray);
+  color: var(--primary-black);
+  font-weight: 600;
+}
+
+.article-faq {
+  max-width: 800px;
+  margin: 1rem auto 0;
+  padding: 0 2rem 1rem;
+}
+
+.article-faq h2 {
+  font-size: 1.6rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--primary-black);
+}
+
+.back-to-blog {
+  display: block;
+  text-align: center;
+  margin: 1rem 0 3rem;
+  font-weight: 600;
+  color: var(--primary-red);
+  text-decoration: none;
+}
+
+.back-to-blog:hover {
+  color: #C40808;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-black);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-red);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(--primary-red);
+}
+
+/* FAQ accordion */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-red);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.faq-item[open] summary::after {
+  content: "\2212";
+}
+
+.faq-item p {
+  margin-top: 1rem;
+  color: var(--secondary-gray);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+    order: 3;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  nav ul.nav-open {
+    max-height: 400px;
+    padding: 0.5rem 0 1rem;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .article-body table {
+    font-size: 0.85rem;
+  }
+}
+
+    </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why Does Air Hiss Out When You Disconnect the Inflator Chuck, and How Do You Stop It?",
+  "description": "Air hisses because the valve stays open for a moment after the chuck seal lets go. Learn why screw-on chucks leak more and how to lose less air.",
+  "mainEntityOfPage": "https://skogtools.com/blog/air-leaks-when-removing-tire-chuck.html",
+  "datePublished": "2026-09-25",
+  "dateModified": "2026-09-25",
+  "author": {
+    "@type": "Organization",
+    "name": "SKÖG® TOOLS",
+    "url": "https://skogtools.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SKÖG® TOOLS",
+    "url": "https://skogtools.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://skogtools.com/images/skog-logo.png"
+    }
+  },
+  "image": "https://skogtools.com/images/skog-logo.png",
+  "url": "https://skogtools.com/blog/air-leaks-when-removing-tire-chuck.html"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://skogtools.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://skogtools.com/blog/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Why Does Air Hiss Out When You Disconnect the Inflator Chuck, and How Do You Stop It?",
+      "item": "https://skogtools.com/blog/air-leaks-when-removing-tire-chuck.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is a short hiss when removing the chuck normal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A brief burst as the chuck comes off is normal. A long hiss, or one that continues after the chuck is off, is not."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much air do I lose when I disconnect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It varies with the chuck, the valve core, and your speed. Check with a gauge afterward and top up if needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my tire keep hissing after I take the chuck off?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The valve core is not closing, usually because of debris, a loose core, or a worn core. Try a soapy-water test, and have a tire shop look at it if the leak continues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the valve cap stop leaks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The valve core is the main seal. The cap simply keeps dirt and moisture out of the valve, so always put it back on. Some valve caps are equipped with its own sealing gasket, which may help if your Schrader valve seal starts to leak, but generally they are not strong enough seals to contain your tire pressure."
+      }
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="../index.html"><img src="../images/skog-logo.png" alt="SKÖG® TOOLS Logo" class="logo"></a>
+            </div>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../platinum-series.html">Platinum Series</a></li>
+                    <li><a href="../premium-series.html">Premium Series</a></li>
+                    <li><a href="../adapters.html">Adapters</a></li>
+                    <li><a href="../tire-gauge.html">Tire Gauge</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Why Does Air Hiss Out When You Disconnect the Inflator Chuck, and How Do You Stop It?</h1>
+        </div>
+    </section>
+
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> &raquo; <a href="index.html">Blog</a> &raquo; <span class="current">Why Does Air Hiss Out When You Disconnect the Inflator Chuck, and How Do You Stop It?</span>
+    </nav>
+
+    <div class="article-body">
+        <p class="lede">That hiss is air escaping in the moment between the chuck&rsquo;s seal letting go and the valve core closing. Screw-on chucks are the worst offenders because they unthread slowly, holding the valve open while the seal loosens. A quick, straight disconnect, a healthy valve core, and a good chuck seal keep the loss small.</p>
+        <h2>What is actually happening when the air hisses?</h2>
+        <p>The valve core is still being held open after the seal between the chuck and the valve stem has broken, so tire air escapes through the gap. A short burst is normal. A long hiss means that in-between moment is lasting too long.</p>
+        <p>A Schrader valve is the standard car and truck tire valve: a threaded metal stem with a spring-loaded valve core inside. The valve core is the small, replaceable check valve in the stem; air flows only while its center pin is pressed in. An inflator chuck does two jobs at once. A rubber seal presses against the end of the stem, and a depressor pushes the core pin so air can flow.</p>
+        <p>Connecting happens in a good order: the seal closes first, then the pin opens. Disconnecting reverses it. Ideally the pin is released before the seal lets go. In practice the two overlap, and that overlap is the hiss.</p>
+        <h2>Why do screw-on chucks leak more than quick-connects?</h2>
+        <p>Screw-on chucks take several turns to remove, so the leaky in-between state lasts longer. A screw-on chuck is a chuck that threads onto the valve stem&rsquo;s 8V1 threads, and many portable inflators ship with one.</p>
+        <p>As you unscrew it, the seal backs off the stem before the depressor fully clears the pin. Every slow partial turn, and every pause to reposition your hand, adds time in that state.</p>
+        <p>A quick-connect chuck is a chuck that clips or locks onto the valve stem and releases in one motion. SKOG&rsquo;s own FAQ notes that &ldquo;speed clip&rdquo; and &ldquo;quick-connect&rdquo; mean the same thing. The release takes a fraction of the time, so the overlap is shorter. It is not zero. If you are still sorting out chuck types, see our guide to <a href="open-vs-closed-tire-chuck.html">open-flow vs closed-flow chucks</a>.</p>
+        <h2>How do you disconnect a screw-on chuck with less air loss?</h2>
+        <ol>
+            <li>Unscrew it fast and straight, in one continuous motion, instead of in slow partial turns.</li>
+            <li>Stop the inflator first, so you are not fighting line pressure while you unthread.</li>
+            <li>Hold the chuck body, not the hose, and keep it square to the stem so you don&rsquo;t bend the stem sideways.</li>
+            <li>Unscrew in one smooth motion. The half-off point is where the hiss lives, so don&rsquo;t pause there.</li>
+            <li>Recheck with a separate gauge after the chuck is off. The inflator&rsquo;s reading was taken before that last bit of air escaped, so top up rather than guessing at an over-fill.</li>
+            <li>Put the valve cap back on.</li>
+        </ol>
+        <h2>When is the hiss a sign something is wrong?</h2>
+        <p>If the tire keeps hissing after the chuck is off, the valve core is not sealing, and that needs fixing. A hiss while you are inflating points to the chuck&rsquo;s seal or how it is seated.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>What you notice</th>
+                    <th>Likely cause</th>
+                    <th>What to do</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Short hiss only as the chuck comes off</td>
+                    <td>Normal seal-to-valve overlap</td>
+                    <td>Disconnect faster and straighter</td>
+                </tr>
+                <tr>
+                    <td>Hiss the whole time you inflate</td>
+                    <td>Chuck not seated square, or a worn seal</td>
+                    <td>Reseat it; replace the chuck if it persists</td>
+                </tr>
+                <tr>
+                    <td>Hiss continues after the chuck is removed</td>
+                    <td>Valve core not closing: debris, a loose core, or a worn core</td>
+                    <td>Soapy-water test, then a core tool or a tire shop</td>
+                </tr>
+                <tr>
+                    <td>Chuck pops off under pressure</td>
+                    <td>Not fully engaged, or worn locking parts</td>
+                    <td>Seat it fully; inspect or replace the chuck</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To test the valve, dab soapy water on the open end of the stem and watch for bubbles. A loose valve core can sometimes be snugged with an inexpensive valve core tool. If bubbles keep coming, or the stem itself looks cracked, have a tire shop replace the core or stem. That goes double for TPMS valve stems, where the tire pressure monitoring sensor is often built into the stem.</p>
+        <h2>Does a quick-connect chuck stop the hiss completely?</h2>
+        <p>No chuck makes disconnecting perfectly silent, but a one-motion release shortens the leaky moment. That is the reason SKÖG&reg; TOOLS makes Chuck Mates&reg;, our own quick-connect adapters. Per our FAQ, you screw your inflator&rsquo;s chuck onto a Chuck Mate instead of the valve stem, and from then on it clips on and off. The <a href="../platinum-series.html">Platinum Series</a> uses patented RatchetSeal&trade; technology with a push-button release.</p>
+    </div>
+
+    <div class="article-faq">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>Is a short hiss when removing the chuck normal?</summary>
+                <p>Yes. A brief burst as the chuck comes off is normal. A long hiss, or one that continues after the chuck is off, is not.</p>
+            </details>
+            <details class="faq-item">
+                <summary>How much air do I lose when I disconnect?</summary>
+                <p>It varies with the chuck, the valve core, and your speed. Check with a gauge afterward and top up if needed.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Why does my tire keep hissing after I take the chuck off?</summary>
+                <p>The valve core is not closing, usually because of debris, a loose core, or a worn core. Try a soapy-water test, and have a tire shop look at it if the leak continues.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Does the valve cap stop leaks?</summary>
+                <p>The valve core is the main seal. The cap simply keeps dirt and moisture out of the valve, so always put it back on. Some valve caps are equipped with its own sealing gasket, which may help if your Schrader valve seal starts to leak, but generally they are not strong enough seals to contain your tire pressure.</p>
+            </details>
+        </div>
+    </div>
+
+    <a class="back-to-blog" href="index.html">&larr; Back to the Blog</a>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../platinum-series.html">Platinum Series</a></li>
+                <li><a href="../premium-series.html">Premium Series</a></li>
+                <li><a href="../adapters.html">Adapters</a></li>
+                <li><a href="../tire-gauge.html">Tire Gauge</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="https://www.facebook.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 SKÖG<sup class="tm">®</sup> TOOLS. All rights reserved.</p>
+            <p>Products available on Amazon.com</p>
+        </div>
+    </footer>
+    <script>
+        (function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var nav = document.getElementById('primary-nav');
+            var navList = nav ? nav.querySelector('ul') : null;
+            if (!toggle || !navList) return;
+
+            function closeMenu() {
+                navList.classList.remove('nav-open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            toggle.addEventListener('click', function () {
+                var isOpen = navList.classList.toggle('nav-open');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navList.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMenu);
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) closeMenu();
+            });
+        })();
+    </script>
+</body>
+</html>
