@@ -12,29 +12,14 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" as="image" href="images/hero-bg-tire.jpg" fetchpriority="high">
-    <meta name="description" content="SKÖG® Adapters - Premium locking adapters for air compressors and tire inflators. Universal compatibility with valve stems.">
-    <meta name="keywords" content="SKÖG® Adapters, locking adapter, tire inflator adapter, air compressor adapter, valve stem adapter">
-    <title>SKÖG® Adapters | SKÖG® TOOLS</title>
-    <link rel="canonical" href="https://skogtools.com/adapters.html">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://skogtools.com/adapters.html">
-    <meta property="og:site_name" content="SKÖG® TOOLS">
-    <meta property="og:title" content="SKÖG® Adapters | SKÖG® TOOLS">
-    <meta property="og:description" content="SKÖG® Adapters - Premium locking adapters for air compressors and tire inflators. Universal compatibility with valve stems.">
-    <meta property="og:image" content="https://skogtools.com/images/adapter-product.jpg">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://skogtools.com/adapters.html">
-    <meta name="twitter:title" content="SKÖG® Adapters | SKÖG® TOOLS">
-    <meta name="twitter:description" content="SKÖG® Adapters - Premium locking adapters for air compressors and tire inflators. Universal compatibility with valve stems.">
-    <meta name="twitter:image" content="https://skogtools.com/images/adapter-product.jpg">
-    <link rel="icon" href="favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="The page you were looking for could not be found. Explore SKÖG® TOOLS and Chuck Mates® tire valve accessories.">
+    <title>Page Not Found - SKÖG® TOOLS</title>
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <style>
 /* SKÖG TOOLS Website Styles */
 
@@ -155,7 +140,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, rgba(26, 26, 26, 0.4) 0%, rgba(42, 42, 42, 0.45) 100%), url('images/hero-bg-tire.jpg') center center / cover no-repeat;
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.4) 0%, rgba(42, 42, 42, 0.45) 100%), url('/images/hero-bg-tire.jpg') center center / cover no-repeat;
   color: var(--white);
   padding: 4rem 2rem;
   text-align: center;
@@ -343,34 +328,6 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
-/* Adapter Gallery */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.gallery-item {
-  display: block;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: all 0.3s;
-}
-
-.gallery-item:hover,
-.gallery-item:focus-visible {
-  box-shadow: var(--shadow-hover);
-  transform: translateY(-4px);
-}
-
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 /* Product Detail Page */
 .product-detail {
   display: grid;
@@ -453,6 +410,64 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
+/* Founder Intro */
+.founder-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.founder-photo {
+  flex: 0 0 320px;
+  width: 320px;
+}
+
+.founder-photo img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: var(--shadow-hover);
+  display: block;
+}
+
+.founder-intro-text {
+  flex: 1 1 380px;
+  min-width: 280px;
+  text-align: left;
+}
+
+.founder-intro-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  color: var(--primary-black);
+}
+
+@media (max-width: 768px) {
+  .founder-intro {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .founder-photo {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .founder-photo img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .founder-intro-text {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
 /* Brand Story Section */
 .brand-story {
   background: var(--light-gray);
@@ -508,25 +523,6 @@ footer {
 .footer-links a:hover {
   color: var(--primary-red);
 }
-
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.footer-social a {
-  color: var(--white);
-  display: flex;
-  align-items: center;
-  transition: color 0.3s;
-}
-
-.footer-social a:hover {
-  color: var(--primary-red);
-}
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -585,45 +581,79 @@ footer {
   display: none;
 }
 
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-red);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.faq-item[open] summary::after {
+  content: "\2212";
+}
+
+.faq-item p {
+  margin-top: 1rem;
+  color: var(--secondary-gray);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(--primary-red);
+}
+
     </style>
-    
-    <!-- Schema.org markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "SKÖG® Adapters",
-      "description": "Premium locking adapters for air compressors and tire inflators. Universal compatibility with valve stems.",
-      "image": "https://skogtools.com/images/adapter-product.jpg",
-      "brand": {
-        "@type": "Brand",
-        "name": "SKÖG® TOOLS"
-      },
-      "url": "https://skogtools.com/adapters.html",
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "1-Pack",
-          "url": "https://www.amazon.com/dp/B0FBKJ5XRC",
-          "availability": "https://schema.org/InStock",
-          "seller": { "@type": "Organization", "name": "SKÖG® TOOLS" }
-        },
-        {
-          "@type": "Offer",
-          "name": "2-Pack",
-          "url": "https://www.amazon.com/dp/B0FBKFV3J5",
-          "availability": "https://schema.org/InStock",
-          "seller": { "@type": "Organization", "name": "SKÖG® TOOLS" }
-        }
-      ]
-    }
-    </script>
 </head>
+
 <body>
     <header>
         <div class="header-content">
             <div class="logo-container">
-                <a href="index.html"><img src="images/skog-logo.png" alt="SKÖG® TOOLS Logo" class="logo" width="500" height="250"></a>
+                <a href="/index.html"><img src="/images/skog-logo.png" alt="SKÖG® TOOLS Logo" class="logo" width="500" height="250"></a>
             </div>
             <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
                 <span></span>
@@ -632,15 +662,15 @@ footer {
             </button>
             <nav id="primary-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="platinum-series.html">Platinum Series</a></li>
-                    <li><a href="premium-series.html">Premium Series</a></li>
-                    <li><a href="adapters.html">Adapters</a></li>
-                    <li><a href="tire-gauge.html">Tire Gauge</a></li>
-                    <li><a href="blog/index.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/platinum-series.html">Platinum Series</a></li>
+                    <li><a href="/premium-series.html">Premium Series</a></li>
+                    <li><a href="/adapters.html">Adapters</a></li>
+                    <li><a href="/tire-gauge.html">Tire Gauge</a></li>
+                    <li><a href="/blog/index.html">Blog</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -648,85 +678,31 @@ footer {
 
     <section class="hero">
         <div class="hero-content">
-            <h1>SKÖG<sup class="tm">®</sup> Adapters</h1>
-            <p>Premium Locking Adapters for Universal Compatibility</p>
+            <h1>Page Not Found</h1>
         </div>
     </section>
 
     <div class="container">
-        <div class="section-header">
-            <h2>Universal Locking Adapters</h2>
-            <p>Connect your air compressor to Chuck Mates<sup class="tm">®</sup> and valve stems with confidence</p>
-        </div>
-
-        <div class="product-grid">
-            <!-- SKÖG Adapters -->
-            <div class="product-card">
-                <img src="images/adapter-product.jpg" alt="SKÖG® Adapters" class="product-image" width="800" height="800">
-                <div class="product-info">
-                    <span class="product-badge">Premium Quality</span>
-                    <h3>SKÖG<sup class="tm">®</sup> Locking Adapters</h3>
-                    <p>Premium chrome-plated steel locking adapters designed for air compressors and tire inflators. Compatible with Chuck Mates<sup class="tm">®</sup> and standard valve stems.</p>
-                    <ul class="product-features">
-                        <li>Chrome-Plated Steel Construction</li>
-                        <li>Locking Design for Secure Connection</li>
-                        <li>Universal Compatibility</li>
-                        <li>Works with Chuck Mates<sup class="tm">®</sup> Products</li>
-                        <li>Standard Valve Stem Compatible</li>
-                        <li>Durable and Long-Lasting</li>
-                    </ul>
-                    <div class="button-group">
-                        <a href="https://www.amazon.com/dp/B0FBKJ5XRC?maas=maas_adg_DC304A8012B3E4C37D7143873B390F94_afap_abs&ref_=aa_maas&tag=maass" class="btn btn-primary" target="_blank" rel="noopener">Buy 1-Pack</a>
-                        <a href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-secondary" target="_blank" rel="noopener">Buy 2-Pack</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-header" style="margin-top: 4rem;">
-            <h2>See It In Action</h2>
-            <p>Why SKÖG<sup class="tm">®</sup> Adapters seal the deal</p>
-        </div>
-
-        <div class="gallery-grid">
-            <a class="gallery-item" href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" target="_blank" rel="noopener" aria-label="Buy SKÖG Adapters 2-Pack on Amazon">
-                <img src="images/adapter-connection-B0GY89G2M3.jpg" alt="SKÖG Adapter connecting an inflator hose to an air chuck with NPT threads" width="800" height="800">
-            </a>
-            <a class="gallery-item" href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" target="_blank" rel="noopener" aria-label="Buy SKÖG Adapters 2-Pack on Amazon">
-                <img src="images/adapter-lifestyle-B0GY89G2M3.jpg" alt="Person holding a SKÖG Adapter, expand your choice of inflator tools" width="800" height="800">
-            </a>
-            <a class="gallery-item" href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" target="_blank" rel="noopener" aria-label="Buy SKÖG Adapters 2-Pack on Amazon">
-                <img src="images/adapter-specs-B0GY89G2M3.jpg" alt="SKÖG Adapter technical specifications, 1/4 inch M-NPT to 8V1 Schrader with dimensions" width="800" height="800">
-            </a>
-            <a class="gallery-item" href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" target="_blank" rel="noopener" aria-label="Buy SKÖG Adapters 2-Pack on Amazon">
-                <img src="images/adapter-compare-B0GY89G2M3.jpg" alt="Comparison of a bulky brass adapter requiring tape versus the sleek self-sealing SKÖG chrome-plated steel adapter" width="800" height="800">
-            </a>
-            <a class="gallery-item" href="https://www.amazon.com/dp/B0FBKFV3J5?maas=maas_adg_7580B501B19268C0BCFCEC916F1B32A1_afap_abs&ref_=aa_maas&tag=maas" target="_blank" rel="noopener" aria-label="Buy SKÖG Adapters 2-Pack on Amazon">
-                <img src="images/adapter-detail-B0GY89G2M3.jpg" alt="Close-up of the SKÖG Adapter attached to an air chuck, fits right seals tight looks even better" width="800" height="800">
-            </a>
-        </div>
-
-        <div style="margin-top: 3rem; padding: 2rem; background: #f5f5f5; border-radius: 8px;">
-            <h3 style="margin-bottom: 1rem; color: #1a1a1a;">Complete Your Setup</h3>
-            <p style="color: #4a4a4a; line-height: 1.8;">SKÖG<sup class="tm">®</sup> Adapters are the perfect complement to your Chuck Mates<sup class="tm">®</sup> collection. These premium chrome-plated steel adapters provide a secure, locking connection between your air compressor and tire inflation accessories. Whether you're using them with Chuck Mates<sup class="tm">®</sup> Platinum or Premium series products, or connecting directly to valve stems, SKÖG<sup class="tm">®</sup> Adapters ensure a leak-free, reliable connection every time.</p>
-            
-            <h3 style="margin: 2rem 0 1rem; color: #1a1a1a;">Built for Reliability</h3>
-            <p style="color: #4a4a4a; line-height: 1.8;">Constructed from high-quality chrome-plated steel with precision threading, these adapters are built to last. The locking mechanism provides superior grip and prevents accidental disconnection during use, making your tire inflation process safer and more efficient.</p>
+        <div style="background: #f5f5f5; padding: 2rem; border-radius: 8px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #1a1a1a;">Sorry, we couldn't find that page.</h3>
+            <p style="color: #4a4a4a; margin-bottom: 1.5rem;">It may have moved, or the link may be mistyped. Try one of these instead:</p>
+            <p style="color: #4a4a4a; line-height: 2;"><a href="/index.html">Home</a> &middot; <a href="/platinum-series.html">Platinum Series</a> &middot; <a href="/premium-series.html">Premium Series</a> &middot; <a href="/faq.html">FAQ</a> &middot; <a href="/blog/index.html">Blog</a></p>
+            <a href="/index.html" class="cta-button" style="margin-top: 1.5rem;">Back to Home</a>
         </div>
     </div>
 
     <footer>
         <div class="footer-content">
             <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="platinum-series.html">Platinum Series</a></li>
-                <li><a href="premium-series.html">Premium Series</a></li>
-                <li><a href="adapters.html">Adapters</a></li>
-                <li><a href="tire-gauge.html">Tire Gauge</a></li>
-                <li><a href="blog/index.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/platinum-series.html">Platinum Series</a></li>
+                <li><a href="/premium-series.html">Premium Series</a></li>
+                <li><a href="/adapters.html">Adapters</a></li>
+                <li><a href="/tire-gauge.html">Tire Gauge</a></li>
+                <li><a href="/blog/index.html">Blog</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
             <div class="footer-social">
                 <a href="https://www.instagram.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Instagram">
