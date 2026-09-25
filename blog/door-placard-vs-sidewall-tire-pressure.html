@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T6HPT75C6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2T6HPT75C6');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use the pressure on your door-jamb placard, not the sidewall max. The sidewall number is the tire's limit, not a target. Here's why, and how to check it.">
+    <title>Door Placard vs Sidewall PSI: Which Tire Pressure to Use</title>
+    <link rel="canonical" href="https://skogtools.com/blog/door-placard-vs-sidewall-tire-pressure.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://skogtools.com/blog/door-placard-vs-sidewall-tire-pressure.html">
+    <meta property="og:site_name" content="SKÖG® TOOLS">
+    <meta property="og:title" content="Door Placard vs Sidewall PSI: Which Tire Pressure to Use">
+    <meta property="og:description" content="Use the pressure on your door-jamb placard, not the sidewall max. The sidewall number is the tire's limit, not a target. Here's why, and how to check it.">
+    <meta property="og:image" content="https://skogtools.com/images/skog-logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://skogtools.com/blog/door-placard-vs-sidewall-tire-pressure.html">
+    <meta name="twitter:title" content="Door Placard vs Sidewall PSI: Which Tire Pressure to Use">
+    <meta name="twitter:description" content="Use the pressure on your door-jamb placard, not the sidewall max. The sidewall number is the tire's limit, not a target. Here's why, and how to check it.">
+    <meta name="twitter:image" content="https://skogtools.com/images/skog-logo.png">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <style>
+
+/* SKÖG TOOLS Website Styles */
+
+:root {
+  --primary-red: #E60909;
+  --premium-orange: #FF6600;
+  --primary-black: #1a1a1a;
+  --secondary-gray: #4a4a4a;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --text-dark: #2c2c2c;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+/* Header & Navigation */
+header {
+  background: var(--primary-black);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.tm {
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: var(--primary-red);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.4) 0%, rgba(42, 42, 42, 0.45) 100%), url('../images/hero-bg-tire.jpg') center center / cover no-repeat;
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #C40808;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 9, 9, 0.3);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: var(--secondary-gray);
+}
+
+/* Post Grid (blog index) */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.post-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.post-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: var(--light-gray);
+}
+
+.post-card-info {
+  padding: 1.5rem;
+}
+
+.post-card-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-black);
+}
+
+.post-card-info p {
+  color: var(--secondary-gray);
+  font-size: 0.95rem;
+}
+
+/* Empty State */
+.empty-state {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+}
+
+.empty-state h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-black);
+}
+
+.empty-state p {
+  color: var(--secondary-gray);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Breadcrumb */
+.breadcrumb-nav {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 0;
+  font-size: 0.9rem;
+  color: var(--secondary-gray);
+}
+
+.breadcrumb-nav a {
+  color: var(--secondary-gray);
+  text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+  color: var(--primary-red);
+}
+
+.breadcrumb-nav .current {
+  color: var(--primary-black);
+  font-weight: 600;
+}
+
+/* Article body */
+.article-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 0;
+}
+
+.article-body .lede {
+  font-size: 1.15rem;
+  color: var(--secondary-gray);
+  margin-bottom: 1.5rem;
+}
+
+.article-body h2 {
+  font-size: 1.6rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--primary-black);
+}
+
+.article-body h3 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.75rem;
+  color: var(--primary-black);
+}
+
+.article-body p {
+  margin-bottom: 1.1rem;
+  color: var(--text-dark);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 0 0 1.2rem 1.5rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+}
+
+.article-body li {
+  margin-bottom: 0.5rem;
+}
+
+.article-body a {
+  color: var(--primary-red);
+  text-decoration: underline;
+}
+
+.article-body a:hover {
+  color: #C40808;
+}
+
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 2rem;
+  font-size: 0.95rem;
+}
+
+.article-body th,
+.article-body td {
+  border: 1px solid var(--border-color);
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-body th {
+  background: var(--light-gray);
+  color: var(--primary-black);
+  font-weight: 600;
+}
+
+.article-faq {
+  max-width: 800px;
+  margin: 1rem auto 0;
+  padding: 0 2rem 1rem;
+}
+
+.article-faq h2 {
+  font-size: 1.6rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--primary-black);
+}
+
+.back-to-blog {
+  display: block;
+  text-align: center;
+  margin: 1rem 0 3rem;
+  font-weight: 600;
+  color: var(--primary-red);
+  text-decoration: none;
+}
+
+.back-to-blog:hover {
+  color: #C40808;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-black);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-red);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(--primary-red);
+}
+
+/* FAQ accordion */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-red);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.faq-item[open] summary::after {
+  content: "\2212";
+}
+
+.faq-item p {
+  margin-top: 1rem;
+  color: var(--secondary-gray);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+    order: 3;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  nav ul.nav-open {
+    max-height: 400px;
+    padding: 0.5rem 0 1rem;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .article-body table {
+    font-size: 0.85rem;
+  }
+}
+
+    </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Door placard vs sidewall max PSI: which number should you use?",
+  "description": "Use the pressure on your door-jamb placard, not the sidewall max. The sidewall number is the tire's limit, not a target. Here's why, and how to check it.",
+  "mainEntityOfPage": "https://skogtools.com/blog/door-placard-vs-sidewall-tire-pressure.html",
+  "datePublished": "2026-09-25",
+  "dateModified": "2026-09-25",
+  "author": {
+    "@type": "Organization",
+    "name": "SKÖG® TOOLS",
+    "url": "https://skogtools.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SKÖG® TOOLS",
+    "url": "https://skogtools.com/"
+  },
+  "image": "https://skogtools.com/images/skog-logo.png"
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://skogtools.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://skogtools.com/blog/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Door Placard vs Sidewall PSI: Which Tire Pressure to Use",
+      "item": "https://skogtools.com/blog/door-placard-vs-sidewall-tire-pressure.html"
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="../index.html"><img src="../images/skog-logo.png" alt="SKÖG® TOOLS Logo" class="logo"></a>
+            </div>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../platinum-series.html">Platinum Series</a></li>
+                    <li><a href="../premium-series.html">Premium Series</a></li>
+                    <li><a href="../adapters.html">Adapters</a></li>
+                    <li><a href="../tire-gauge.html">Tire Gauge</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Door placard vs sidewall max PSI: which number should you use?</h1>
+        </div>
+    </section>
+
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> &raquo; <a href="index.html">Blog</a> &raquo; <span class="current">Door Placard vs Sidewall PSI: Which Tire Pressure to Use</span>
+    </nav>
+
+    <div class="article-body">
+        <p class="lede">Use the pressure on your vehicle&rsquo;s Tire and Loading Information placard, usually on the driver&rsquo;s door jamb, or the one in your owner&rsquo;s manual. The number molded on the tire sidewall is the tire&rsquo;s maximum pressure, a limit the tire can safely hold, not a target for everyday driving. Set placard pressure with the tires cold.</p>
+        <h2>What is the pressure on the door placard?</h2>
+        <p>The placard pressure is the vehicle manufacturer&rsquo;s recommended cold inflation pressure for your vehicle. The Tire and Loading Information placard is a label the manufacturer fixes to the vehicle that lists recommended tire pressures and load information. It usually sits on the driver&rsquo;s side door jamb. The US Department of Energy&rsquo;s <a href="https://www.fueleconomy.gov/feg/maintain.jsp" target="_blank" rel="noopener">FuelEconomy.gov</a> notes it can also be in the glove box, and the same number appears in the owner&rsquo;s manual.</p>
+        <p>Many placards list different pressures for the front and rear tires, and some list one for the spare. Use the number for each position.</p>
+        <h2>What does the max PSI on the sidewall mean?</h2>
+        <p>The sidewall number is the maximum inflation pressure the tire is built to hold, set by the tire manufacturer. It is a ceiling for that tire in any vehicle, not a recommendation for yours. FuelEconomy.gov is direct about it: &ldquo;Do not use the maximum pressure printed on the tire&rsquo;s sidewall.&rdquo;</p>
+        <h2>Why are the two numbers different?</h2>
+        <p>They answer different questions. The vehicle maker chooses a pressure for your vehicle&rsquo;s weight, handling, braking, and ride. The tire maker states the most that tire can take, whatever it&rsquo;s mounted on.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Door placard</th>
+                    <th>Sidewall max PSI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Set by</th>
+                    <td>Vehicle manufacturer</td>
+                    <td>Tire manufacturer</td>
+                </tr>
+                <tr>
+                    <th scope="row">What it means</th>
+                    <td>Recommended cold pressure for this vehicle</td>
+                    <td>Maximum the tire can hold</td>
+                </tr>
+                <tr>
+                    <th scope="row">Use it for</th>
+                    <td>Everyday inflation</td>
+                    <td>An upper limit you should never exceed</td>
+                </tr>
+                <tr>
+                    <th scope="row">Where to find it</th>
+                    <td>Driver&rsquo;s door jamb, glove box, or owner&rsquo;s manual</td>
+                    <td>Molded into the tire sidewall</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>What if your tires aren&rsquo;t the originals?</h2>
+        <p>If the replacements match the original size and load range, the placard still applies. Load range is the tire&rsquo;s rated load-carrying class, marked on the sidewall. If you changed tire size or load range, which is common with light-truck tires on lifted trucks or overland builds, the placard may no longer fit. Ask a tire professional, or use the tire manufacturer&rsquo;s load and inflation tables for your actual vehicle weight.</p>
+        <p>The same goes for duallys and RVs. Those vehicles depend on load tables, and passenger-car rules of thumb don&rsquo;t carry over. Our <a href="how-to-inflate-inner-dually-tire.html">dually guide</a> covers inner-tire access.</p>
+        <h2>How do you check your tires against the placard?</h2>
+        <p>Read the placard, then measure each tire cold with a gauge and adjust it to that number. Step by step:</p>
+        <ol>
+            <li>Note the front, rear, and spare pressures from the placard or owner&rsquo;s manual.</li>
+            <li>Remove the valve cap and press the gauge squarely onto the valve stem.</li>
+            <li>Compare the reading with the placard number for that position.</li>
+            <li>Add air if it is low. If it is high and the tires are cold, let a little out and measure again.</li>
+            <li>Replace the cap and repeat on every tire, including the spare if the placard lists one.</li>
+        </ol>
+        <h2>Should you check tire pressure hot or cold?</h2>
+        <p>Check cold. The placard number is a cold-tire spec, and <a href="https://www.nhtsa.gov/vehicle-safety/tires" target="_blank" rel="noopener">NHTSA</a> recommends checking at least once a month, with the tires cold. Pressure rises as tires warm up while driving, so a hot reading will look higher than the true cold number.</p>
+        <p>Never let air out of hot tires to reach the placard number. When they cool, they will be underinflated. If you have to check warm, wait for the tires to cool, or recheck the next morning.</p>
+        <p>Our own <a href="../tire-gauge.html">SKÖG&reg; Platinum Tire Gauge</a> is a battery-free dial gauge with a 0&ndash;100 PSI range, made to ANSI B40.1 accuracy (&plusmn;1.5%). Its second needle lets you set the placard number once and match each tire to it.</p>
+    </div>
+
+    <div class="article-faq">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>Is it OK to inflate my tires to the max sidewall PSI?</summary>
+                <p>Not for normal driving. The sidewall number is the upper limit. Use the placard pressure unless your vehicle or tire manufacturer specifies otherwise for a particular load.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Why does my placard list different front and rear pressures?</summary>
+                <p>The vehicle manufacturer sets pressure per axle to suit how weight is distributed. Use each number for its position.</p>
+            </details>
+            <details class="faq-item">
+                <summary>What if my vehicle has no placard?</summary>
+                <p>Check the owner&rsquo;s manual, or ask the dealer or vehicle manufacturer.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Does towing or hauling change the pressure?</summary>
+                <p>It can. Some owner&rsquo;s manuals list separate pressures for heavy loads or towing, so check yours before you hitch up.</p>
+            </details>
+        </div>
+    </div>
+
+    <a class="back-to-blog" href="index.html">&larr; Back to the Blog</a>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../platinum-series.html">Platinum Series</a></li>
+                <li><a href="../premium-series.html">Premium Series</a></li>
+                <li><a href="../adapters.html">Adapters</a></li>
+                <li><a href="../tire-gauge.html">Tire Gauge</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="https://www.facebook.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 SKÖG<sup class="tm">®</sup> TOOLS. All rights reserved.</p>
+            <p>Products available on Amazon.com</p>
+        </div>
+    </footer>
+    <script>
+        (function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var nav = document.getElementById('primary-nav');
+            var navList = nav ? nav.querySelector('ul') : null;
+            if (!toggle || !navList) return;
+
+            function closeMenu() {
+                navList.classList.remove('nav-open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            toggle.addEventListener('click', function () {
+                var isOpen = navList.classList.toggle('nav-open');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navList.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMenu);
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) closeMenu();
+            });
+        })();
+    </script>
+</body>
+</html>
