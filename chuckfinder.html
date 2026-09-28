@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T6HPT75C6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2T6HPT75C6');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChuckFinder: answer a few quick questions about your vehicle, inflator, and hose fitting and we'll match you to the right Chuck Mates® chuck or accessory.">
+    <meta name="keywords" content="chuck finder, tire chuck finder, chuck mates fit, tire inflator adapter, which chuck mates do I need, SKÖG® TOOLS">
+    <title>ChuckFinder – Find Your Chuck Mates® Fit | SKÖG® TOOLS</title>
+    <link rel="canonical" href="https://skogtools.com/chuckfinder.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skogtools.com/chuckfinder.html">
+    <meta property="og:site_name" content="SKÖG® TOOLS">
+    <meta property="og:title" content="ChuckFinder – Find Your Chuck Mates® Fit | SKÖG® TOOLS">
+    <meta property="og:description" content="Answer a few quick questions about your vehicle, inflator, and hose fitting and we'll match you to the right Chuck Mates® chuck or accessory.">
+    <meta property="og:image" content="https://skogtools.com/images/hero-bg-tire.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://skogtools.com/chuckfinder.html">
+    <meta name="twitter:title" content="ChuckFinder – Find Your Chuck Mates® Fit | SKÖG® TOOLS">
+    <meta name="twitter:description" content="Answer a few quick questions about your vehicle, inflator, and hose fitting and we'll match you to the right Chuck Mates® chuck or accessory.">
+    <meta name="twitter:image" content="https://skogtools.com/images/hero-bg-tire.jpg">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+    <style>
+/* SKÖG TOOLS Website Styles */
+
+:root {
+  --primary-red: #E60909;
+  --premium-orange: #FF6600;
+  --primary-black: #1a1a1a;
+  --secondary-gray: #4a4a4a;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --text-dark: #2c2c2c;
+  --border-color: #e0e0e0;
+  --shadow: 0 2px 8px rgba(0,0,0,0.1);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+
+header {
+  background: var(--primary-black);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.tm {
+  font-size: 0.5em;
+  font-weight: 400;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: var(--primary-red);
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--primary-red);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #C40808;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(230, 9, 9, 0.3);
+}
+
+footer {
+  background: var(--primary-black);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-red);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(--primary-red);
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    width: 100%;
+    order: 3;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  nav ul.nav-open {
+    max-height: 400px;
+    padding: 0.5rem 0 1rem;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+}
+    </style>
+    <style>
+/* ChuckFinder tool */
+.cf-page{
+  --ink:#1c1b19; --ink-soft:#4a4640;
+  --paper:#f6f4f0; --paper-raised:#ffffff; --paper-sunk:#ece8e0;
+  --steel:#6f6a63; --steel-soft:#a39d92;
+  --line:#ddd8d0;
+  --red:#E60909; --red-deep:#C40808; --red-tint:#fbe7e5;
+  --brass:#9a6d28; --brass-tint:#f3e6cc;
+  --warn:#a8630c; --warn-tint:#faedd9;
+  --platinum-accent:#E60909; --platinum-accent-deep:#b80707;
+  --premium-accent:#FF6600; --premium-accent-deep:#cc5200;
+  --shadow: 0 1px 2px rgba(28,27,25,.06), 0 10px 28px rgba(28,27,25,.10);
+  --radius: 14px;
+  background:var(--paper); color:var(--ink); font-family:'Inter',system-ui,sans-serif; line-height:1.55;
+  padding-inline:16px;
+}
+.cf-page .wrap{max-width:980px; margin:0 auto; padding-block:36px 64px;}
+
+.cf-page .eyebrow{font-family:'Oswald',sans-serif; font-weight:600; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--red); display:flex; align-items:center; gap:.5rem;}
+.cf-page .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--red);}
+.cf-page h1.title{font-family:'Oswald',sans-serif; font-weight:700; font-size:clamp(1.9rem,5vw,2.6rem); letter-spacing:-.01em; margin:.35rem 0 .5rem;}
+.cf-page p.lede{color:var(--ink-soft); font-size:1.02rem; max-width:64ch; margin:0 0 1.6rem;}
+
+.cf-page .progress{display:flex; gap:.4rem; margin-bottom:1.1rem;}
+.cf-page .progress i{flex:1; height:4px; border-radius:2px; background:var(--line);}
+.cf-page .progress i.done{background:var(--red);}
+
+.cf-page .card{background:var(--paper-raised); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:1.6rem;}
+.cf-page .step-kicker{font-family:'IBM Plex Mono',monospace; font-size:.72rem; color:var(--steel); letter-spacing:.04em;}
+.cf-page .q-text{font-family:'Oswald',sans-serif; font-weight:600; font-size:1.4rem; margin:.35rem 0 1.1rem;}
+
+/* Image-tile grid */
+.cf-page .tile-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:.85rem;}
+.cf-page .tile{
+  display:flex; flex-direction:column; background:var(--paper); border:1px solid var(--line); border-radius:12px;
+  overflow:hidden; cursor:pointer; transition:border-color .15s, transform .15s; font:inherit; color:inherit; padding:0;
+}
+.cf-page .tile:hover{border-color:var(--red); transform:translateY(-2px);}
+.cf-page .tile:focus-visible{outline:2px solid var(--red); outline-offset:2px;}
+.cf-page .tile-media{position:relative; width:100%; aspect-ratio:4/3; background:var(--paper-sunk); display:flex; align-items:center; justify-content:center; overflow:hidden;}
+.cf-page .tile-media img{width:100%; height:100%; object-fit:cover; display:block;}
+.cf-page .tile-label{font-family:'Oswald',sans-serif; font-weight:600; font-size:.92rem; text-align:center; padding:.6rem .5rem;}
+
+/* Text-only option grid (Easy/Difficult/Both) */
+.cf-page .opt-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:.75rem;}
+.cf-page .opt{display:flex; gap:.85rem; align-items:flex-start; text-align:left; background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:1rem; cursor:pointer; transition:border-color .15s, transform .15s; font:inherit; color:inherit;}
+.cf-page .opt:hover{border-color:var(--red); transform:translateY(-2px);}
+.cf-page .opt:focus-visible{outline:2px solid var(--red); outline-offset:2px;}
+.cf-page .opt svg{flex:none; width:28px; height:28px; color:var(--red);}
+.cf-page .opt .opt-label{font-family:'Oswald',sans-serif; font-weight:600; font-size:1rem; margin-bottom:.15rem;}
+.cf-page .opt .opt-sub{font-size:.85rem; color:var(--ink-soft);}
+
+.cf-page .back-row{display:flex; justify-content:space-between; align-items:center; margin-top:1.1rem;}
+.cf-page .link-btn{font-family:'Oswald',sans-serif; font-weight:600; font-size:.85rem; letter-spacing:.02em; background:none; border:none; color:var(--steel); cursor:pointer; padding:.3rem .1rem; display:flex; align-items:center; gap:.35rem;}
+.cf-page .link-btn:hover{color:var(--ink);}
+.cf-page .link-btn:focus-visible{outline:2px solid var(--red); outline-offset:2px;}
+
+/* Result */
+.cf-page .result-tier{display:inline-flex; align-items:center; gap:.4rem; font-family:'Oswald',sans-serif; font-weight:600; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; padding:.3rem .6rem; border-radius:999px; margin-bottom:.7rem;}
+.cf-page .result-tier.platinum{background:var(--paper-sunk); color:var(--ink-soft); border:1px solid var(--line);}
+.cf-page .result-tier.premium{background:var(--brass-tint); color:var(--brass);}
+.cf-page .result-tier.accessory{background:var(--warn-tint); color:var(--warn); border:1px solid var(--warn);}
+.cf-page .mismatch-note{display:flex; gap:.7rem; align-items:flex-start; background:var(--warn-tint); border:1px solid var(--warn); border-radius:10px; padding:.9rem 1rem; margin-bottom:1.2rem; font-size:.9rem; color:var(--ink);}
+.cf-page .mismatch-note b{color:var(--warn);}
+.cf-page button.mismatch-note{width:100%; text-align:left; font-family:inherit; cursor:pointer; transition:transform .15s, box-shadow .15s;}
+.cf-page button.mismatch-note:hover{transform:translateY(-2px); box-shadow:var(--shadow);}
+.cf-page button.mismatch-note:focus-visible{outline:2px solid var(--warn); outline-offset:2px;}
+.cf-page .mismatch-cta{display:inline-block; margin-top:.5rem; font-family:'Oswald',sans-serif; font-weight:600; text-decoration:underline;}
+.cf-page .trigger-check-media{width:200px; max-width:65%; aspect-ratio:4/3; margin:0 auto 1.3rem; border-radius:10px; overflow:hidden; border:1px solid var(--line); background:var(--paper-sunk);}
+.cf-page .trigger-check-media img{width:100%; height:100%; object-fit:cover; display:block;}
+.cf-page .result-card.info-card{background:var(--paper-sunk); border-style:dashed;}
+.cf-page .result-card{display:flex; gap:1.1rem; border:1px solid var(--line); border-radius:12px; padding:1.2rem; margin-bottom:1rem; background:var(--paper);}
+.cf-page .result-card:last-child{margin-bottom:0;}
+.cf-page .result-media{flex:0 0 130px; width:130px; height:130px; border-radius:8px; overflow:hidden; border:1px solid var(--line); background:var(--paper-raised); display:flex; align-items:center; justify-content:center;}
+.cf-page .result-media img{width:100%; height:100%; object-fit:contain;}
+.cf-page .result-body{flex:1; min-width:0;}
+@media (max-width:520px){ .cf-page .result-card{flex-direction:column;} .cf-page .result-media{width:100%; height:auto; aspect-ratio:4/3;} }
+.cf-page .result-name{font-family:'Oswald',sans-serif; font-weight:700; font-size:1.25rem; margin:0 0 .4rem;}
+.cf-page .result-spec{font-family:'IBM Plex Mono',monospace; font-size:.8rem; color:var(--ink-soft); background:var(--paper-sunk); border:1px solid var(--line); border-radius:8px; padding:.5rem .7rem; margin-bottom:.8rem; display:inline-block;}
+.cf-page ul.why{margin:0 0 1rem; padding-left:1.1rem;}
+.cf-page ul.why li{margin-bottom:.35rem; color:var(--ink-soft); font-size:.94rem;}
+.cf-page ul.why li::marker{color:var(--red);}
+.cf-page .buy-row{display:flex; flex-wrap:wrap; gap:.6rem;}
+.cf-page .buy-btn{font-family:'Oswald',sans-serif; font-weight:600; font-size:.9rem; background:var(--red); color:#fff; border:none; border-radius:8px; padding:.7rem 1.1rem; text-decoration:none; display:inline-flex; align-items:center; gap:.4rem;}
+.cf-page .buy-btn:hover{background:var(--red-deep);}
+.cf-page .buy-btn:focus-visible{outline:2px solid var(--ink); outline-offset:2px;}
+.cf-page .buy-btn.secondary{background:var(--paper-sunk); color:var(--ink);}
+.cf-page .buy-btn.tier-platinum{background:var(--platinum-accent);}
+.cf-page .buy-btn.tier-platinum:hover{background:var(--platinum-accent-deep);}
+.cf-page .buy-btn.tier-platinum.secondary{background:transparent; color:var(--platinum-accent); border:1.5px solid var(--platinum-accent);}
+.cf-page .buy-btn.tier-platinum.secondary:hover{background:var(--platinum-accent); color:#fff;}
+.cf-page .buy-btn.tier-premium{background:var(--premium-accent);}
+.cf-page .buy-btn.tier-premium:hover{background:var(--premium-accent-deep);}
+.cf-page .buy-btn.tier-premium.secondary{background:transparent; color:var(--premium-accent); border:1.5px solid var(--premium-accent);}
+.cf-page .buy-btn.tier-premium.secondary:hover{background:var(--premium-accent); color:#fff;}
+.cf-page .amazon-tag{font-size:.72rem; color:var(--steel); margin:1rem 0 0;}
+.cf-page .answer-summary{display:flex; flex-wrap:wrap; align-items:center; gap:.55rem; margin:.5rem 0 1.4rem; padding-bottom:1.2rem; border-bottom:1px dashed var(--line);}
+.cf-page .answer-chip{display:flex; align-items:center; gap:.6rem; background:var(--paper-sunk); border:1px solid var(--line); border-radius:10px; padding:.45rem .7rem .45rem .45rem;}
+.cf-page .answer-chip-media{width:42px; height:42px; border-radius:6px; overflow:hidden; flex:none; background:var(--paper-raised); border:1px solid var(--line);}
+.cf-page .answer-chip-media img{width:100%; height:100%; object-fit:cover;}
+.cf-page .answer-chip-text{display:flex; flex-direction:column; line-height:1.25;}
+.cf-page .answer-chip-kicker{font-family:'IBM Plex Mono',monospace; font-size:.6rem; letter-spacing:.05em; text-transform:uppercase; color:var(--steel);}
+.cf-page .answer-chip-label{font-family:'Oswald',sans-serif; font-weight:600; font-size:.86rem; color:var(--ink);}
+.cf-page .answer-chip-arrow{color:var(--steel-soft); font-size:1rem;}
+.cf-page .contact-banner{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:.9rem; background:var(--brass-tint); border:1px solid var(--brass); border-radius:10px; padding:1rem 1.1rem; margin-top:1.1rem;}
+.cf-page .contact-banner p{margin:0; font-size:.9rem; color:var(--ink); max-width:46ch;}
+.cf-page .buy-btn.contact-btn{background:var(--brass); color:#fff; flex:none; white-space:nowrap;}
+.cf-page .buy-btn.contact-btn:hover{background:var(--ink);}
+.cf-page .deadend-icon{width:48px; height:48px; color:var(--warn); margin-bottom:.8rem;}
+.cf-page .restart-row{display:flex; flex-wrap:wrap; align-items:center; gap:.7rem; margin-top:1.3rem;}
+.cf-page .restart{font-family:'Oswald',sans-serif; font-weight:600; font-size:.88rem; background:none; border:1px solid var(--line); border-radius:8px; color:var(--ink); padding:.6rem 1rem; cursor:pointer;}
+.cf-page .restart:hover{border-color:var(--red); color:var(--red);}
+.cf-page .buy-btn.shop-all-btn{background:var(--ink); color:var(--paper);}
+.cf-page .buy-btn.shop-all-btn:hover{background:var(--red);}
+.cf-page [hidden]{display:none !important;}
+@media (prefers-reduced-motion: reduce){ .cf-page .opt, .cf-page .tile{transition:none;} }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "ChuckFinder",
+      "url": "https://skogtools.com/chuckfinder.html",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "description": "Interactive tool that matches your vehicle, inflator, and hose fitting to the right Chuck Mates® chuck or accessory.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "SKÖG® TOOLS",
+        "url": "https://skogtools.com"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <a href="index.html" rel="noopener"><img src="images/skog-logo.png" alt="SKÖG® TOOLS Logo" class="logo" width="500" height="250"></a>
+            </div>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-nav">
+                <ul>
+                    <li><a rel="noopener" target="_blank" href="index.html">Home</a></li>
+                    <li><a rel="noopener" target="_blank" href="chuckfinder.html">ChuckFinder</a></li>
+                    <li><a rel="noopener" target="_blank" href="platinum-series.html">Platinum Series</a></li>
+                    <li><a rel="noopener" target="_blank" href="premium-series.html">Premium Series</a></li>
+                    <li><a rel="noopener" target="_blank" href="adapters.html">Adapters</a></li>
+                    <li><a rel="noopener" target="_blank" href="tire-gauge.html">Tire Gauge</a></li>
+                    <li><a rel="noopener" target="_blank" href="blog/index.html">Blog</a></li>
+                    <li><a rel="noopener" target="_blank" href="about.html">About</a></li>
+                    <li><a rel="noopener" target="_blank" href="faq.html">FAQ</a></li>
+                    <li><a rel="noopener" target="_blank" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cf-page">
+      <div class="wrap">
+        <div class="eyebrow"><span class="dot"></span> SKÖG TOOLS &middot; CHUCKFINDER</div>
+        <h1 class="title">ChuckFinder</h1>
+        <p class="lede">Not sure which Chuck Mates<sup class="tm">®</sup> chuck or accessory fits your setup? Pick the image closest to your vehicle, then your inflator, then confirm your hose fitting — we'll show you exactly what to buy.</p>
+        <div id="app"></div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a rel="noopener" target="_blank" href="index.html">Home</a></li>
+                <li><a rel="noopener" target="_blank" href="chuckfinder.html">ChuckFinder</a></li>
+                <li><a rel="noopener" target="_blank" href="platinum-series.html">Platinum Series</a></li>
+                <li><a rel="noopener" target="_blank" href="premium-series.html">Premium Series</a></li>
+                <li><a rel="noopener" target="_blank" href="adapters.html">Adapters</a></li>
+                <li><a rel="noopener" target="_blank" href="tire-gauge.html">Tire Gauge</a></li>
+                <li><a rel="noopener" target="_blank" href="blog/index.html">Blog</a></li>
+                <li><a rel="noopener" target="_blank" href="about.html">About</a></li>
+                <li><a rel="noopener" target="_blank" href="faq.html">FAQ</a></li>
+                <li><a rel="noopener" target="_blank" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="https://www.facebook.com/skogtools" target="_blank" rel="noopener" aria-label="SKÖG Tools on Facebook">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+            </div>
+            <p>&copy; 2026 SKÖG<sup class="tm">®</sup> TOOLS. All rights reserved.</p>
+            <p>Products available on Amazon.com</p>
+        </div>
+    </footer>
+    <script>
+        (function () {
+            var toggle = document.querySelector('.menu-toggle');
+            var nav = document.getElementById('primary-nav');
+            var navList = nav ? nav.querySelector('ul') : null;
+            if (!toggle || !navList) return;
+
+            function closeMenu() {
+                navList.classList.remove('nav-open');
+                toggle.classList.remove('active');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            toggle.addEventListener('click', function () {
+                var isOpen = navList.classList.toggle('nav-open');
+                toggle.classList.toggle('active', isOpen);
+                toggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            navList.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMenu);
+            });
+
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768) closeMenu();
+            });
+        })();
+    </script>
+    <script>
+(function(){
+  var ICONS = {
+    atv:'<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="20" r="3.4"/><circle cx="22" cy="20" r="3.4"/><path d="M9 20h10M11 20l2-8h6l2 4M13 12V8h4"/></svg>',
+    mower:'<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="21" r="3"/><circle cx="21" cy="21" r="3"/><path d="M9 18h12l3-9h-9l-2 5H5"/><path d="M15 9V5h4"/></svg>',
+    singleWheel:'<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="14" cy="14" r="8"/><circle cx="14" cy="14" r="2.6" fill="currentColor" stroke="none"/><path d="M6 22h16"/></svg>',
+    dualWheel:'<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="14" r="6.5"/><circle cx="18" cy="14" r="6.5"/><path d="M3 22h22"/></svg>',
+    presta:'<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="12.2" y="3" width="3.6" height="16" rx="1"/><circle cx="14" cy="22" r="2.6"/><rect x="11.4" y="1.4" width="5.2" height="2.6" rx="1"/></svg>',
+    schrader:'<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="11" y="3" width="6" height="14" rx="1"/><circle cx="14" cy="21" r="4.2"/><circle cx="14" cy="21" r="1.4" fill="currentColor" stroke="none"/></svg>',
+    trigger:'<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h11l6 4-6 4H5z"/><path d="M9 12v-3a2 2 0 0 1 2-2h2"/></svg>',
+    reach:'<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 14h6"/><rect x="9" y="11" width="12" height="6" rx="2"/><circle cx="24" cy="14" r="2.6"/></svg>',
+    flex:'<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 18c4-8 8 6 12-2s8-6 10-2"/><circle cx="25" cy="13" r="2"/></svg>',
+    accessory:'<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="14" cy="14" r="3"/><path d="M14 4v3M14 21v3M4 14h3M21 14h3M7 7l2 2M19 19l2 2M7 21l2-2M19 9l2-2"/></svg>'
+  };
+
+  function imgTile(src, label, alt){
+    return '<img src="'+src+'" alt="'+alt+'" loading="lazy">';
+  }
+
+  var PRODUCTS = {
+    premiumOpen:{
+      img:"images/premium-product.jpg",
+      name:"Chuck Mates® Quick-Connect, Open-Flow", tier:"premium", tierLabel:"Premium Series",
+      spec:"Open-Flow · Schrader (8V1) · SimpleSeal™ brass trigger clip",
+      why:["Solid brass speed clip with a finger trigger for on and off.","SimpleSeal™ means no Teflon tape, ever.","Threads onto a portable inflator's hose once, then clips on and off at the tire."],
+      packs:[
+        {label:"1-Pack", url:"https://www.amazon.com/dp/B0CYDXGGH2?maas=maas_adg_327CF1EEFCD7D1038F8578A727578281_afap_abs&ref_=aa_maas&tag=maas"},
+        {label:"2-Pack", url:"https://www.amazon.com/dp/B0DC4PWX4H?maas=maas_adg_6B804281DD6DF337A29F16A7CBE5D7BE_afap_abs&ref_=aa_maas&tag=maas", primary:true}
+      ]
+    },
+    platinumOpen:{
+      img:"images/platinum-product.jpg",
+      name:"Chuck Mates® Platinum Quick-Connect", tier:"platinum", tierLabel:"Platinum Series",
+      spec:"Open-Flow · Schrader (8V1) · RatchetSeal™ push-button release",
+      why:["Push straight onto the valve stem, press the button to release.","Patented RatchetSeal™ locks on with a guaranteed leak-free seal.","Same job as Premium, push-button feel instead of a trigger clip."],
+      packs:[
+        {label:"1-Pack", url:"https://www.amazon.com/dp/B0F9B1ZKJP?maas=maas_adg_FF31821B904C892E50D7452A0D3CD0FB_afap_abs&ref_=aa_maas&tag=maas"},
+        {label:"2-Pack", url:"https://www.amazon.com/dp/B0F9B28GMN?maas=maas_adg_8368324474309152AC8CEDA84EF7F238_afap_abs&ref_=aa_maas&tag=maas", primary:true}
+      ]
+    },
+    premiumNPT:{
+      img:"images/premium-npt-product.jpg",
+      name:"Chuck Mates® NPT Quick-Connect, Closed-Flow", tier:"premium", tierLabel:"Premium Series",
+      spec:"Closed-Flow · 1/4\" NPT · SimpleSeal™",
+      why:["Closed-flow means it only passes air once pressed onto a valve — no leak-down on a pressurized shop line.","1/4\" NPT threads straight into a standard shop-air fitting.","SimpleSeal™ seats on its own O-ring, so skip the Teflon tape."],
+      packs:[
+        {label:"1-Pack", url:"https://www.amazon.com/dp/B0F2JNH29G?maas=maas_adg_DBF1C03358AB746C4A71ACF4E5AD5CEE_afap_abs&ref_=aa_maas&tag=maas"},
+        {label:"2-Pack", url:"https://www.amazon.com/dp/B0F2JQ15B3?maas=maas_adg_AF1BC76D9824C99DA1F07AD0C92043FE_afap_abs&ref_=aa_maas&tag=maas", primary:true}
+      ]
+    },
+    platinumNPT:{
+      img:"images/Platinum-closed-npt-B0FNKH13BL.jpg",
+      name:"SKÖG® Quick-Connect Tire Inflator (Closed Type, NPT)", tier:"platinum", tierLabel:"Platinum Series",
+      spec:"Closed-Flow · 1/4\" NPT · precision shop-air control",
+      why:["Closed-type connection built for a pressurized shop-air line.","Precision inflation control for repeatable, professional-grade fill-ups.","The Platinum-line pick when you want that build quality on your NPT tool."],
+      packs:[{url:"https://www.amazon.com/dp/B0FNKH13BL?maas=maas_adg_7556254F4369F72294637F474C59CA5F_afap_abs&ref_=aa_maas&tag=maas"}]
+    },
+    platLockAdapter:{
+      img:"images/platinum-locking-product-B0GM1QCQC1.jpg",
+      name:"Chuck Mates® Platinum Locking Quick-Connect (Schrader)", tier:"platinum", tierLabel:"Platinum Series",
+      spec:"Schrader (8V1) · RatchetSeal™ · includes 1/4\" NPT adapter",
+      why:["Handles the mismatch: a locking Schrader chuck that ships with a 1/4\" NPT adapter, so it works whichever fitting you actually have.","Positive locking mechanism on top of RatchetSeal™.","One piece that covers you now and if your fitting turns out different than expected."],
+      packs:[{url:"https://www.amazon.com/dp/B0GM1QCQC1?maas=maas_adg_D33469F9D135937ADD926AB09CC94170_afap_abs&ref_=aa_maas&tag=maas"}]
+    },
+    reach360:{
+      img:"images/reach360-product.jpg",
+      name:"Chuck Mates® Reach360 Extension", tier:"platinum", tierLabel:"Platinum Series",
+      spec:"7\" rigid extension · 360° swivel · fits any Chuck Mates chuck",
+      why:["Built for blind or hard-to-reach valve stems — dually inner tires, tight wheel wells, motorcycles.","360° swivel keeps the hose from kinking mid-fill, and works just as well on an easy-to-reach valve stem.","Compatible with every Chuck Mates chuck, Platinum or Premium."],
+      packs:[{url:"https://www.amazon.com/dp/B0F99YM7V3?maas=maas_adg_38065D4D87B3DB15B49DA4DA1BC1D1B1_afap_abs&ref_=aa_maas&tag=maas"}]
+    },
+    flex360:{
+      img:"images/Platinum-Flex360-B0GQWJF9VK.jpg",
+      name:"Chuck Mates® Flex360 Inflator Extension (Open Flow)", tier:"platinum", tierLabel:"Platinum Series",
+      spec:"Flexible extension · Open-Flow · max airflow",
+      why:["Flexes into position instead of holding one rigid angle.","Open-flow design keeps full airflow through the extension.","Kink-free, 360° rotation for tight spaces."],
+      packs:[{url:"https://www.amazon.com/dp/B0GQWJF9VK?maas=maas_adg_722BABE94E640AF81B6E8A51C140F374_afap_abs&ref_=aa_maas&tag=maas"}]
+    },
+    mnptCoupling:{
+      img:"images/chuckfinder/mnpt-coupling-product.jpg",
+      name:"MNPT Coupling", tier:"accessory", tierLabel:"Required Accessory",
+      spec:"Air hose quick-connect coupling → 1/4\" M-NPT thread",
+      why:["Adapts a quick-connect air hose coupling down to the 1/4\" M-NPT thread the closed-flow chucks below need.","Required with one of these chucks if your shop hose terminates in a coupling rather than a bare NPT fitting.","Not a SKÖG product — a third-party part, so this is a plain Amazon link rather than a skogtools.com attribution link."],
+      packs:[{url:"https://link.amazon/B0fF1cYJh"}]
+    }
+  };
+
+  // ----- Tree -----
+  var VEHICLES = [
+    {key:'car', label:'Car', img:'images/chuckfinder/car.jpg', next:'inflator', pool:['premiumOpen','platinumOpen']},
+    {key:'motorcycle', label:'Motorcycle', img:'images/chuckfinder/motorcycle.jpg', next:'reachTextMotorcycle'},
+    {key:'truck', label:'Truck', img:'images/chuckfinder/truck.jpg', next:'wheelTruck'},
+    {key:'bus', label:'Bus', img:'images/chuckfinder/bus.jpg', next:'wheelBus'},
+    {key:'atv', label:'ATV', img:'images/chuckfinder/atv.jpg', next:'reachTextATV'},
+    {key:'mower', label:'Mower', img:'images/chuckfinder/mower.jpg', next:'reachTextMower'},
+    {key:'bicycle', label:'Bicycle', img:'images/chuckfinder/bicycle.jpg', next:'valveType'}
+  ];
+
+  var WHEEL_TRUCK = [
+    {key:'single', label:'Single rear tire', img:'images/chuckfinder/truck-single-wheel.jpg', next:'inflator', pool:['premiumOpen','platinumOpen']},
+    {key:'dual', label:'Dual rear tire (dually)', img:'images/chuckfinder/truck-dual-wheel.jpg', next:'inflator', dually:true}
+  ];
+  var WHEEL_BUS = [
+    {key:'single', label:'Single wheel', img:'images/chuckfinder/bus-single-wheel.jpg', next:'inflator', pool:['premiumOpen','platinumOpen']},
+    {key:'dual', label:'Dually', img:'images/chuckfinder/bus-dual-wheel.jpg', next:'inflator', dually:true}
+  ];
+  var VALVE_TYPE = [
+    {key:'presta', label:'Presta', img:'images/chuckfinder/presta.jpg', next:'DEADEND'},
+    {key:'schrader', label:'Schrader', img:'images/chuckfinder/schrader-valve.jpg', next:'reachTextBike'}
+  ];
+
+  function reachTextOptions(){
+    return [
+      {key:'easy', icon:'accessory', label:'Easy to reach', sub:'Valve stem is out in the open', next:'inflator', pool:['premiumOpen','platinumOpen']},
+      {key:'difficult', icon:'reach', label:'Difficult to reach', sub:'Blind, inner, or crowded valve stem', next:'inflator', pool:['reach360','flex360']},
+      {key:'both', icon:'flex', label:'Both, or not sure', sub:'Some easy, some not — cover every case', next:'inflator', pool:['premiumOpen','platinumOpen','reach360','flex360'], notSure:true}
+    ];
+  }
+
+  var INFLATORS = [
+    {key:'trigger', label:'Trigger-Type', img:'images/chuckfinder/trigger-type.jpg', group:'nptSkip'},
+    {key:'batteryHandheld', label:'Battery Handheld', img:'images/chuckfinder/handheld-inflator.jpg', group:'expect8v1'},
+    {key:'12vPortable', label:'12V Portable', img:'images/chuckfinder/viair.jpg', group:'expect8v1'},
+    {key:'batteryPortable', label:'Battery Portable', img:'images/chuckfinder/milwaukee.jpg', group:'expect8v1'},
+    {key:'shopAir', label:'Shop Air', img:'images/chuckfinder/shop-air.jpg', group:'expectNpt'}
+  ];
+
+  var HOSE = [
+    {key:'8v1', label:'Schrader Type Hose', img:'images/chuckfinder/schrader-female-hose.jpg', kind:'8v1'},
+    {key:'npt', label:'M-NPT Hose', img:'images/chuckfinder/mnpt-hose.jpg', kind:'npt'},
+    {key:'coupling', label:'Air Hose Coupling', img:'images/chuckfinder/air-hose-coupling.jpg', kind:'coupling'}
+  ];
+
+  var state = {step:'vehicle', pool:[], history:[], deadend:false, notSure:false, mismatch:false, needsTrigger:false, uncertainFit:false, inflatorGroup:null, dually:false, picked:{}};
+  var app = document.getElementById('app');
+
+  function snapshot(){
+    return {step:state.step, pool:state.pool.slice(), notSure:state.notSure, mismatch:state.mismatch, needsTrigger:state.needsTrigger, uncertainFit:state.uncertainFit, inflatorGroup:state.inflatorGroup, dually:state.dually, picked:Object.assign({}, state.picked)};
+  }
+  function push(step, extra, pickedPatch){
+    state.history.push(snapshot());
+    if(pickedPatch) state.picked[pickedPatch.field] = pickedPatch.value;
+    state.step = step;
+    if(extra) state.pool = extra;
+    render();
+  }
+  function back(){
+    var prev = state.history.pop();
+    if(!prev) return;
+    state.step = prev.step; state.pool = prev.pool; state.deadend = false; state.notSure = prev.notSure || false;
+    state.mismatch = prev.mismatch || false; state.needsTrigger = prev.needsTrigger || false; state.inflatorGroup = prev.inflatorGroup || null;
+    state.uncertainFit = prev.uncertainFit || false;
+    state.dually = prev.dually || false;
+    state.picked = prev.picked || {};
+    render();
+  }
+  function restart(){ state = {step:'vehicle', pool:[], history:[], deadend:false, notSure:false, mismatch:false, needsTrigger:false, uncertainFit:false, inflatorGroup:null, dually:false, picked:{}}; render(); }
+
+  function progressHTML(n, total){
+    total = total || 4;
+    var out = '<div class="progress">';
+    for(var i=1;i<=total;i++){ out += '<i class="'+(i<=n?'done':'')+'"></i>'; }
+    return out+'</div>';
+  }
+
+  function tileGrid(items, onPick){
+    var html = '<div class="tile-grid">';
+    items.forEach(function(it, i){
+      var media = imgTile(it.img, it.label);
+      html += '<button class="tile" data-idx="'+i+'"><span class="tile-media">'+media+'</span><span class="tile-label">'+it.label+'</span></button>';
+    });
+    html += '</div>';
+    app.querySelector('.tile-grid-slot').outerHTML = html;
+    app.querySelectorAll('.tile').forEach(function(btn){
+      btn.addEventListener('click', function(){ onPick(items[+btn.dataset.idx]); });
+    });
+  }
+
+  function optGrid(items, onPick){
+    var html = '<div class="opt-grid">';
+    items.forEach(function(it, i){
+      html += '<button class="opt" data-idx="'+i+'">'+ICONS[it.icon]+'<span><span class="opt-label">'+it.label+'</span><br><span class="opt-sub">'+it.sub+'</span></span></button>';
+    });
+    html += '</div>';
+    app.querySelector('.tile-grid-slot').outerHTML = html;
+    app.querySelectorAll('.opt').forEach(function(btn){
+      btn.addEventListener('click', function(){ onPick(items[+btn.dataset.idx]); });
+    });
+  }
+
+  function frame(stepNum, kicker, question, total){
+    total = total || 4;
+    var html = '<div class="card">' + progressHTML(stepNum, total) +
+      '<div class="step-kicker">STEP '+stepNum+' OF '+total+' · '+kicker+'</div>' +
+      '<div class="q-text">'+question+'</div>' +
+      '<div class="tile-grid-slot"></div>' +
+      '<div class="back-row">'+(state.history.length ? '<button class="link-btn" id="backBtn">&larr; Back</button>' : '<span></span>')+'<span></span></div>' +
+      '</div>';
+    app.innerHTML = html;
+    var back = document.getElementById('backBtn');
+    if(back) back.addEventListener('click', backHandler);
+  }
+  function backHandler(){ back(); }
+
+  function poolWith(p){ return (state.pool||[]).concat(p||[]); }
+  function accessoriesInPool(){ return (state.pool||[]).filter(function(k){ return k === 'reach360' || k === 'flex360'; }); }
+
+  function render(){
+    if(state.deadend){ renderDeadend(); return; }
+
+    switch(state.step){
+      case 'vehicle':
+        frame(1, 'VEHICLE', 'What vehicle type are you servicing with air?');
+        tileGrid(VEHICLES, function(v){
+          var patch = {field:'vehicle', value:{img:v.img, label:v.label}};
+          if(v.next === 'inflator') push('inflator', poolWith(v.pool), patch);
+          else push(v.next, poolWith(v.pool), patch);
+        });
+        break;
+
+      case 'wheelTruck':
+        frame(2, 'TRUCK WHEELS', 'Which looks like your truck’s rear wheels?');
+        tileGrid(WHEEL_TRUCK, function(v){
+          state.dually = !!v.dually;
+          var patch = v.dually ? {field:'wheelType', value:{img:v.img, label:v.label}} : undefined;
+          push(v.next, poolWith(v.pool), patch);
+        });
+        break;
+
+      case 'wheelBus':
+        frame(2, 'BUS WHEELS', 'Which looks like your bus’s wheels?');
+        tileGrid(WHEEL_BUS, function(v){
+          state.dually = !!v.dually;
+          var patch = v.dually ? {field:'wheelType', value:{img:v.img, label:v.label}} : undefined;
+          push(v.next, poolWith(v.pool), patch);
+        });
+        break;
+
+      case 'dualTriggerCheck':
+        renderDualTriggerCheck();
+        break;
+
+      case 'dualHose':
+        frame(5, 'HOSE FITTING', 'Which looks most like your air hose fitting?', 5);
+        tileGrid(HOSE, function(v){
+          var patch = {field:'hose', value:{img:v.img, label:v.label}};
+          if(v.kind === '8v1'){
+            state.uncertainFit = true;
+            state.pool = ['reach360'];
+            showResult(patch);
+          } else if(v.kind === 'npt'){
+            state.needsTrigger = true;
+            state.pool = ['reach360'];
+            showResult(patch);
+          } else {
+            state.needsTrigger = true;
+            state.pool = ['mnptCoupling','reach360'];
+            showResult(patch);
+          }
+        });
+        break;
+
+      case 'valveType':
+        frame(2, 'BICYCLE VALVE', 'Which valve does your bicycle use?');
+        tileGrid(VALVE_TYPE, function(v){
+          if(v.next === 'DEADEND'){ state.history.push(snapshot()); state.deadend = true; render(); }
+          else push(v.next);
+        });
+        break;
+
+      case 'reachTextMotorcycle':
+        frame(2, 'MOTORCYCLE REACH', 'How easy is it to reach the valve stem?');
+        optGrid(reachTextOptions(), function(o){
+          if(o.notSure) state.notSure = true;
+          push(o.next, poolWith(o.pool));
+        });
+        break;
+
+      case 'reachTextATV':
+        frame(2, 'ATV REACH', 'How easy is it to reach the valve stem?');
+        optGrid(reachTextOptions(), function(o){
+          if(o.notSure) state.notSure = true;
+          push(o.next, poolWith(o.pool));
+        });
+        break;
+
+      case 'reachTextMower':
+        frame(2, 'MOWER REACH', 'How easy is it to reach the valve stem?');
+        optGrid(reachTextOptions(), function(o){
+          if(o.notSure) state.notSure = true;
+          push(o.next, poolWith(o.pool));
+        });
+        break;
+
+      case 'reachTextBike':
+        frame(3, 'BICYCLE REACH', 'How easy is it to reach the valve stem?');
+        optGrid(reachTextOptions(), function(o){
+          if(o.notSure) state.notSure = true;
+          push(o.next, poolWith(o.pool));
+        });
+        break;
+
+      case 'inflator':
+        frame(3, 'INFLATOR', 'Which image most represents the inflator you’re using?');
+        tileGrid(INFLATORS, function(v){
+          var patch = {field:'inflator', value:{img:v.img, label:v.label}};
+          if(state.dually){
+            if(v.group === 'expectNpt'){
+              push('dualTriggerCheck', undefined, patch);
+            } else {
+              state.pool = ['reach360'];
+              showResult(patch);
+            }
+          } else if(v.group === 'nptSkip'){
+            state.pool = accessoriesInPool().concat(['premiumNPT','platinumNPT']); showResult(patch);
+          } else {
+            state.inflatorGroup = v.group; push('hose', undefined, patch);
+          }
+        });
+        break;
+
+      case 'hose':
+        frame(4, 'HOSE FITTING', 'Which looks most like your air hose fitting?');
+        tileGrid(HOSE, function(v){
+          var patch = {field:'hose', value:{img:v.img, label:v.label}};
+          if(state.inflatorGroup === 'expect8v1' && v.kind === '8v1'){
+            showResult(patch);
+          } else if(state.inflatorGroup === 'expectNpt' && v.kind === 'npt'){
+            state.pool = accessoriesInPool().concat(['premiumNPT','platinumNPT']);
+            showResult(patch);
+          } else if(state.inflatorGroup === 'expectNpt' && v.kind === 'coupling'){
+            state.pool = accessoriesInPool().concat(['mnptCoupling','premiumNPT','platinumNPT']);
+            showResult(patch);
+          } else {
+            state.mismatch = true;
+            state.pool = ['platLockAdapter','reach360'];
+            showResult(patch);
+          }
+        });
+        break;
+    }
+  }
+
+  function renderDualTriggerCheck(){
+    var stepNum = 4, total = 5;
+    var html = '<div class="card">' + progressHTML(stepNum, total) +
+      '<div class="step-kicker">STEP '+stepNum+' OF '+total+' · TRIGGER INFLATOR</div>' +
+      '<div class="q-text">Do you already have a trigger-style inflator like this one?</div>' +
+      '<div class="trigger-check-media"><img src="images/chuckfinder/trigger-type.jpg" alt="Trigger-style inflator"></div>' +
+      '<div class="opt-grid" id="triggerYesNo">' +
+        '<button class="opt" data-ans="yes">'+ICONS.accessory+'<span><span class="opt-label">Yes, I have one</span><br><span class="opt-sub">Already own a trigger-style inflator tool</span></span></button>' +
+        '<button class="opt" data-ans="no">'+ICONS.reach+'<span><span class="opt-label">No, I don’t</span><br><span class="opt-sub">I’ll need to know what else to buy</span></span></button>' +
+      '</div>' +
+      '<div class="back-row">'+(state.history.length ? '<button class="link-btn" id="backBtn">&larr; Back</button>' : '<span></span>')+'<span></span></div>' +
+      '</div>';
+    app.innerHTML = html;
+    document.querySelectorAll('#triggerYesNo .opt').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var yes = btn.dataset.ans === 'yes';
+        var patch = {field:'triggerCheck', value:{img:'images/chuckfinder/trigger-type.jpg', label: yes ? 'Have one already' : 'Don’t have one yet'}};
+        if(yes){
+          state.pool = ['reach360'];
+          showResult(patch);
+        } else {
+          push('dualHose', undefined, patch);
+        }
+      });
+    });
+    var back = document.getElementById('backBtn');
+    if(back) back.addEventListener('click', backHandler);
+  }
+
+  function showResult(pickedPatch){
+    state.history.push(snapshot());
+    if(pickedPatch) state.picked[pickedPatch.field] = pickedPatch.value;
+    state.step = 'result';
+    renderResult();
+  }
+
+  function mark(s){ return s.replace(/®/g, '<sup class="tm">®</sup>'); }
+
+  function summaryHTML(){
+    var order = [['vehicle','Vehicle'], ['wheelType','Wheels'], ['inflator','Inflator'], ['triggerCheck','Trigger inflator'], ['hose','Hose fitting']];
+    var items = order.filter(function(o){ return !!state.picked[o[0]]; });
+    if(!items.length) return '';
+    var html = '<div class="step-kicker">YOUR ANSWERS</div><div class="answer-summary">';
+    items.forEach(function(o, i){
+      var a = state.picked[o[0]];
+      html += '<div class="answer-chip"><div class="answer-chip-media"><img src="'+a.img+'" alt="'+a.label+'"></div>' +
+        '<div class="answer-chip-text"><span class="answer-chip-kicker">'+o[1]+'</span><span class="answer-chip-label">'+a.label+'</span></div></div>';
+      if(i < items.length-1) html += '<div class="answer-chip-arrow">&rarr;</div>';
+    });
+    html += '</div>';
+    return html;
+  }
+
+  function renderResult(){
+    var keys = state.pool.filter(function(k, i){ return state.pool.indexOf(k) === i; });
+    var html = '<div class="card">' + summaryHTML();
+    if(state.mismatch){
+      html += '<button type="button" class="mismatch-note" id="mismatchRestartBtn"><span>&#9888;&#65039;</span><span><b>Not a typical pairing:</b> that hose fitting isn’t what we’d expect with the inflator you picked. These options are built to work with either fitting:<br><span class="mismatch-cta">Press here to try again.</span></span></button>';
+    }
+    if(state.uncertainFit){
+      html += '<div class="mismatch-note"><span>&#9888;&#65039;</span><span><b>Uncommon combination:</b> this hose type isn’t typically associated with the other equipment you selected. This recommendation may not be fully reliable for your setup — <a href="contact.html" target="_blank" rel="noopener" style="color:inherit;">contact SKÖG Support</a> to confirm before you buy.</span></div>';
+    }
+    keys.forEach(function(key){
+      var p = PRODUCTS[key];
+      html += '<div class="result-card">';
+      html += '<div class="result-media"><img src="'+p.img+'" alt="'+p.name+'"></div>';
+      html += '<div class="result-body">';
+      html += '<span class="result-tier '+p.tier+'">'+p.tierLabel+'</span>';
+      html += '<h3 class="result-name">'+mark(p.name)+'</h3>';
+      html += '<div class="result-spec">'+p.spec+'</div>';
+      html += '<ul class="why">'+p.why.map(function(w){return '<li>'+w+'</li>';}).join('')+'</ul>';
+      html += '<div class="buy-row">';
+      var hasPrimary = p.packs.some(function(pk){ return pk.primary; });
+      var tierClass = (p.tier === 'platinum' || p.tier === 'premium') ? (' tier-'+p.tier) : '';
+      p.packs.forEach(function(pk, i){
+        var isPrimary = hasPrimary ? !!pk.primary : (i === 0);
+        var text = pk.label ? ('Buy '+pk.label+' on Amazon') : 'Buy on Amazon';
+        html += '<a class="buy-btn'+tierClass+(isPrimary?'':' secondary')+'" target="_blank" rel="noopener nofollow sponsored" href="'+pk.url+'">'+text+'</a>';
+      });
+      html += '</div></div></div>';
+    });
+    if(state.needsTrigger){
+      html += '<div class="result-card info-card">';
+      html += '<div class="result-media"><img src="images/chuckfinder/trigger-type.jpg" alt="Trigger-style inflator"></div>';
+      html += '<div class="result-body">';
+      html += '<span class="result-tier accessory">Bring Your Own</span>';
+      html += '<h3 class="result-name">Trigger-Style Inflator</h3>';
+      html += '<div class="result-spec">Pictured for reference — SKÖG doesn’t sell or recommend a specific one</div>';
+      html += '<ul class="why"><li>Reach360 needs an open-flow-style connection to attach to — a trigger-style inflator tool gives you that, even off a shop-air line.</li><li>Any trigger-style tool works here; this is just so you know what to look for.</li></ul>';
+      html += '</div></div>';
+    }
+    html += '<div class="amazon-tag">'+(keys.indexOf('mnptCoupling') > -1 ? 'SKÖG items open the same Amazon listings linked from skogtools.com; the MNPT Coupling is a third-party part, linked directly.' : 'Opens the live Amazon listing already linked from skogtools.com.')+'</div>';
+    if(state.notSure){
+      html += '<div class="contact-banner">';
+      html += '<p>You said your situation is a mix, or you weren’t sure &mdash; that’s a fair answer, and our team can help you nail down the exact fit.</p>';
+      html += '<a class="buy-btn contact-btn" target="_blank" rel="noopener" href="contact.html">Contact SKÖG Support</a>';
+      html += '</div>';
+    }
+    html += '<div class="restart-row"><button class="restart" id="restartBtn">Start over</button>' +
+      '<a class="buy-btn shop-all-btn" target="_blank" rel="noopener nofollow sponsored" href="https://www.amazon.com/skog?maas=maas_adg_A9FE909AF33A722428DFC6F62DC37794_afap_abs&ref_=aa_maas&tag=maas">Shop SKÖG on Amazon</a></div>';
+    html += '</div>';
+    app.innerHTML = html;
+    document.getElementById('restartBtn').addEventListener('click', restart);
+    var mismatchBtn = document.getElementById('mismatchRestartBtn');
+    if(mismatchBtn) mismatchBtn.addEventListener('click', restart);
+  }
+
+  function renderDeadend(){
+    var html = '<div class="card">';
+    html += ICONS.presta.replace('viewBox="0 0 28 28"','viewBox="0 0 28 28" class="deadend-icon"');
+    html += '<h3 class="result-name">Not covered yet</h3>';
+    html += '<p style="color:var(--ink-soft); max-width:56ch;">'+mark('Chuck Mates® chucks are built for the Schrader (8V1) valve thread used on cars, trucks, RVs, and motorcycles. A Presta valve is a different design, and SKÖG doesn’t currently sell a Presta-to-Schrader adapter. A bike shop can point you to one.')+'</p>';
+    html += '<div class="restart-row"><button class="restart" id="restartBtn">Start over</button></div>';
+    html += '</div>';
+    app.innerHTML = html;
+    document.getElementById('restartBtn').addEventListener('click', restart);
+  }
+
+  render();
+})();
+    </script>
+</body>
+</html>
