@@ -358,6 +358,9 @@ footer {
 .cf-page .amazon-tag{font-size:.72rem; color:var(--steel); margin:1rem 0 0;}
 .cf-page .answer-summary{display:flex; flex-wrap:wrap; align-items:center; gap:.55rem; margin:.5rem 0 1.4rem; padding-bottom:1.2rem; border-bottom:1px dashed var(--line);}
 .cf-page .answer-chip{display:flex; align-items:center; gap:.6rem; background:var(--paper-sunk); border:1px solid var(--line); border-radius:10px; padding:.45rem .7rem .45rem .45rem;}
+.cf-page button.answer-chip{font:inherit; color:inherit; text-align:left; cursor:pointer; transition:border-color .15s, transform .15s;}
+.cf-page button.answer-chip:hover{border-color:var(--red); transform:translateY(-1px);}
+.cf-page button.answer-chip:focus-visible{outline:2px solid var(--red); outline-offset:2px;}
 .cf-page .answer-chip-media{width:42px; height:42px; border-radius:6px; overflow:hidden; flex:none; background:var(--paper-raised); border:1px solid var(--line);}
 .cf-page .answer-chip-media img{width:100%; height:100%; object-fit:cover;}
 .cf-page .answer-chip-text{display:flex; flex-direction:column; line-height:1.25;}
@@ -547,7 +550,7 @@ footer {
       img:"images/platinum-locking-product-B0GM1QCQC1.jpg",
       name:"Chuck Mates® Platinum Locking Quick-Connect (Schrader)", tier:"platinum", tierLabel:"Platinum Series",
       spec:"Schrader (8V1) · RatchetSeal™ · includes 1/4\" NPT adapter",
-      why:["Handles the mismatch: a locking Schrader chuck that ships with a 1/4\" NPT adapter, so it works whichever fitting you actually have.","Positive locking mechanism on top of RatchetSeal™.","One piece that covers you now and if your fitting turns out different than expected."],
+      why:["Handles the mismatch: a locking Schrader chuck that ships with a 1/4\" NPT adapter, so it should work with either hose fitting type.","Positive locking mechanism on top of RatchetSeal™.","One piece that covers you now and if your fitting turns out different than expected."],
       packs:[{url:"https://www.amazon.com/dp/B0GM1QCQC1?maas=maas_adg_D33469F9D135937ADD926AB09CC94170_afap_abs&ref_=aa_maas&tag=maas"}]
     },
     reach360:{
@@ -658,6 +661,15 @@ footer {
     state.dually = prev.dually || false;
     state.picked = prev.picked || {};
     render();
+  }
+  function jumpTo(field){
+    var idx = -1;
+    for(var i = state.history.length - 1; i >= 0; i--){
+      if(!(state.history[i].picked || {})[field]){ idx = i; break; }
+    }
+    if(idx < 0) return;
+    while(state.history.length > idx + 1) state.history.pop();
+    back();
   }
   function restart(){ state = {step:'vehicle', pool:[], history:[], deadend:false, notSure:false, mismatch:false, needsTrigger:false, uncertainFit:false, inflatorGroup:null, dually:false, picked:{}}; render(); }
 
@@ -892,8 +904,8 @@ footer {
     var html = '<div class="step-kicker">YOUR ANSWERS</div><div class="answer-summary">';
     items.forEach(function(o, i){
       var a = state.picked[o[0]];
-      html += '<div class="answer-chip"><div class="answer-chip-media"><img src="'+a.img+'" alt="'+a.label+'"></div>' +
-        '<div class="answer-chip-text"><span class="answer-chip-kicker">'+o[1]+'</span><span class="answer-chip-label">'+a.label+'</span></div></div>';
+      html += '<button type="button" class="answer-chip" data-field="'+o[0]+'" title="Change this answer" aria-label="Change your '+o[1]+' answer ('+a.label+')"><div class="answer-chip-media"><img src="'+a.img+'" alt="'+a.label+'"></div>' +
+        '<div class="answer-chip-text"><span class="answer-chip-kicker">'+o[1]+'</span><span class="answer-chip-label">'+a.label+'</span></div></button>';
       if(i < items.length-1) html += '<div class="answer-chip-arrow">&rarr;</div>';
     });
     html += '</div>';
@@ -950,6 +962,7 @@ footer {
     html += '</div>';
     app.innerHTML = html;
     document.getElementById('restartBtn').addEventListener('click', restart);
+    app.querySelectorAll('.answer-chip').forEach(function(c){ c.addEventListener('click', function(){ jumpTo(c.dataset.field); }); });
     var mismatchBtn = document.getElementById('mismatchRestartBtn');
     if(mismatchBtn) mismatchBtn.addEventListener('click', restart);
   }
