@@ -231,6 +231,42 @@ nav a:hover {
   margin-top: 2rem;
 }
 
+/* Product + gallery side by side on desktop */
+.product-showcase {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product-showcase .product-grid {
+  margin-top: 0;
+}
+
+.showcase-header {
+  margin-bottom: 0;
+}
+
+.showcase-header h2 {
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  .product-showcase {
+    grid-template-columns: 380px 1fr;
+    align-items: start;
+    gap: 2.5rem;
+  }
+
+  .product-showcase .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-gallery .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Feature Gallery */
 .gallery-grid {
   display: grid;
@@ -650,26 +686,45 @@ footer {
             <p>Set your target pressure once, then match the needles as you check each tire</p>
         </div>
 
-        <div class="product-grid">
-            <!-- SKÖG Platinum Tire Pressure Gauge -->
-            <div class="product-card">
-                <img src="images/platinum-tire-gauge-B0FNKGWW8H.jpg" alt="SKÖG® Platinum Dual-Needle Tire Pressure Gauge" class="product-image" width="800" height="800">
-                <div class="product-info">
-                    <span class="product-badge">New Arrival</span>
-                    <h3>SKÖG<sup class="tm">®</sup> Dual-Needle Tire Pressure Gauge (0-100 PSI)</h3>
-                    <p>Featuring our convenient Chuck Mates<sup class="tm">®</sup> lock-on quick-connect. No batteries to replace — just consistent, accurate readings every time.</p>
-                    <ul class="product-features">
-                        <li>Dual-Needle Design for Easy Reading</li>
-                        <li>Built-In Deflation Button for Fine-Tuning</li>
-                        <li>ANSI B40.1 Accuracy (±1.5%)</li>
-                        <li>Patented RatchetSeal™ Locking Chuck</li>
-                        <li>7" Kink-Free, 360° Rotating Hose</li>
-                        <li>Battery-Free with Included Padded Pouch</li>
-                    </ul>
-                    <div class="button-group">
-                        <a href="https://www.amazon.com/stores/page/9F2660BD-D9A8-4C40-8B63-43EB1D131BB3?maas=maas_adg_1FED66939C5B70997161BEE14738C557_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-primary" target="_blank" rel="noopener">Buy on Amazon</a>
+        <div class="product-showcase">
+            <div class="product-grid">
+                <!-- SKÖG Platinum Tire Pressure Gauge -->
+                <div class="product-card">
+                    <img src="images/platinum-tire-gauge-B0FNKGWW8H.jpg" alt="SKÖG® Platinum Dual-Needle Tire Pressure Gauge" class="product-image" width="800" height="800">
+                    <div class="product-info">
+                        <span class="product-badge">New Arrival</span>
+                        <h3>SKÖG<sup class="tm">®</sup> Dual-Needle Tire Pressure Gauge (0-100 PSI)</h3>
+                        <p>Featuring our convenient Chuck Mates<sup class="tm">®</sup> lock-on quick-connect. No batteries to replace — just consistent, accurate readings every time.</p>
+                        <ul class="product-features">
+                            <li>Dual-Needle Design for Easy Reading</li>
+                            <li>Built-In Deflation Button for Fine-Tuning</li>
+                            <li>ANSI B40.1 Accuracy (±1.5%)</li>
+                            <li>Patented RatchetSeal™ Locking Chuck</li>
+                            <li>7" Kink-Free, 360° Rotating Hose</li>
+                            <li>Battery-Free with Included Padded Pouch</li>
+                        </ul>
+                        <div class="button-group">
+                            <a href="https://www.amazon.com/stores/page/9F2660BD-D9A8-4C40-8B63-43EB1D131BB3?maas=maas_adg_1FED66939C5B70997161BEE14738C557_afap_abs&ref_=aa_maas&tag=maas" class="btn btn-primary" target="_blank" rel="noopener">Buy on Amazon</a>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="showcase-gallery">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/psi100-how-it-works.jpg" alt="Four-step guide: Lock On, Read True, Air Down, Remove" loading="lazy" width="700" height="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/psi100-dual-needle-setting.jpg" alt="Setting the reference needle once, then matching it on every tire" loading="lazy" width="700" height="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/psi100-ratchetseal-chuck.jpg" alt="Chuck Mates patented RatchetSeal locking quick-connect chuck close-up" loading="lazy" width="700" height="700">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/psi100-professional-accuracy.jpg" alt="Professional accuracy: meets ANSI B40.1 (±1.5% accuracy), designed in the USA, precision made in Taiwan" loading="lazy" width="700" height="700">
+                </div>
+            </div>
             </div>
         </div>
 
@@ -679,26 +734,6 @@ footer {
             
             <h3 style="margin: 2rem 0 1rem; color: #1a1a1a;">Built for Every Vehicle</h3>
             <p style="color: #4a4a4a; line-height: 1.8;">Accurate to ANSI B40.1 standards (±1.5%), this gauge is equally at home on cars, trucks, motorcycles, and bicycles. The patented RatchetSeal™ locking chuck and 7" kink-free, 360° rotating hose make valve access easy in tight spaces, and the included padded pouch keeps it protected in the garage or glove box between uses.</p>
-        </div>
-
-        <div class="section-header" style="margin-top: 3rem; margin-bottom: 0;">
-            <h2 style="font-size: 2rem;">See It In Action</h2>
-            <p>From lock-on to lock-in, here's how the dual-needle system works</p>
-        </div>
-
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="images/psi100-how-it-works.jpg" alt="Four-step guide: Lock On, Read True, Air Down, Remove" loading="lazy" width="700" height="700">
-            </div>
-            <div class="gallery-item">
-                <img src="images/psi100-dual-needle-setting.jpg" alt="Setting the reference needle once, then matching it on every tire" loading="lazy" width="700" height="700">
-            </div>
-            <div class="gallery-item">
-                <img src="images/psi100-ratchetseal-chuck.jpg" alt="Chuck Mates patented RatchetSeal locking quick-connect chuck close-up" loading="lazy" width="700" height="700">
-            </div>
-            <div class="gallery-item">
-                <img src="images/psi100-professional-accuracy.jpg" alt="Professional accuracy: meets ANSI B40.1 (±1.5% accuracy), designed in the USA, precision made in Taiwan" loading="lazy" width="700" height="700">
-            </div>
         </div>
     </div>
 
