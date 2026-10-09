@@ -388,6 +388,34 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
+.chuckfinder-logo-link {
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.chuckfinder-logo-link img {
+  display: block;
+  width: min(320px, 80vw);
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.18));
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.chuckfinder-logo-link:hover img,
+.chuckfinder-logo-link:focus-visible img {
+  transform: translateY(-3px) rotate(-1.5deg) scale(1.04);
+  filter: drop-shadow(0 8px 14px rgba(230, 9, 9, 0.35));
+}
+
+.chuckfinder-logo-link:focus-visible {
+  outline: 3px solid var(--primary-red);
+  outline-offset: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chuckfinder-logo-link img { transition: none; }
+}
+
 .featured-banner {
   margin-top: 1.5rem;
   border-radius: 8px;
@@ -636,7 +664,9 @@ footer {
 
         <div class="chuckfinder-cta">
             <p>Not sure which chuck or accessory fits your setup?</p>
-            <a href="chuckfinder.html" class="cta-button" rel="noopener" target="_blank">Find My Fit with ChuckFinder</a>
+            <a href="chuckfinder.html" class="chuckfinder-logo-link" rel="noopener" target="_blank" aria-label="Find My Fit with ChuckFinder">
+                <img src="images/chuckfinder-button.webp" alt="ChuckFinder: Find Now" width="800" height="421">
+            </a>
         </div>
 
         <div class="featured-banner">
