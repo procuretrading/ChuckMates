@@ -378,6 +378,14 @@ footer {
 .cf-page .restart:hover{border-color:var(--red); color:var(--red);}
 .cf-page .buy-btn.shop-all-btn{background:var(--ink); color:var(--paper);}
 .cf-page .buy-btn.shop-all-btn:hover{background:var(--red);}
+.cf-page .coupon-card{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:.9rem; background:var(--brass-tint); border:1.5px dashed var(--brass); border-radius:12px; padding:1.1rem 1.2rem; margin-top:1.2rem;}
+.cf-page .coupon-text{flex:1 1 240px; min-width:0;}
+.cf-page .coupon-kicker{font-family:'IBM Plex Mono',monospace; font-size:.65rem; letter-spacing:.08em; text-transform:uppercase; color:var(--brass);}
+.cf-page .coupon-title{font-family:'Oswald',sans-serif; font-weight:700; font-size:1.2rem; margin:.15rem 0 .25rem; color:var(--ink);}
+.cf-page .coupon-text p{margin:0; font-size:.88rem; color:var(--ink-soft);}
+.cf-page .coupon-code{font-family:'IBM Plex Mono',monospace; font-weight:600; background:var(--paper); border:1px solid var(--line); border-radius:6px; padding:.05rem .4rem; color:var(--ink);}
+.cf-page .buy-btn.coupon-btn{background:var(--brass); color:#fff; cursor:pointer; flex:none; font-size:.95rem;}
+.cf-page .buy-btn.coupon-btn:hover{background:var(--ink);}
 .cf-page [hidden]{display:none !important;}
 @media (prefers-reduced-motion: reduce){ .cf-page .opt, .cf-page .tile{transition:none;} }
     </style>
@@ -888,6 +896,9 @@ footer {
     if(back) back.addEventListener('click', backHandler);
   }
 
+  var COUPON_CODE = 'CHUCKFINDER';
+  var COUPON_URL = 'https://www.amazon.com/stores/SK%C3%96GTOOLS/page/F2A0A9CD-372D-418D-945C-67F42AFB3B81?maas=maas_adg_651F23C4AAD0061EEEF0A041AC7CE8D6_afap_abs&ref_=aa_maas&tag=maas';
+
   function showResult(pickedPatch){
     bumpCounter('chuckfinder-complete-session');
     state.history.push(snapshot());
@@ -958,12 +969,23 @@ footer {
       html += '<a class="buy-btn contact-btn" target="_blank" rel="noopener" href="contact.html">Contact SKÖG Support</a>';
       html += '</div>';
     }
+    html += '<div class="coupon-card"><div class="coupon-text"><div class="coupon-kicker">Chuckfinder bonus</div><div class="coupon-title">15% off on Amazon</div><p>Press the button: we&rsquo;ll copy the code <span class="coupon-code">'+COUPON_CODE+'</span> and open our Amazon store. Paste it at checkout.</p></div>' +
+      '<button type="button" class="buy-btn coupon-btn" id="couponBtn">Copy code &amp; get 15% off</button></div>';
     html += '<div class="restart-row"><button class="restart" id="restartBtn">Start over</button>' +
       '<a class="buy-btn shop-all-btn" target="_blank" rel="noopener nofollow sponsored" href="https://www.amazon.com/skog?maas=maas_adg_A9FE909AF33A722428DFC6F62DC37794_afap_abs&ref_=aa_maas&tag=maas">Shop SKÖG on Amazon</a></div>';
     html += '</div>';
     app.innerHTML = html;
     document.getElementById('restartBtn').addEventListener('click', restart);
     app.querySelectorAll('.answer-chip').forEach(function(c){ c.addEventListener('click', function(){ jumpTo(c.dataset.field); }); });
+    var couponBtn = document.getElementById('couponBtn');
+    if(couponBtn) couponBtn.addEventListener('click', function(){
+      var done = function(){ couponBtn.textContent = 'Copied ' + COUPON_CODE + ' \u2713 Opening Amazon\u2026'; };
+      try {
+        if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(COUPON_CODE).then(done, done); }
+        else { var t = document.createElement('textarea'); t.value = COUPON_CODE; t.style.position='fixed'; t.style.opacity='0'; document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); done(); }
+      } catch(e){ done(); }
+      window.open(COUPON_URL, '_blank', 'noopener');
+    });
     var mismatchBtn = document.getElementById('mismatchRestartBtn');
     if(mismatchBtn) mismatchBtn.addEventListener('click', restart);
   }
