@@ -1,0 +1,28 @@
+/* Trick or Treat: code reveal and homepage popup */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.treat-hero { background: var(--primary-black); color: #e8e8e8; text-align: center; padding: 0 0 2rem; }
+.treat-hero img { display: block; width: 100%; height: auto; max-height: 70vh; object-fit: cover; object-position: center; }
+.treat-hero p { max-width: 560px; margin: 1.5rem auto 0; padding: 0 1.25rem; font-size: 1.1rem; }
+.treat-container { display: block; max-width: 720px; }
+.treat-card { background: var(--white); border: 2px dashed var(--premium-orange); border-radius: 12px; padding: 1.5rem; text-align: center; box-shadow: var(--shadow); margin-bottom: 2rem; }
+.treat-card .btn { display: block; flex: none; width: 100%; max-width: 360px; margin: 0 auto; background: var(--premium-orange); color: var(--white); }
+.treat-card .btn:hover { background: #E65C00; }
+.treat-reveal { display: none; margin-top: 1rem; padding: 0.9rem; background: var(--light-gray); border-radius: 8px; }
+.treat-reveal.shown { display: block; }
+.treat-code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 1.6rem; font-weight: 700; letter-spacing: .08em; color: var(--primary-black); user-select: all; }
+.treat-note { font-size: .9rem; color: var(--secondary-gray); margin: 6px 0 0; }
+.treat-how { background: var(--light-gray); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+.treat-how h2 { font-size: 1.25rem; margin-bottom: .75rem; }
+.treat-how ol { padding-left: 1.25rem; }
+.treat-how li { margin-bottom: .5rem; }
+.treat-fine { font-size: .85rem; color: var(--secondary-gray); text-align: center; }
+.treat-popup { position: fixed; inset: 0; z-index: 1000; display: none; align-items: center; justify-content: center; padding: 16px; background: rgba(10, 8, 6, .75); }
+.treat-popup.open { display: flex; }
+.treat-popup-card { position: relative; width: 100%; max-width: 560px; max-height: 100%; overflow-y: auto; background: var(--primary-black); color: #e8e8e8; border-radius: 12px; text-align: center; box-shadow: var(--shadow-hover); }
+.treat-popup-card img { display: block; width: 100%; height: auto; border-radius: 12px 12px 0 0; }
+.treat-popup-body { padding: 20px 24px 24px; }
+.treat-popup-body p { margin: 0 0 16px; font-size: 1.05rem; }
+.treat-popup-body .btn { display: block; flex: none; background: var(--premium-orange); color: var(--white); }
+.treat-popup-body .btn:hover { background: #E65C00; }
+.treat-popup-close { position: absolute; top: 8px; right: 8px; width: 36px; height: 36px; border: 0; border-radius: 50%; background: rgba(10, 8, 6, .7); color: var(--white); font-size: 1.4rem; line-height: 1; cursor: pointer; }
+.treat-popup-dismiss { margin-top: 12px; background: none; border: 0; color: #b8b8b8; text-decoration: underline; cursor: pointer; font: inherit; font-size: .9rem; }
