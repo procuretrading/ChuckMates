@@ -587,7 +587,18 @@ footer {
 .review-card blockquote { color: var(--secondary-gray); margin-bottom: 1rem; }
 .review-author { font-weight: 600; color: var(--primary-black); }
 .review-product { font-size: 0.9rem; color: var(--secondary-gray); }
-.review-cta { text-align: center; margin-top: 3rem; }
+.review-invite { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
+.review-invite h2 { font-size: 2rem; margin-bottom: 0.75rem; color: var(--primary-black); }
+.review-invite p { color: var(--secondary-gray); margin-bottom: 1.25rem; }
+.review-invite p a { color: var(--primary-red); font-weight: 600; }
+.leave-review { margin-top: 4rem; }
+.review-products { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+.review-product-card { background: var(--white); border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; text-align: center; display: flex; flex-direction: column; gap: 0.75rem; }
+.review-product-card img { width: 120px; height: 120px; object-fit: cover; border-radius: 6px; margin: 0 auto; }
+.review-product-card h3 { font-size: 1rem; color: var(--primary-black); }
+.review-links { display: flex; flex-direction: column; gap: 0.5rem; margin-top: auto; }
+.review-links a { display: block; padding: 0.5rem 0.75rem; border: 1px solid var(--primary-red); border-radius: 6px; color: var(--primary-red); font-weight: 600; font-size: 0.9rem; text-decoration: none; }
+.review-links a:hover { background: var(--primary-red); color: var(--white); }
 
 /* Chuck Mates dropdown menu */
 nav li.has-submenu { position: relative; }
@@ -684,35 +695,98 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
     <section class="hero">
         <div class="hero-content">
             <h1>Chuck Mates<sup class="tm">®</sup> Reviews</h1>
-            <p>See what customers are saying about Chuck Mates®</p>
+            <p>See what customers are saying about Chuck Mates<sup class="tm">®</sup></p>
         </div>
     </section>
 
     <div class="container">
+        <div class="review-invite">
+            <h2>Send Us Your Review</h2>
+            <p>Love your Chuck Mates<sup class="tm">®</sup>? We'd like to hear about it. <a href="contact.html">Contact us</a> to have your review added to our website.</p>
+            <a href="contact.html" class="btn btn-premium">Contact Us</a>
+        </div>
+
         <div class="review-grid">
             <!-- Replace each card with a real customer review -->
             <div class="review-card">
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <blockquote>Review text goes here.</blockquote>
                 <p class="review-author">Customer Name</p>
-                <p class="review-product">Chuck Mates® Platinum Series</p>
+                <p class="review-product">Chuck Mates<sup class="tm">®</sup> Platinum Series</p>
             </div>
             <div class="review-card">
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <blockquote>Review text goes here.</blockquote>
                 <p class="review-author">Customer Name</p>
-                <p class="review-product">Chuck Mates® Premium Series</p>
+                <p class="review-product">Chuck Mates<sup class="tm">®</sup> Premium Series</p>
             </div>
             <div class="review-card">
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <blockquote>Review text goes here.</blockquote>
                 <p class="review-author">Customer Name</p>
-                <p class="review-product">Chuck Mates® Platinum Series</p>
+                <p class="review-product">Chuck Mates<sup class="tm">®</sup> Platinum Series</p>
             </div>
         </div>
 
-        <div class="review-cta">
-            <a href="https://www.amazon.com/skog" class="btn btn-premium" target="_blank" rel="noopener">Read All Reviews on Amazon</a>
+        <div class="leave-review">
+            <div class="section-header">
+                <h2>Leave a Review on Amazon</h2>
+                <p>Pick your product to go straight to its review page.</p>
+            </div>
+            <div class="review-products">
+            <div class="review-product-card">
+                <img src="images/platinum-product.jpg" alt="Chuck Mates® Platinum Quick-Connect" width="120" height="120" loading="lazy">
+                <h3>Chuck Mates<sup class="tm">®</sup> Platinum Quick-Connect</h3>
+                <div class="review-links">
+                    <a href="https://www.amazon.com/review/create-review?asin=B0F9B1ZKJP" target="_blank" rel="noopener">Review 1-Pack</a>
+                    <a href="https://www.amazon.com/review/create-review?asin=B0F9B28GMN" target="_blank" rel="noopener">Review 2-Pack</a>
+                </div>
+            </div>
+            <div class="review-product-card">
+                <img src="images/platinum-locking-product-B0GM1QCQC1.jpg" alt="Chuck Mates® Platinum Locking Quick-Connect" width="120" height="120" loading="lazy">
+                <h3>Chuck Mates<sup class="tm">®</sup> Platinum Locking Quick-Connect (Schrader)</h3>
+                <div class="review-links">
+                    <a href="https://www.amazon.com/review/create-review?asin=B0GM1QCQC1" target="_blank" rel="noopener">Write a Review</a>
+                </div>
+            </div>
+            <div class="review-product-card">
+                <img src="images/reach360-product.jpg" alt="Chuck Mates® Reach360 Extension" width="120" height="120" loading="lazy">
+                <h3>Chuck Mates<sup class="tm">®</sup> Reach360 Extension</h3>
+                <div class="review-links">
+                    <a href="https://www.amazon.com/review/create-review?asin=B0F99YM7V3" target="_blank" rel="noopener">Write a Review</a>
+                </div>
+            </div>
+            <div class="review-product-card">
+                <img src="images/Platinum-Flex360-B0GQWJF9VK.jpg" alt="Chuck Mates® Flex360 Inflator Extension" width="120" height="120" loading="lazy">
+                <h3>Chuck Mates<sup class="tm">®</sup> Flex360 Inflator Extension (Open Flow)</h3>
+                <div class="review-links">
+                    <a href="https://www.amazon.com/review/create-review?asin=B0GQWJF9VK" target="_blank" rel="noopener">Write a Review</a>
+                </div>
+            </div>
+            <div class="review-product-card">
+                <img src="images/Platinum-closed-npt-B0FNKH13BL.jpg" alt="SKÖG® Quick-Connect Tire Inflator (Closed Type, NPT)" width="120" height="120" loading="lazy">
+                <h3>SKÖG<sup class="tm">®</sup> Quick-Connect Tire Inflator (Closed Type, NPT)</h3>
+                <div class="review-links">
+                    <a href="https://www.amazon.com/review/create-review?asin=B0FNKH13BL" target="_blank" rel="noopener">Write a Review</a>
+                </div>
+            </div>
+            <div class="review-product-card">
+                <img src="images/premium-product.jpg" alt="Chuck Mates® Premium Quick-Connect, Open-Flow" width="120" height="120" loading="lazy">
+                <h3>Chuck Mates<sup class="tm">®</sup> Premium Quick-Connect, Open-Flow</h3>
+                <div class="review-links">
+                    <a href="https://www.amazon.com/review/create-review?asin=B0CYDXGGH2" target="_blank" rel="noopener">Review 1-Pack</a>
+                    <a href="https://www.amazon.com/review/create-review?asin=B0DC4PWX4H" target="_blank" rel="noopener">Review 2-Pack</a>
+                </div>
+            </div>
+            <div class="review-product-card">
+                <img src="images/premium-npt-product.jpg" alt="Chuck Mates® Premium NPT Quick-Connect, Closed-Flow" width="120" height="120" loading="lazy">
+                <h3>Chuck Mates<sup class="tm">®</sup> Premium NPT Quick-Connect, Closed-Flow</h3>
+                <div class="review-links">
+                    <a href="https://www.amazon.com/review/create-review?asin=B0F2JNH29G" target="_blank" rel="noopener">Review 1-Pack</a>
+                    <a href="https://www.amazon.com/review/create-review?asin=B0F2JQ15B3" target="_blank" rel="noopener">Review 2-Pack</a>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
 
