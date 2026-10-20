@@ -591,6 +591,9 @@ footer {
 .review-invite h2 { font-size: 2rem; margin-bottom: 0.75rem; color: var(--primary-black); }
 .review-invite p { color: var(--secondary-gray); margin-bottom: 1.25rem; }
 .review-invite p a { color: var(--primary-red); font-weight: 600; }
+.video-review { max-width: 800px; margin: 0 auto 3rem; }
+.video-frame { position: relative; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); background: var(--primary-black); }
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .leave-review { margin-top: 4rem; }
 .review-products { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
 .review-product-card { background: var(--white); border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; text-align: center; display: flex; flex-direction: column; gap: 0.75rem; }
@@ -705,6 +708,15 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
             <a href="contact.html" class="btn btn-premium">Contact Us</a>
         </div>
 
+        <div class="video-review">
+            <div class="section-header">
+                <h2>Watch a Customer Review</h2>
+            </div>
+            <div class="video-frame">
+                <iframe src="https://www.youtube-nocookie.com/embed/Km5iIol8DM8?start=121" title="Chuck Mates customer review on YouTube" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+
         <div class="leave-review">
             <div class="section-header">
                 <h2>Leave a Review on Amazon</h2>
@@ -716,7 +728,7 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
                 <h3>Chuck Mates<sup class="tm">®</sup> Platinum Quick-Connect</h3>
                 <div class="review-links">
                     <a href="https://www.amazon.com/review/create-review?asin=B0F9B1ZKJP" class="btn btn-primary" target="_blank" rel="noopener">Review 1-Pack</a>
-                    <a href="https://www.amazon.com/review/create-review?asin=B0F9B28GMN" class="btn btn-secondary" target="_blank" rel="noopener">Review 2-Pack</a>
+                    <a href="https://www.amazon.com/review/create-review?asin=B0F9B28GMN" class="btn btn-primary" target="_blank" rel="noopener">Review 2-Pack</a>
                 </div>
             </div>
             <div class="review-product-card">
@@ -752,7 +764,7 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
                 <h3>Chuck Mates<sup class="tm">®</sup> Premium Quick-Connect, Open-Flow</h3>
                 <div class="review-links">
                     <a href="https://www.amazon.com/review/create-review?asin=B0CYDXGGH2" class="btn btn-premium" target="_blank" rel="noopener">Review 1-Pack</a>
-                    <a href="https://www.amazon.com/review/create-review?asin=B0DC4PWX4H" class="btn btn-secondary" target="_blank" rel="noopener">Review 2-Pack</a>
+                    <a href="https://www.amazon.com/review/create-review?asin=B0DC4PWX4H" class="btn btn-primary" target="_blank" rel="noopener">Review 2-Pack</a>
                 </div>
             </div>
             <div class="review-product-card">
@@ -760,7 +772,7 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
                 <h3>Chuck Mates<sup class="tm">®</sup> Premium NPT Quick-Connect, Closed-Flow</h3>
                 <div class="review-links">
                     <a href="https://www.amazon.com/review/create-review?asin=B0F2JNH29G" class="btn btn-premium" target="_blank" rel="noopener">Review 1-Pack</a>
-                    <a href="https://www.amazon.com/review/create-review?asin=B0F2JQ15B3" class="btn btn-secondary" target="_blank" rel="noopener">Review 2-Pack</a>
+                    <a href="https://www.amazon.com/review/create-review?asin=B0F2JQ15B3" class="btn btn-primary" target="_blank" rel="noopener">Review 2-Pack</a>
                 </div>
             </div>
             </div>
