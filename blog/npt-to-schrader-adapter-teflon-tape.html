@@ -567,7 +567,62 @@ footer {
   }
 }
 
-    </style>
+    
+/* Chuck Mates dropdown menu */
+nav li.has-submenu { position: relative; }
+.submenu-toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--white);
+  font: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.submenu-toggle::after { content: "\25BE"; margin-left: 0.35rem; font-size: 0.8em; }
+.submenu-toggle:hover,
+.has-submenu:focus-within > .submenu-toggle { color: var(--primary-red); }
+nav ul.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  flex-direction: column;
+  gap: 0;
+  min-width: 200px;
+  background: var(--primary-black);
+  padding: 0.5rem 0;
+  border-radius: 0 0 6px 6px;
+  box-shadow: var(--shadow-hover);
+}
+nav li.has-submenu:hover > ul.submenu,
+nav li.has-submenu:focus-within > ul.submenu { display: flex; }
+nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap; }
+
+@media (max-width: 768px) {
+  nav ul.nav-open { max-height: 900px; }
+  .submenu-toggle {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .submenu-toggle::after { content: none; }
+  nav ul.submenu {
+    display: flex;
+    position: static;
+    max-height: none;
+    overflow: visible;
+    padding: 0 0 0 1rem;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+</style>
 
     <script type="application/ld+json">
 {
@@ -676,9 +731,15 @@ footer {
             <nav id="primary-nav">
                 <ul>
                     <li><a rel="noopener" target="_blank" href="../index.html">Home</a></li>
-                    <li><a rel="noopener" target="_blank" href="../chuckfinder.html">ChuckFinder</a></li>
-                    <li><a rel="noopener" target="_blank" href="../platinum-series.html">Platinum Series</a></li>
-                    <li><a rel="noopener" target="_blank" href="../premium-series.html">Premium Series</a></li>
+                    <li class="has-submenu">
+                        <button class="submenu-toggle" type="button" aria-haspopup="true">Chuck Mates</button>
+                        <ul class="submenu">
+                            <li><a rel="noopener" target="_blank" href="../platinum-series.html">Platinum Series</a></li>
+                            <li><a rel="noopener" target="_blank" href="../premium-series.html">Premium Series</a></li>
+                            <li><a rel="noopener" target="_blank" href="../chuckfinder.html">ChuckFinder</a></li>
+                            <li><a rel="noopener" target="_blank" href="../reviews.html">Reviews</a></li>
+                        </ul>
+                    </li>
                     <li><a rel="noopener" target="_blank" href="../adapters.html">Adapters</a></li>
                     <li><a rel="noopener" target="_blank" href="../tire-gauge.html">Tire Gauge</a></li>
                     <li><a rel="noopener" target="_blank" href="index.html">Blog</a></li>
@@ -792,6 +853,7 @@ footer {
             <ul class="footer-links">
                 <li><a rel="noopener" target="_blank" href="../index.html">Home</a></li>
                 <li><a rel="noopener" target="_blank" href="../chuckfinder.html">ChuckFinder</a></li>
+                <li><a rel="noopener" target="_blank" href="../reviews.html">Reviews</a></li>
                 <li><a rel="noopener" target="_blank" href="../platinum-series.html">Platinum Series</a></li>
                 <li><a rel="noopener" target="_blank" href="../premium-series.html">Premium Series</a></li>
                 <li><a rel="noopener" target="_blank" href="../adapters.html">Adapters</a></li>
