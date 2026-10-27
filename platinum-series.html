@@ -615,6 +615,10 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
 .video-review { max-width: 800px; margin: 3rem auto 0; }
 .video-frame { position: relative; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); background: var(--primary-black); }
 .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-facade { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; cursor: pointer; background: var(--primary-black); }
+.video-facade img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-facade::after { content: ""; position: absolute; top: 50%; left: 50%; width: 68px; height: 48px; margin: -24px 0 0 -34px; border-radius: 12px; background: rgba(0,0,0,0.75) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68 48'%3E%3Cpath fill='%23fff' d='M27 14l16 10-16 10z'/%3E%3C/svg%3E") center / 100% 100% no-repeat; transition: background-color 0.2s; }
+.video-facade:hover::after, .video-facade:focus-visible::after { background-color: var(--primary-red); }
 .video-caption { margin-top: 0.75rem; text-align: center; font-size: 0.9rem; color: var(--secondary-gray); }
 .video-caption a { color: var(--primary-red); font-weight: 600; }
 </style>
@@ -808,6 +812,14 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
             <p class="video-caption">Chuck Mates<sup class="tm">®</sup> Platinum review on YouTube &ndash; <a href="https://www.youtube.com/watch?v=QKwDLaS3134" target="_blank" rel="noopener">Watch on YouTube</a></p>
         </div>
 
+        <div class="video-review">
+            <div class="video-frame">
+                <button type="button" class="video-facade" data-video-id="1cvVmO8PdeA" aria-label="Play Chuck Mates Platinum video">
+                    <img src="images/platinum-video-1cvVmO8PdeA.jpg" alt="Chuck Mates Platinum video thumbnail" width="1920" height="1080" loading="lazy">
+                </button>
+            </div>
+        </div>
+
         <div style="margin-top: 3rem; padding: 2rem; background: #f5f5f5; border-radius: 8px;">
             <h3 style="margin-bottom: 1rem; color: #1a1a1a;">Why Choose Platinum Series?</h3>
             <p style="color: #4a4a4a; line-height: 1.8;">The Platinum Series features our exclusive RatchetSeal™ technology, which delivers a secure, leak-free seal every time you inflate. The patented design gently yet firmly locks the connection, eliminating air loss and saving you time. With a 360° swivel design, you'll never deal with kinked hoses again. Whether you're inflating car tires, motorcycle tires, or bicycle tires, Chuck Mates<sup class="tm">®</sup> Platinum gives you professional-grade performance with effortless ease.</p>
@@ -868,6 +880,19 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
                 if (window.innerWidth > 768) closeMenu();
             });
         })();
+    </script>
+    <script>
+        document.querySelectorAll('.video-facade').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var f = document.createElement('iframe');
+                f.src = 'https://www.youtube-nocookie.com/embed/' + btn.getAttribute('data-video-id') + '?autoplay=1';
+                f.title = 'Chuck Mates Platinum video on YouTube';
+                f.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+                f.referrerPolicy = 'strict-origin-when-cross-origin';
+                f.allowFullscreen = true;
+                btn.parentNode.replaceChild(f, btn);
+            });
+        });
     </script>
 </body>
 </html>
