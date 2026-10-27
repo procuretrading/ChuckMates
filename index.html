@@ -648,6 +648,13 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
     border-radius: 0;
   }
 }
+
+.reviews-cta { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap; }
+.reviews-cta-text { flex: 1 1 320px; max-width: 480px; text-align: center; }
+.reviews-cta-text h2 { font-size: 2rem; margin-bottom: 0.75rem; color: var(--primary-black); }
+.reviews-cta-text p { color: var(--secondary-gray); margin-bottom: 1.25rem; font-size: 1.1rem; }
+.short-frame { position: relative; flex: 0 0 auto; width: min(315px, 100%); aspect-ratio: 9 / 16; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); background: var(--primary-black); }
+.short-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 </style>
     
     <!-- Schema.org markup for SEO -->
@@ -724,7 +731,7 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
         </div>
 
         <div class="chuckfinder-cta">
-            <p>Not sure which chuck fits your setup?</p>
+            <p>Not sure which Chuck Mate fits your setup?</p>
             <a href="chuckfinder.html" class="chuckfinder-logo-link" rel="noopener" target="_blank" aria-label="Find My Fit with ChuckFinder">
                 <img src="images/chuckfinder-button.webp" alt="ChuckFinder: Find Now" width="800" height="421">
             </a>
@@ -734,6 +741,17 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
             <img src="images/featured-arrgh-banner.jpg" alt="Love your portable tire inflator but hate screwing it on? There is a better way — simply push the SKÖG chuck on. Problem solved." width="1000" height="820">
         </div>
     </div>
+
+    <section class="reviews-cta">
+        <div class="reviews-cta-text">
+            <h2>See What Customers Are Saying</h2>
+            <p>Real reviews of Chuck Mates<sup class="tm">®</sup> from real users. Watch the short, then read and watch more on our Reviews page.</p>
+            <a href="reviews.html" class="cta-button" rel="noopener" target="_blank">Read the Reviews</a>
+        </div>
+        <div class="short-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/JfUpVet_Pi0" title="Chuck Mates review short on YouTube" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
 
     <section class="brand-story">
         <div class="brand-story-content">
