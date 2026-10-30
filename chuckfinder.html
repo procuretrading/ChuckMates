@@ -784,6 +784,8 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
 
   function poolWith(p){ return (state.pool||[]).concat(p||[]); }
   function accessoriesInPool(){ return (state.pool||[]).filter(function(k){ return k === 'reach360' || k === 'flex360'; }); }
+  // Flex360 is open-flow only, so it never goes with an NPT result.
+  function nptAccessoriesInPool(){ return accessoriesInPool().filter(function(k){ return k !== 'flex360'; }); }
 
   function render(){
     if(state.deadend){ renderDeadend(); return; }
@@ -892,7 +894,7 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
               showResult(patch);
             }
           } else if(v.group === 'nptSkip'){
-            state.pool = accessoriesInPool().concat(['premiumNPT','platinumNPT']); showResult(patch);
+            state.pool = nptAccessoriesInPool().concat(['premiumNPT','platinumNPT']); showResult(patch);
           } else {
             state.inflatorGroup = v.group; push('hose', undefined, patch);
           }
@@ -906,10 +908,10 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
           if(state.inflatorGroup === 'expect8v1' && v.kind === '8v1'){
             showResult(patch);
           } else if(state.inflatorGroup === 'expectNpt' && v.kind === 'npt'){
-            state.pool = accessoriesInPool().concat(['premiumNPT','platinumNPT']);
+            state.pool = nptAccessoriesInPool().concat(['premiumNPT','platinumNPT']);
             showResult(patch);
           } else if(state.inflatorGroup === 'expectNpt' && v.kind === 'coupling'){
-            state.pool = accessoriesInPool().concat(['mnptCoupling','premiumNPT','platinumNPT']);
+            state.pool = nptAccessoriesInPool().concat(['mnptCoupling','premiumNPT','platinumNPT']);
             showResult(patch);
           } else {
             state.mismatch = true;
