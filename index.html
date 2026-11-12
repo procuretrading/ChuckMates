@@ -155,7 +155,7 @@ nav a:hover {
 .hero {
   background: linear-gradient(135deg, rgba(26, 26, 26, 0.4) 0%, rgba(42, 42, 42, 0.45) 100%), url('images/hero-bg-tire.jpg') center center / cover no-repeat;
   color: var(--white);
-  padding: 3rem 2rem;
+  padding: 1.75rem 2rem;
   text-align: center;
 }
 
@@ -167,19 +167,20 @@ nav a:hover {
 .hero h1 {
   font-size: 2.5rem;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.9rem;
   font-weight: 700;
 }
 
 .hero p {
   font-size: 1.3rem;
   line-height: 1.5;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9rem;
   color: #e0e0e0;
 }
 
 .hero .cta-button {
-  padding: 0.85rem 2.5rem;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.9rem;
 }
 
 .cta-button {
@@ -401,7 +402,7 @@ nav a:hover {
 
 .chuckfinder-logo-link img {
   display: block;
-  width: min(320px, 80vw);
+  width: min(224px, 56vw);
   height: auto;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.18));
   transition: transform 0.25s ease, filter 0.25s ease;
@@ -460,10 +461,6 @@ nav a:hover {
   font-weight: 700;
   color: var(--primary-black);
   margin-bottom: 1.5rem;
-}
-
-#story-headline-short {
-  display: none;
 }
 
 .brand-story p {
@@ -529,7 +526,7 @@ footer {
   }
 
   #home-hero {
-    padding: 3rem 1rem;
+    padding: 1.5rem 1rem;
   }
 
   #home-hero h1 {
@@ -557,12 +554,8 @@ footer {
     font-size: 1.15rem;
   }
 
-  #story-headline-full {
-    display: none;
-  }
-
-  #story-headline-short {
-    display: block;
+  .brand-story {
+    padding-top: 1.75rem;
   }
 
   .header-content {
@@ -656,7 +649,7 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
 
 .reviews-cta { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap; }
 .reviews-cta-text { flex: 1 1 320px; max-width: 480px; text-align: center; }
-.reviews-cta-text h2 { font-size: 2rem; margin-bottom: 0.75rem; color: var(--primary-black); }
+.reviews-cta-text h2 { font-size: min(1.85rem, 5.2vw); white-space: nowrap; margin-bottom: 0.75rem; color: var(--primary-black); }
 .reviews-cta-text p { color: var(--secondary-gray); margin-bottom: 1.25rem; font-size: 1.1rem; }
 .short-frame { position: relative; flex: 0 0 auto; width: min(315px, 100%); aspect-ratio: 9 / 16; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); background: var(--primary-black); }
 .short-thumb { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; cursor: pointer; background: var(--primary-black); }
@@ -665,8 +658,9 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
 @media (max-width: 768px) {
   .home-main { padding-bottom: 0; }
   .reviews-cta { padding-top: 1.5rem; }
-  .chuckfinder-cta { padding-left: 1rem; padding-right: 1rem; }
+  .chuckfinder-cta { margin-top: 0.75rem; padding: 0.9rem 1rem 1.25rem; }
   .chuckfinder-cta p { font-size: min(1.15rem, 3.9vw); white-space: nowrap; }
+  .chuckfinder-logo-link img { width: min(170px, 46vw); }
 }
 </style>
     
@@ -722,14 +716,13 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
     <section class="hero" id="home-hero">
         <div class="hero-content">
             <h1>Innovative Tire Accessories<br>That Make Life Easier</h1>
-            <p>Faster Tire Servicing. Less Hassle.</p>
-            <a href="https://www.amazon.com/skog?maas=maas_adg_A9FE909AF33A722428DFC6F62DC37794_afap_abs&ref_=aa_maas&tag=maas" class="cta-button" target="_blank" rel="noopener">Shop on Amazon</a>
+            <a href="https://www.amazon.com/skog?maas=maas_adg_A9FE909AF33A722428DFC6F62DC37794_afap_abs&ref_=aa_maas&tag=maas" class="cta-button" target="_blank" rel="noopener">SKÖG Chuck Mates on Amazon</a>
         </div>
     </section>
 
     <div class="container home-main">
         <div class="featured-banner">
-            <img src="images/featured-arrgh-banner.jpg" alt="Love your portable tire inflator but hate having to screw it on? There is a better way. Just push it on! Problem solved. Meet your new mate: Chuck Mates." width="1464" height="1464">
+            <img src="images/featured-arrgh-banner.webp" alt="Love your portable tire inflator but hate having to screw it on? There is a better way. Just push it on! Problem solved. Meet your new mate: Chuck Mates." width="1464" height="1550">
         </div>
 
         <div class="chuckfinder-cta">
@@ -750,7 +743,7 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
                 <img src="images/featured-reach360-square.jpg" alt="Chuck Mates® Reach360 Extension" width="800" height="800">
             </a>
             <a rel="noopener" target="_blank" href="tire-gauge.html" class="feature-tile" aria-label="Shop SKÖG® Platinum Tire Pressure Gauge">
-                <img src="images/featured-tire-gauge-square.jpg" alt="SKÖG® Platinum Series Tire Pressure Gauge, Dual-Needle" width="800" height="800">
+                <img src="images/featured-tire-gauge-square.jpg" alt="SKÖG® PSI Gauge, Dual-Needle Tire Pressure Gauge" width="800" height="800">
             </a>
         </div>
     </div>
@@ -770,8 +763,7 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
 
     <section class="brand-story">
         <div class="brand-story-content">
-            <h2 id="story-headline-full">Still Screwing on the Inflator Hose?</h2>
-            <h2 id="story-headline-short">Still Screwing on the Hose?</h2>
+            <h2>Still twisting on the air hose?</h2>
             <p class="brand-story-tagline">Time to get Chuck Mates<sup class="tm">®</sup></p>
             <p>The old way: kneel down, thread it on, air up, unscrew it, repeat three more times.</p>
             <p>The new way: Add Chuck Mates<sup class="tm">®</sup> to your tire inflator. No more screwing on and off. Your inflator finally becomes the convenient, grab-and-go tool you always wanted it to be.</p>
