@@ -651,7 +651,9 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
 .reviews-cta-text { flex: 1 1 320px; max-width: 480px; text-align: center; }
 .reviews-cta-text h2 { font-size: min(1.85rem, 5.2vw); white-space: nowrap; margin-bottom: 0.75rem; color: var(--primary-black); }
 .reviews-cta-text p { color: var(--secondary-gray); margin-bottom: 1.25rem; font-size: 1.1rem; }
-.short-frame { position: relative; flex: 0 0 auto; width: min(315px, 100%); aspect-ratio: 9 / 16; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); background: var(--primary-black); }
+.review-video { flex: 0 1 440px; width: min(440px, 100%); }
+.review-video-caption { margin-top: 0.75rem; text-align: center; font-size: 0.9rem; color: var(--secondary-gray); }
+.short-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); background: var(--primary-black); }
 .short-thumb { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; cursor: pointer; background: var(--primary-black); }
 .short-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .short-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
@@ -751,13 +753,14 @@ nav ul.submenu a { display: block; padding: 0.6rem 1.25rem; white-space: nowrap;
     <section class="reviews-cta">
         <div class="reviews-cta-text">
             <h2>See What Customers Are Saying</h2>
-            <p>Real reviews of Chuck Mates<sup class="tm">®</sup> from real users. Watch the short, then watch more on our Reviews page.</p>
+            <p>Real reviews of Chuck Mates<sup class="tm">®</sup> from real users. Watch the video, then watch more on our Reviews page.</p>
             <a href="reviews.html" class="cta-button" rel="noopener" target="_blank">Reviews</a>
         </div>
-        <div class="short-frame">
-            <button type="button" class="short-thumb" aria-label="Play Chuck Mates review short" onclick="var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/JfUpVet_Pi0?autoplay=1';f.title='Chuck Mates review short on YouTube';f.allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';f.referrerPolicy='strict-origin-when-cross-origin';f.allowFullscreen=true;this.replaceWith(f);">
-                <img src="images/review-short-thumb.jpg" alt="Hand holding Chuck Mates Platinum Series Speed Clip package" width="630" height="1092" loading="lazy">
-            </button>
+        <div class="review-video">
+            <div class="short-frame">
+                <iframe src="https://www.youtube-nocookie.com/embed/w0QnCRF5GiU" title="Chuck Mates customer review on YouTube" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="review-video-caption">Unsolicited review of Chuck Mates<sup class="tm">®</sup> by @WestCoastMan</p>
         </div>
     </section>
 
